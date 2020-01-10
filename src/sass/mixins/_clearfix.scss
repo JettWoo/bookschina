@@ -1,0 +1,9 @@
+@mixin clearfix {
+    content: "%20";
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    width: 0;
+}

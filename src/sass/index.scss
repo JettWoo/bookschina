@@ -1,0 +1,219 @@
+@charset 'utf-8';
+@import 'compass/reset';
+
+@import 'mixins/center';
+@import 'mixins/clearfix';
+@import 'mixins/hover';
+
+@import 'variables';
+
+@import "header";
+@import "footer";
+
+
+@import 'banner';
+@import 'tabHot';
+
+
+
+/* 顶部广告样式 */
+.topBanner {
+    height: 100px;
+    background-color: rgb(138, 31, 37);
+
+    .banner {
+        text-align: center;
+
+        img {
+            /* width: 100%; */
+        }
+    }
+}
+
+/* 网页头部样式 */
+header {
+    height: 175px;
+    min-width: $contentWidth;
+
+    .search {
+        height: 144px;
+        background: #abc;
+    }
+}
+
+/* 头部链接结构 */
+#top {
+    height: 31px;
+    line-height: 31px;
+    background-color: #f2f2f2;
+    font-size: 12px;
+
+    .topWrapper {
+        @include w1200;
+        overflow: hidden;
+    }
+
+    /* 左侧欢迎结构 */
+    .topLeft {
+        float: left;
+        font-weight: 400;
+        color: #666;
+
+        h2 {
+            float: left;
+        }
+
+        p {
+            float: left;
+            margin-left: 10px;
+        }
+
+        span {
+            padding: 0 10px;
+            color: #d1d1d1;
+        }
+
+        a {
+            @include hover_link;
+            color: #e60000;
+        }
+    }
+
+    /* 右侧导航结构 */
+    .right_nav {
+        float: right;
+        height: 100%;
+
+        li {
+            float: left;
+            height: 100%;
+            padding: 0 15px;
+            border: 1px solid #f2f2f2;
+            border-bottom: none;
+        }
+
+        li:hover {
+            span{
+                background-position: 0 -4px;
+            }
+        }
+        .backChange:hover{
+            background: #fff;
+            box-shadow: 1px 1px 2px #e6e6e6;
+        }
+        a {
+            @include hover_link;
+        }
+
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            width: 8px;
+            height: 4px;
+            background: url(../images/homeindex.png) no-repeat 0 0;
+        }
+    }
+
+}
+
+/* 网页内容 */
+.content {
+    @include w1200;
+
+    .bannerWrap {
+        height: 890px;
+        background: #333;
+        overflow: hidden;
+
+        /* 左侧导航样式 */
+        .leftNav {
+            width: 200px;
+            height: 100%;
+            background: lightblue;
+            float: left;
+        }
+
+        /* 右侧样式 */
+        .rightBanner {
+            margin-left: 200px;
+            padding: 10px 0 0 10px;
+            height: 100%;
+            background: #fff;
+        }
+
+    }
+
+    /* 每日更新样式 */
+    .dayUpdate {
+        height: 160px;
+        background: #fff;
+
+        &::before {
+            @include clearfix;
+        }
+
+        .updateWrap {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            a {
+                display: block;
+                width: 393px;
+
+                img {
+                    display: block;
+                }
+
+                ;
+            }
+        }
+
+    }
+
+    /* 淘书团热销样式 */
+    .groupHot {
+        height: 395px;
+        background: lightcoral;
+    }
+
+    /* 包邮区样式 */
+    .freeShipping {
+        height: 320px;
+        background: lightseagreen;
+    }
+
+    %category {
+        height: 624px;
+        background: lightpink;
+    }
+
+    .literature {
+        @extend %category;
+        background: lightsteelblue;
+    }
+
+    .social {
+        @extend %category;
+        background: lightsalmon;
+    }
+
+    .childBooks {
+        @extend %category;
+        background: lightgreen;
+    }
+
+    .others {
+        height: 346px;
+        background: lightgoldenrodyellow;
+    }
+
+    .publish {
+        height: 516px;
+        background: lightseagreen;
+    }
+}
+
+/*  */

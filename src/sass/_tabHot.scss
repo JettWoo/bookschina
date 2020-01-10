@@ -1,0 +1,23 @@
+.tabHot{
+    margin-top: 10px;
+    height: 510px;
+    overflow: hidden;
+    .tabWrap{
+        float: left;
+        padding: 10px;
+        background: #eff2fa;
+        .tabSwitch{
+            width: 730px;
+            height: 490px;
+            background: lightgreen;
+        }
+    }
+    
+    /* 右侧畅销榜样式 */
+    .hotShipping{
+        width: 240px;
+        height: 100%;
+        float: right;
+        background: lightcoral;
+    }
+}

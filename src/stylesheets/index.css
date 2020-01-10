@@ -1,0 +1,491 @@
+@charset "UTF-8";
+/* line 5, E:/Program Files (x86)/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, E:/Program Files (x86)/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, E:/Program Files (x86)/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, E:/Program Files (x86)/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, E:/Program Files (x86)/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, E:/Program Files (x86)/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, E:/Program Files (x86)/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, E:/Program Files (x86)/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, E:/Program Files (x86)/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 5, ../sass/_header.scss */
+.loginHead {
+  background: #fff;
+  height: 91px;
+  border-bottom: 2px solid #e60000;
+  min-width: 1000px;
+}
+/* line 10, ../sass/_header.scss */
+.loginHead .logoInner {
+  width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+/* line 13, ../sass/_header.scss */
+.loginHead .logoInner .logo {
+  padding: 22px 0;
+  float: left;
+  width: 200px;
+  position: relative;
+}
+/* line 19, ../sass/_header.scss */
+.loginHead .logoInner h1 {
+  text-indent: -9999px;
+}
+/* line 21, ../sass/_header.scss */
+.loginHead .logoInner h1 a {
+  display: block;
+  position: absolute;
+  top: 22px;
+}
+/* line 26, ../sass/_header.scss */
+.loginHead .logoInner h1 img {
+  display: block;
+}
+/* line 30, ../sass/_header.scss */
+.loginHead .logoInner .ad {
+  float: right;
+  height: 36px;
+  padding: 27px 0;
+}
+/* line 34, ../sass/_header.scss */
+.loginHead .logoInner .ad span {
+  float: left;
+  line-height: 36px;
+  padding-left: 49px;
+  margin-right: 33px;
+  font-size: 12px;
+  background: url(../images/promiseAd.png) no-repeat left;
+}
+/* line 42, ../sass/_header.scss */
+.loginHead .logoInner .ad .baoyou {
+  background-position: -141px;
+}
+/* line 45, ../sass/_header.scss */
+.loginHead .logoInner .ad .yizhe {
+  background-position: -289px;
+}
+
+/* line 6, ../sass/_footer.scss */
+.loginRegistryFoot .footNav {
+  padding-top: 46px;
+}
+/* line 9, ../sass/_footer.scss */
+.loginRegistryFoot .footNav ul {
+  width: 480px;
+  margin: auto;
+  overflow: hidden;
+}
+/* line 15, ../sass/_footer.scss */
+.loginRegistryFoot .footNav li {
+  float: left;
+  width: 120px;
+  text-align: center;
+  background: url(../images/loginRegistfootline.jpg) no-repeat right center;
+}
+/* line 22, ../sass/_footer.scss */
+.loginRegistryFoot .footNav li:last-child {
+  background: none;
+}
+/* line 27, ../sass/_footer.scss */
+.loginRegistryFoot .certificate {
+  margin: 20px auto 30px;
+}
+/* line 30, ../sass/_footer.scss */
+.loginRegistryFoot .certificate .credit_certificate {
+  float: left;
+  margin-left: 90px;
+}
+/* line 35, ../sass/_footer.scss */
+.loginRegistryFoot .certificate .license {
+  float: left;
+  margin-left: 18px;
+}
+/* line 38, ../sass/_footer.scss */
+.loginRegistryFoot .certificate .license p {
+  line-height: 20px;
+}
+/* line 41, ../sass/_footer.scss */
+.loginRegistryFoot .certificate .license span {
+  font-size: 12px;
+  color: #333333;
+}
+/* line 49, ../sass/_footer.scss */
+.loginRegistryFoot a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #333333;
+}
+/* line 6, ../sass/mixins/_hover.scss */
+.loginRegistryFoot a:hover {
+  color: #e60000;
+  text-decoration: underline;
+}
+
+/* line 1, ../sass/_banner.scss */
+.bannerSwiper {
+  height: 360px;
+  position: relative;
+}
+/* line 5, ../sass/_banner.scss */
+.bannerSwiper ul li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+/* line 12, ../sass/_banner.scss */
+.bannerSwiper ul li:first-child {
+  display: block;
+}
+/* line 16, ../sass/_banner.scss */
+.bannerSwiper .bannerDot {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+/* line 20, ../sass/_banner.scss */
+.bannerSwiper .bannerDot a {
+  float: left;
+  height: 34px;
+  font-size: 12px;
+  width: 16.6666%;
+  text-align: center;
+  line-height: 34px;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 3px 0px;
+}
+/* line 31, ../sass/_banner.scss */
+.bannerSwiper .bannerDot a span {
+  vertical-align: middle;
+  padding: 0 10px;
+}
+/* line 36, ../sass/_banner.scss */
+.bannerSwiper .bannerDot a.on {
+  background: #e60000;
+}
+/* line 42, ../sass/_banner.scss */
+.bannerSwiper .arrowLeft, .bannerSwiper .arrowRight {
+  position: absolute;
+  width: 27px;
+  height: 38px;
+  top: 50%;
+  margin-top: -19px;
+  cursor: pointer;
+  display: none;
+}
+/* line 52, ../sass/_banner.scss */
+.bannerSwiper .arrowLeft {
+  left: 0;
+  background: url(../images/homeindex.png) no-repeat -73px -38px;
+}
+/* line 58, ../sass/_banner.scss */
+.bannerSwiper .arrowRight {
+  right: 0;
+  background: url(../images/homeindex.png) no-repeat -73px 0px;
+}
+
+/* line 1, ../sass/_tabHot.scss */
+.tabHot {
+  margin-top: 10px;
+  height: 510px;
+  overflow: hidden;
+  /* 右侧畅销榜样式 */
+}
+/* line 5, ../sass/_tabHot.scss */
+.tabHot .tabWrap {
+  float: left;
+  padding: 10px;
+  background: #eff2fa;
+}
+/* line 9, ../sass/_tabHot.scss */
+.tabHot .tabWrap .tabSwitch {
+  width: 730px;
+  height: 490px;
+  background: lightgreen;
+}
+/* line 17, ../sass/_tabHot.scss */
+.tabHot .hotShipping {
+  width: 240px;
+  height: 100%;
+  float: right;
+  background: lightcoral;
+}
+
+/* 顶部广告样式 */
+/* line 20, ../sass/index.scss */
+.topBanner {
+  height: 100px;
+  background-color: #8a1f25;
+}
+/* line 24, ../sass/index.scss */
+.topBanner .banner {
+  text-align: center;
+}
+/* line 27, ../sass/index.scss */
+.topBanner .banner img {
+  /* width: 100%; */
+}
+
+/* 网页头部样式 */
+/* line 34, ../sass/index.scss */
+header {
+  height: 175px;
+  min-width: 1200px;
+}
+/* line 38, ../sass/index.scss */
+header .search {
+  height: 144px;
+  background: #abc;
+}
+
+/* 头部链接结构 */
+/* line 45, ../sass/index.scss */
+#top {
+  height: 31px;
+  line-height: 31px;
+  background-color: #f2f2f2;
+  font-size: 12px;
+  /* 左侧欢迎结构 */
+  /* 右侧导航结构 */
+}
+/* line 51, ../sass/index.scss */
+#top .topWrapper {
+  width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+/* line 57, ../sass/index.scss */
+#top .topLeft {
+  float: left;
+  font-weight: 400;
+  color: #666;
+}
+/* line 62, ../sass/index.scss */
+#top .topLeft h2 {
+  float: left;
+}
+/* line 66, ../sass/index.scss */
+#top .topLeft p {
+  float: left;
+  margin-left: 10px;
+}
+/* line 71, ../sass/index.scss */
+#top .topLeft span {
+  padding: 0 10px;
+  color: #d1d1d1;
+}
+/* line 76, ../sass/index.scss */
+#top .topLeft a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #333333;
+  color: #e60000;
+}
+/* line 6, ../sass/mixins/_hover.scss */
+#top .topLeft a:hover {
+  color: #e60000;
+  text-decoration: underline;
+}
+/* line 83, ../sass/index.scss */
+#top .right_nav {
+  float: right;
+  height: 100%;
+}
+/* line 87, ../sass/index.scss */
+#top .right_nav li {
+  float: left;
+  height: 100%;
+  padding: 0 15px;
+  border: 1px solid #f2f2f2;
+  border-bottom: none;
+}
+/* line 96, ../sass/index.scss */
+#top .right_nav li:hover span {
+  background-position: 0 -4px;
+}
+/* line 100, ../sass/index.scss */
+#top .right_nav .backChange:hover {
+  background: #fff;
+  box-shadow: 1px 1px 2px #e6e6e6;
+}
+/* line 104, ../sass/index.scss */
+#top .right_nav a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #333333;
+}
+/* line 6, ../sass/mixins/_hover.scss */
+#top .right_nav a:hover {
+  color: #e60000;
+  text-decoration: underline;
+}
+/* line 108, ../sass/index.scss */
+#top .right_nav span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 8px;
+  height: 4px;
+  background: url(../images/homeindex.png) no-repeat 0 0;
+}
+
+/* 网页内容 */
+/* line 120, ../sass/index.scss */
+.content {
+  width: 1200px;
+  margin: auto;
+  /* 每日更新样式 */
+  /* 淘书团热销样式 */
+  /* 包邮区样式 */
+}
+/* line 123, ../sass/index.scss */
+.content .bannerWrap {
+  height: 890px;
+  background: #333;
+  overflow: hidden;
+  /* 左侧导航样式 */
+  /* 右侧样式 */
+}
+/* line 129, ../sass/index.scss */
+.content .bannerWrap .leftNav {
+  width: 200px;
+  height: 100%;
+  background: lightblue;
+  float: left;
+}
+/* line 137, ../sass/index.scss */
+.content .bannerWrap .rightBanner {
+  margin-left: 200px;
+  padding: 10px 0 0 10px;
+  height: 100%;
+  background: #fff;
+}
+/* line 147, ../sass/index.scss */
+.content .dayUpdate {
+  height: 160px;
+  background: #fff;
+}
+/* line 151, ../sass/index.scss */
+.content .dayUpdate::before {
+  content: "%20";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  width: 0;
+}
+/* line 155, ../sass/index.scss */
+.content .dayUpdate .updateWrap {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 162, ../sass/index.scss */
+.content .dayUpdate .updateWrap a {
+  display: block;
+  width: 393px;
+}
+/* line 166, ../sass/index.scss */
+.content .dayUpdate .updateWrap a img {
+  display: block;
+}
+/* line 177, ../sass/index.scss */
+.content .groupHot {
+  height: 395px;
+  background: lightcoral;
+}
+/* line 183, ../sass/index.scss */
+.content .freeShipping {
+  height: 320px;
+  background: lightseagreen;
+}
+/* line 188, ../sass/index.scss */
+.content .literature, .content .social, .content .childBooks {
+  height: 624px;
+  background: lightpink;
+}
+/* line 193, ../sass/index.scss */
+.content .literature {
+  background: lightsteelblue;
+}
+/* line 198, ../sass/index.scss */
+.content .social {
+  background: lightsalmon;
+}
+/* line 203, ../sass/index.scss */
+.content .childBooks {
+  background: lightgreen;
+}
+/* line 208, ../sass/index.scss */
+.content .others {
+  height: 346px;
+  background: lightgoldenrodyellow;
+}
+/* line 213, ../sass/index.scss */
+.content .publish {
+  height: 516px;
+  background: lightseagreen;
+}
+
+/*  */

@@ -173,7 +173,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 6, ../sass/mixins/_hover.scss */
 .loginRegistryFoot a:hover {
-  color: red;
+  color: #e60000;
   text-decoration: underline;
 }
 
