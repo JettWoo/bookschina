@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background: #333;
+        }
+        .registerForm{
+            width: 1000px;
+            box-sizing: border-box;
+            padding: 20px;
+            margin: auto;
+            background: #fff;
+
+        }
+
+        .contentInput{
+            overflow: hidden;
+            line-height: 42px;
+        }
+        .contentInput .label{
+            width: 150px;
+            text-align: right;
+            float: left;
+
+        }
+        .contentInput .inputWrap{
+            box-sizing: border-box;
+            width: 340px;
+            height: 42px;
+            border: 1px solid #333;
+            border-radius: 4px;
+            float: left;
+            margin-left: 30px;
+        }
+        .contentInput .inputWrap input{
+            border: none;
+            outline: none;
+            height: 100%;
+            width: 100%;
+            padding-left: 10px;
+            background: transparent;
+        }
+        input:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 1000px white inset;
+        }
+        .contentInput  .info{
+            margin-left: 20px;
+        }
+        .item .tip{
+            height: 30px;
+            line-height: 30px;
+        }
+        .item .tip p{
+            margin-left: 180px;
+        }
+
+        .registerForm input[type="button"]{
+            width: 380px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border: none;
+            background:#e60000;
+            color: #fff;
+            border-radius: 5px;
+            margin-left: 180px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="registerForm">
+            <form method="POST">
+                <div class="item">
+                    <div class="contentInput">
+                        <span class="label">手机号码:</span>
+                        <div class="inputWrap">
+                            <input type="text" name="phoneNum" id="" placeholder="用户名/邮箱/已验证手机" autocomplete="off">
+                        </div>
+                        <span class="info"><img src="http://www.bookschina.com/Images/sucessTip.png" alt=""></span>
+                    </div>
+                    <div class="tip">
+                        <p>请输入用户名/邮箱/已验证手机</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="contentInput">
+                        <span class="label">密码:</span>
+                        <div class="inputWrap">
+                            <input type="password" name="pwd" id="" placeholder="密码">
+                        </div>
+                        <span class="info"><img src="http://www.bookschina.com/Images/sucessTip.png" alt=""></span>
+                    </div>
+                    <div class="tip">
+                        <p>请输入密码</p>
+                    </div>
+                </div>
+
+                <input type="button" value="登录" name="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

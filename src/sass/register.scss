@@ -1,0 +1,115 @@
+@import "header";
+@import "footer";
+
+
+body {
+    background: #f6f4f5;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.w1000 {
+    @include w1000;
+    background: #fff;
+}
+
+.registerForm {
+    padding: 60px 50px 170px;
+
+    .registerTitle {
+        height: 24px;
+        line-height: 24px;
+
+        b {
+            border-left: 3px solid #ff0000;
+            font-size: 22px;
+            color: #333;
+            font-weight: bold;
+            padding-left: 13px;
+        }
+
+        span {
+            font-size: 14px;
+            color: #ff0000;
+            margin-left: 11px;
+        }
+
+        .backLogin {
+            float: right;
+            font-size: 14px;
+            color: #c1c1c1;
+
+            a {
+                color: #999;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .registerInputWrap {
+        margin-top: 50px;
+
+        input[type='submit']{              
+            width: 380px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border: none;
+            background: #e60000;
+            color: #fff;
+            border-radius: 5px;
+            margin-left: 180px;
+        }
+    }
+}
+
+.item {
+    .contentInput {
+        overflow: hidden;
+        line-height: 42px;
+
+        .label {
+            width: 150px;
+            text-align: right;
+            float: left;
+        }
+
+
+        .inputWrap {
+            box-sizing: border-box;
+            width: 340px;
+            height: 42px;
+            border: 1px solid #333;
+            border-radius: 4px;
+            float: left;
+            margin-left: 30px;
+            input{
+                border: none;
+                outline: none;
+                height: 100%;
+                width: 100%;
+                padding-left: 10px;
+                background: transparent;
+            }
+            input:-webkit-autofill {
+                -webkit-box-shadow: 0 0 0 1000px white inset;
+            }
+            
+        }
+
+        .info{
+            margin-left: 20px;
+        }
+    }
+
+    .tip {
+        height: 30px;
+        line-height: 30px;
+
+        p {
+            margin-left: 180px;
+        }
+    }
+}

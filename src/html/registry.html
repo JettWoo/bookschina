@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheets/register.css">
+</head>
+
+<body>
+    <div class="head">
+
+    </div>
+    <div class="content">
+        <div class="w1000">
+            <div class="registerForm">
+                <div class="registerTitle">
+                    <b>新用户注册</b>
+                    <span>
+                        新用户专享：19减5优惠券（全场通用，淘书团除外）
+                    </span>
+                    <div class="backLogin">
+                        已有账号?<a href="">请登录</a>
+                    </div>
+                </div>
+                <div class="registerInputWrap">
+                    <form action="http://10.31.152.26:8080/bookStore/php/regitser.php" method="POST">
+                        <div class="item">
+                            <div class="contentInput">
+                                <span class="label">手机号码:</span>
+                                <div class="inputWrap">
+                                    <input type="text" name="phoneNum" id="" placeholder="请输入您的常用手机号码" maxlength="11"
+                                        autocomplete="off">
+                                </div>
+                                <span class="info"><img src="http://www.bookschina.com/Images/sucessTip.png"
+                                        alt=""></span>
+                            </div>
+                            <div class="tip">
+                                <p>请输入您的常用手机号码</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="contentInput">
+                                <span class="label">设置密码:</span>
+                                <div class="inputWrap">
+                                    <input type="password" name="pwd" id="" placeholder="请输入密码">
+                                </div>
+                                <span class="info"><img src="http://www.bookschina.com/Images/sucessTip.png"
+                                        alt=""></span>
+                            </div>
+                            <div class="tip">
+                                <p>请输入密码</p>
+                            </div>
+                        </div>
+                        <input value="立即注册"  type="submit"name="submit">
+                        <!--  -->
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="foot">
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(".head").load("../static/header.html");
+        $(".foot").load("../static/footer.html");
+    </script>
+</body>
+
+</html>

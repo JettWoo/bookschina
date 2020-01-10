@@ -1,0 +1,52 @@
+@import "./mixins/center";
+@import "./mixins/hover";
+@import "compass/reset";
+
+.loginRegistryFoot {
+    .footNav {
+        padding-top: 46px;
+
+        ul {
+            width: 480px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+            width: 120px;
+            text-align: center;
+            background: url(../images/loginRegistfootline.jpg) no-repeat right center;
+        }
+
+        li:last-child {
+            background: none;
+        }
+    }
+
+    .certificate {
+        margin: 20px auto 30px;
+
+        .credit_certificate {
+            float: left;
+            margin-left: 90px;
+        }
+
+        .license {
+            float: left;
+            margin-left: 18px;
+            p{
+                line-height: 20px;
+            }
+            span {
+                font-size: 12px;
+                color: #333333;
+            }
+        }
+
+    }
+
+    a {
+        @include hover_link;
+    }
+}
