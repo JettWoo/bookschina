@@ -11,11 +11,18 @@
 @import "footer";
 
 
+@import "topHeader";     // 引入网站头部样式
+@import "leftNav";       // 引入左部导航的样式
 @import 'banner';
 @import 'tabHot';
+@import 'hotShipping';   // 引入畅销样式
 
 
-
+body{
+    /* font-size: 12px;
+    color: #666666; */
+    font-family: "宋体";;
+}
 /* 顶部广告样式 */
 .topBanner {
     height: 100px;
@@ -30,91 +37,6 @@
     }
 }
 
-/* 网页头部样式 */
-header {
-    height: 175px;
-    min-width: $contentWidth;
-
-    .search {
-        height: 144px;
-        background: #abc;
-    }
-}
-
-/* 头部链接结构 */
-#top {
-    height: 31px;
-    line-height: 31px;
-    background-color: #f2f2f2;
-    font-size: 12px;
-
-    .topWrapper {
-        @include w1200;
-        overflow: hidden;
-    }
-
-    /* 左侧欢迎结构 */
-    .topLeft {
-        float: left;
-        font-weight: 400;
-        color: #666;
-
-        h2 {
-            float: left;
-        }
-
-        p {
-            float: left;
-            margin-left: 10px;
-        }
-
-        span {
-            padding: 0 10px;
-            color: #d1d1d1;
-        }
-
-        a {
-            @include hover_link;
-            color: #e60000;
-        }
-    }
-
-    /* 右侧导航结构 */
-    .right_nav {
-        float: right;
-        height: 100%;
-
-        li {
-            float: left;
-            height: 100%;
-            padding: 0 15px;
-            border: 1px solid #f2f2f2;
-            border-bottom: none;
-        }
-
-        li:hover {
-            span{
-                background-position: 0 -4px;
-            }
-        }
-        .backChange:hover{
-            background: #fff;
-            box-shadow: 1px 1px 2px #e6e6e6;
-        }
-        a {
-            @include hover_link;
-        }
-
-        span {
-            display: inline-block;
-            vertical-align: middle;
-            width: 8px;
-            height: 4px;
-            background: url(../images/homeindex.png) no-repeat 0 0;
-        }
-    }
-
-}
 
 /* 网页内容 */
 .content {
@@ -123,16 +45,7 @@ header {
     .bannerWrap {
         height: 890px;
         background: #333;
-        overflow: hidden;
-
-        /* 左侧导航样式 */
-        .leftNav {
-            width: 200px;
-            height: 100%;
-            background: lightblue;
-            float: left;
-        }
-
+        /* overflow: hidden; */
         /* 右侧样式 */
         .rightBanner {
             margin-left: 200px;

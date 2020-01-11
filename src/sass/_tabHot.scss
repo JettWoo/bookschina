@@ -1,23 +1,198 @@
-.tabHot{
+.tabHot {
     margin-top: 10px;
     height: 510px;
     overflow: hidden;
-    .tabWrap{
+
+    .tabWrap {
         float: left;
         padding: 10px;
         background: #eff2fa;
-        .tabSwitch{
+
+        #tabSwitch {
             width: 730px;
             height: 490px;
-            background: lightgreen;
+            background: transparent;
         }
     }
-    
-    /* 右侧畅销榜样式 */
-    .hotShipping{
-        width: 240px;
-        height: 100%;
-        float: right;
-        background: lightcoral;
+}
+
+#tabSwitch {
+    .nav {
+        height: 40px;
+        background: transparent;
+
+        li {
+            border: none;
+            box-sizing: border-box;
+            height: 100%;
+            background: transparent;
+        }
+
+        a {
+            border-radius: 0;
+            border: none;
+            background: transparent;
+            margin-right: 0;
+            padding: 0 25px;
+            box-sizing: content-box;
+            border-top: 3px solid transparent;
+            font-size: 16px;
+            color: #111;
+            height: 37px;
+            line-height: 37px;
+            font-weight: 300;
+        }
+
+        border-bottom: none;
+
+        .active {
+            a {
+                border-top: 3px solid $themeColor;
+                background: #fff;
+                font-weight: bold;
+                color: $themeColor;
+            }
+        }
+    }
+
+    /* 切换内容样式 */
+    .tab-content {
+        background: #ffff;
+        height: 450px;
+        margin: 0;
+    }
+}
+
+/* 切换面板内容样式 */
+.tab-pane {
+    height: 100%;
+
+    .mainEditor {
+        height: 189px;
+        border-bottom: 1px solid #eef1f9;
+        padding: 15px 15px 0;
+
+        .mainCover {
+            float: left;
+            width: 189px;
+            height: 160px;
+            text-align: center;
+
+            img {
+                max-width: 160px;
+                max-height: 160px;
+            }
+        }
+    }
+
+    .tabBook{
+        padding: 10px 0;
+    }
+
+}
+
+.mainText {
+    float: left;
+    width: 495px;
+    height: 100px;
+
+    h2 {
+        margin-top: 10px;
+        line-height: 30px;
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            font-family: "Microsoft YaHei";
+
+            &:hover {
+                color: $themeColor;
+            }
+        }
+    }
+
+    .mainFont {
+        p {
+            text-indent: 2em;
+        }
+    }
+}
+
+.priceWrap {
+    height: 30px;
+    line-height: 30px;
+
+    span {
+        font-size: 18px;
+        font-family: "Microsoft YaHei";
+        color: #999999;
+    }
+
+    .nowPrice {
+        color: $themeColor;
+    }
+
+    .oldPrice {
+        text-decoration: line-through;
+    }
+}
+
+.mainFont {
+    p {
+        font-size: 12px;
+        color: #333;
+        line-height: 24px;
+        text-indent: 2em;
+    }
+}
+
+.bookItem{
+    width: floor($number: 25%);
+    float: left;
+    .bookWrap{ 
+        a{
+            text-decoration: none;
+        }
+        .bookImg{
+            text-align: center;
+            position: relative;
+            img{
+                max-width: 158px;
+                max-height: 158px;;
+            }
+            .discount{
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+        .bookDisc{
+            margin: 10px 0;
+            padding: 0 15px;
+            text-decoration: none;
+            font-size: 12px;
+            line-height: 18px;
+            color: #333;
+            &:hover{
+                color: $themeColor; 
+            }
+        }
+    }
+    .bookPrice{
+        padding: 0 15px;
+        line-height: 20px;
+        .nowPrice{
+            color: $themeColor;
+            font-size: 16px;
+            font-family: "Microsoft YaHei";
+        }
+
+        .oldPrice{
+            color: #666666;
+            font-size: 12px;
+            font-family: "Microsoft YaHei";
+            text-decoration: line-through;
+        }
     }
 }

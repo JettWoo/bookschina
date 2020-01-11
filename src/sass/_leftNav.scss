@@ -1,0 +1,207 @@
+/* 左侧导航样式 */
+.leftNav {
+    width: 200px;
+    height: 890px + 44px;
+    background: #fff;
+    margin-top: -44px;
+    float: left;
+    position: relative;
+    .leftNavWrap {
+        border: 1px solid $themeColor;
+    }
+
+    /* 底部导航样式 */
+    .minNav{
+        border: 1px solid #c8c8c8;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        h4{
+            padding: 12px 20px 12px 40px;
+            color: $themeColor;
+            background: url(../images/shu_icon.png) no-repeat;
+            background-position: 20px 8px;
+        }
+        a{
+            display: block;
+            border-top:1px solid #c8c8c8;
+            font-size: 12px;
+            padding: 12px 20px;
+            text-decoration: none;
+            color: #666666;
+            em{
+                float: right;
+            }
+            &:hover{
+                color: $themeColor;
+            }
+        }
+    }
+}
+
+/* 导航头部样式 */
+.titleWrap {
+    height: 42px;
+    line-height: 42px;
+
+    .title {
+        padding: 0 30px 0 15px;
+        height: 100%;
+        background: $themeColor;
+
+        h2 {
+            color: #fff;
+
+            span {
+                display: inline-block;
+                width: 20px;
+                height: 15px;
+                background: url(../images/homeindex.png) no-repeat -8px 0px;
+                vertical-align: middle;
+                transform: translateY(-1px);
+                ;
+            }
+
+            background: url(../images/categoryarrowdown.png) no-repeat right center;
+        }
+    }
+
+}
+
+/* 导航内容样式 */
+.navContent {
+    /* 每块导航的样式 */
+    .ItemWrap {
+        padding: 0px 12px;
+        .navItem{
+            padding: 8px 0;
+            border-bottom: 1px solid #ffd3d4;
+            position: relative;
+            z-index: 999;
+        }
+        position: relative;
+        &:hover{
+            border: 2px solid $themeColor;
+            border-right: none;
+            .navItem{
+                background: #fff;
+                width: 186px;
+                border: none;
+                transform: translateX(2px);
+            }
+            .menu-item{
+                display: block;
+            }
+        }
+        h4 {
+            background: url(../images/);
+            margin-bottom: 10px;
+            a {
+                @include hover_link;
+                font-size: 16px;
+                color: $themeColor;
+            }
+
+            em {
+                float: right;
+                width: 16px;
+                height: 16px;
+                font-size: 16px;
+                color: #666666;
+            }
+        }
+
+        /* 每块导航内容的样式 */
+        .category-list{
+            a{
+                @include hover_link;
+                display: inline-block;
+                color: #666666;
+                margin-right: 12px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    .ItemWrap:last-child{
+        .navItem{
+            border-bottom: none;
+        }
+    }
+
+    .navBottom{
+        text-align: right;
+        padding-right: 20px;
+        line-height: 26px;
+
+        a{
+            font-size: 12px;
+            color: #666;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+/* 隐藏导航块样式 */
+.menu-item{
+    position: absolute;
+    display: none;
+    left: 100%;
+    top: -2px;
+    width: 761px;
+    border-left: none;
+    background: #fff;
+    overflow: hidden;
+    z-index: 5;
+    .subWrap{
+        border: 2px solid $themeColor;
+        padding: 10px 0 10px 16px;
+        overflow: hidden;
+        .sub-list{
+            padding-right: 32px;
+        }
+        li{
+            padding: 9px 0;
+            border-bottom: 1px solid #999999;
+            overflow: hidden;
+        }
+        li:last-child{
+            border-bottom: none;
+        }
+       
+        h4{
+            float: left;
+            width: 85px;
+            a{
+                font-size: 12px;
+                font-weight: 700;
+                text-decoration: none;
+                
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+        p{
+            line-height: 24px;
+            color: #666;
+            float: left;
+            width: 600px;
+            a{
+                @include hover_link;
+                color: inherit;
+                white-space: nowrap;
+                margin: 0 16px;
+                float: left;
+                line-height: inherit;
+            }
+            span{
+                font-size: 12px;
+                float: left;
+                line-height: inherit;
+            }
+        }
+    }
+}

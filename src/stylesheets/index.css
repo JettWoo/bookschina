@@ -178,6 +178,646 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-decoration: underline;
 }
 
+/* 网页头部样式 */
+/* line 2, ../sass/_topHeader.scss */
+header {
+  height: 173px;
+  min-width: 1200px;
+  border-bottom: 2px solid #e60000;
+}
+
+/* 头部链接结构 */
+/* line 9, ../sass/_topHeader.scss */
+#top {
+  height: 31px;
+  line-height: 31px;
+  background-color: #f2f2f2;
+  font-size: 12px;
+  /* 左侧欢迎结构 */
+  /* 右侧导航结构 */
+}
+/* line 15, ../sass/_topHeader.scss */
+#top .topWrapper {
+  width: 1200px;
+  margin: auto;
+  /* overflow: hidden; */
+  height: 31px;
+}
+/* line 22, ../sass/_topHeader.scss */
+#top .topLeft {
+  float: left;
+  font-weight: 400;
+  color: #666;
+}
+/* line 27, ../sass/_topHeader.scss */
+#top .topLeft h2 {
+  float: left;
+}
+/* line 31, ../sass/_topHeader.scss */
+#top .topLeft p {
+  float: left;
+  margin-left: 10px;
+}
+/* line 36, ../sass/_topHeader.scss */
+#top .topLeft span {
+  padding: 0 10px;
+  color: #d1d1d1;
+}
+/* line 41, ../sass/_topHeader.scss */
+#top .topLeft a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #333333;
+  color: #e60000;
+}
+/* line 6, ../sass/mixins/_hover.scss */
+#top .topLeft a:hover {
+  color: #e60000;
+  text-decoration: underline;
+}
+/* line 48, ../sass/_topHeader.scss */
+#top .right_nav {
+  float: right;
+  height: 100%;
+}
+/* line 52, ../sass/_topHeader.scss */
+#top .right_nav li {
+  float: left;
+  height: 100%;
+  padding: 0 15px;
+  border: 1px solid #f2f2f2;
+  border-bottom: none;
+}
+/* line 60, ../sass/_topHeader.scss */
+#top .right_nav .backChange {
+  position: relative;
+}
+/* line 63, ../sass/_topHeader.scss */
+#top .right_nav .backChange span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 8px;
+  height: 4px;
+  background: url(../images/homeindex.png) no-repeat 0 0;
+}
+/* line 72, ../sass/_topHeader.scss */
+#top .right_nav .backChange:hover {
+  background: #fff;
+  box-shadow: 1px 1px 2px #e6e6e6;
+}
+/* line 73, ../sass/_topHeader.scss */
+#top .right_nav .backChange:hover span {
+  background-position: 0 -4px;
+}
+/* line 80, ../sass/_topHeader.scss */
+#top .right_nav .backChange:hover .hiddenLayer {
+  display: block;
+}
+/* line 85, ../sass/_topHeader.scss */
+#top .right_nav .hiddenLayer {
+  display: none;
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+  width: 156px;
+  background: #ffff;
+  border: 1px solid #dadada;
+  border-top: none;
+  z-index: 9;
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
+  padding-left: 12px;
+}
+/* line 98, ../sass/_topHeader.scss */
+#top .right_nav .hiddenLayer a {
+  width: 78px;
+  line-height: 24px;
+  margin-bottom: 6px;
+  float: left;
+  /* text-align: center; */
+}
+/* line 107, ../sass/_topHeader.scss */
+#top .right_nav a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #333333;
+}
+/* line 6, ../sass/mixins/_hover.scss */
+#top .right_nav a:hover {
+  color: #e60000;
+  text-decoration: underline;
+}
+
+/* 二维码样式 */
+/* line 116, ../sass/_topHeader.scss */
+.erweimaWrap {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 8px;
+}
+/* line 121, ../sass/_topHeader.scss */
+.erweimaWrap .erweima {
+  float: left;
+}
+/* line 124, ../sass/_topHeader.scss */
+.erweimaWrap .erweima img {
+  display: block;
+}
+/* line 129, ../sass/_topHeader.scss */
+.erweimaWrap .text {
+  float: left;
+  line-height: 18px;
+  margin-left: 10px;
+}
+/* line 134, ../sass/_topHeader.scss */
+.erweimaWrap .text b {
+  display: block;
+  color: #e60000;
+  margin: 8px 0;
+}
+/* line 140, ../sass/_topHeader.scss */
+.erweimaWrap .text i {
+  /* line-height: 14px; */
+}
+
+/* 头部搜索块 */
+/* line 149, ../sass/_topHeader.scss */
+.search {
+  height: 100px;
+  background: #ffff;
+  /* 左侧logo样式 */
+}
+/* line 153, ../sass/_topHeader.scss */
+.search .searchWrap {
+  width: 1200px;
+  margin: auto;
+  height: 100%;
+}
+/* line 159, ../sass/_topHeader.scss */
+.search .ztLogo {
+  float: left;
+  overflow: hidden;
+  height: 100%;
+}
+/* line 164, ../sass/_topHeader.scss */
+.search .ztLogo h1 {
+  text-indent: -9999px;
+}
+/* line 167, ../sass/_topHeader.scss */
+.search .ztLogo h1 a {
+  display: block;
+}
+/* line 171, ../sass/_topHeader.scss */
+.search .ztLogo h1 img {
+  display: block;
+}
+
+/* 中间搜索框样式 */
+/* line 182, ../sass/_topHeader.scss */
+.searchCenter {
+  padding-top: 20px;
+  margin-left: 35px;
+  float: left;
+  /* overflow: hidden; */
+  position: relative;
+}
+/* line 189, ../sass/_topHeader.scss */
+.searchCenter .inputWrap {
+  height: 40px;
+  width: 610px;
+  position: relative;
+}
+/* line 195, ../sass/_topHeader.scss */
+.searchCenter .inputInner {
+  border: 2px solid #e60000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 203, ../sass/_topHeader.scss */
+.searchCenter .inputInner input {
+  float: left;
+  margin: 8px 12px;
+  width: 350px;
+  border: none;
+  outline: none;
+  color: #6666;
+}
+/* line 212, ../sass/_topHeader.scss */
+.searchCenter .inputInner .searchTabWrap {
+  float: right;
+  height: 100%;
+  padding: 0 12px;
+  font-size: 8px;
+  line-height: 34px;
+  box-sizing: border-box;
+  color: #999999;
+  border: 1px solid;
+  position: relative;
+}
+/* line 223, ../sass/_topHeader.scss */
+.searchCenter .inputInner .searchTabWrap span {
+  position: relative;
+  padding-right: 12px;
+}
+/* line 228, ../sass/_topHeader.scss */
+.searchCenter .inputInner .searchTabWrap i {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0;
+  width: 8px;
+  height: 4px;
+  background: url(../Images/homeindex.png) no-repeat 0 -14px;
+}
+/* line 240, ../sass/_topHeader.scss */
+.searchCenter .inputInner .searchTabWrap:hover i {
+  background: url(../Images/homeindex.png) no-repeat 0 -10px;
+}
+/* line 244, ../sass/_topHeader.scss */
+.searchCenter .inputInner .searchTabWrap:hover ul {
+  visibility: visible;
+}
+/* line 249, ../sass/_topHeader.scss */
+.searchCenter .inputInner .searchTabWrap ul {
+  position: absolute;
+  z-index: 5;
+  left: -1px;
+  background: #fff;
+  border: 1px solid;
+  border-top: none;
+  visibility: hidden;
+  width: 100%;
+}
+/* line 259, ../sass/_topHeader.scss */
+.searchCenter .inputInner .searchTabWrap ul li {
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+}
+/* line 267, ../sass/_topHeader.scss */
+.searchCenter .inputInner .searchText {
+  float: right;
+  height: 100%;
+  background: #e60000;
+  color: #fff;
+  padding: 0px 35px;
+  line-height: 36px;
+}
+/* line 277, ../sass/_topHeader.scss */
+.searchCenter .inputBottom {
+  list-style-type: none;
+  margin-top: 5px;
+}
+/* line 280, ../sass/_topHeader.scss */
+.searchCenter .inputBottom li {
+  float: left;
+  margin-right: 15px;
+}
+/* line 283, ../sass/_topHeader.scss */
+.searchCenter .inputBottom li a {
+  text-decoration: none;
+  color: #666666;
+  font-size: 12px;
+}
+/* line 288, ../sass/_topHeader.scss */
+.searchCenter .inputBottom li a:hover {
+  color: #e60000;
+}
+/* line 294, ../sass/_topHeader.scss */
+.searchCenter .highSearch {
+  position: absolute;
+  right: -80px;
+  line-height: 36px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+/* line 301, ../sass/_topHeader.scss */
+.searchCenter .highSearch a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #333333;
+  color: #e60000;
+}
+/* line 6, ../sass/mixins/_hover.scss */
+.searchCenter .highSearch a:hover {
+  color: #e60000;
+  text-decoration: underline;
+}
+
+/* 右侧滚动通知样式 */
+/* line 309, ../sass/_topHeader.scss */
+.scrollMessage {
+  margin-top: 20px;
+  float: right;
+  width: 160px;
+  height: 36px;
+  padding-left: 30px;
+  margin-right: 10px;
+  background: url(../images/homeindex.png) no-repeat 0 -20px;
+  overflow: hidden;
+}
+/* line 318, ../sass/_topHeader.scss */
+.scrollMessage p {
+  height: 100%;
+  line-height: 36px;
+}
+/* line 322, ../sass/_topHeader.scss */
+.scrollMessage .newUserR {
+  color: #e60000;
+}
+
+/* line 328, ../sass/_topHeader.scss */
+.header_nav {
+  height: 44px;
+  min-width: 1200px;
+}
+/* line 331, ../sass/_topHeader.scss */
+.header_nav .header_nav_wrap {
+  width: 1200px;
+  margin: auto;
+  height: 100%;
+  line-height: 40px;
+}
+/* line 335, ../sass/_topHeader.scss */
+.header_nav .header_nav_wrap ul {
+  padding-left: 200px;
+  list-style-type: none;
+  overflow: hidden;
+  /* background: lightpink; */
+}
+/* line 340, ../sass/_topHeader.scss */
+.header_nav .header_nav_wrap ul li {
+  float: left;
+}
+/* line 343, ../sass/_topHeader.scss */
+.header_nav .header_nav_wrap ul .active {
+  font-weight: 700;
+  color: #e60000;
+}
+/* line 347, ../sass/_topHeader.scss */
+.header_nav .header_nav_wrap ul a {
+  font-size: 18px;
+  color: #333333;
+  text-decoration: none;
+  padding: 0 25px;
+}
+/* line 353, ../sass/_topHeader.scss */
+.header_nav .header_nav_wrap ul a:hover {
+  color: #e60000;
+}
+
+/* 左侧导航样式 */
+/* line 2, ../sass/_leftNav.scss */
+.leftNav {
+  width: 200px;
+  height: 934px;
+  background: #fff;
+  margin-top: -44px;
+  float: left;
+  position: relative;
+  /* 底部导航样式 */
+}
+/* line 9, ../sass/_leftNav.scss */
+.leftNav .leftNavWrap {
+  border: 1px solid #e60000;
+}
+/* line 14, ../sass/_leftNav.scss */
+.leftNav .minNav {
+  border: 1px solid #c8c8c8;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+/* line 19, ../sass/_leftNav.scss */
+.leftNav .minNav h4 {
+  padding: 12px 20px 12px 40px;
+  color: #e60000;
+  background: url(../images/shu_icon.png) no-repeat;
+  background-position: 20px 8px;
+}
+/* line 25, ../sass/_leftNav.scss */
+.leftNav .minNav a {
+  display: block;
+  border-top: 1px solid #c8c8c8;
+  font-size: 12px;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #666666;
+}
+/* line 32, ../sass/_leftNav.scss */
+.leftNav .minNav a em {
+  float: right;
+}
+/* line 35, ../sass/_leftNav.scss */
+.leftNav .minNav a:hover {
+  color: #e60000;
+}
+
+/* 导航头部样式 */
+/* line 43, ../sass/_leftNav.scss */
+.titleWrap {
+  height: 42px;
+  line-height: 42px;
+}
+/* line 47, ../sass/_leftNav.scss */
+.titleWrap .title {
+  padding: 0 30px 0 15px;
+  height: 100%;
+  background: #e60000;
+}
+/* line 52, ../sass/_leftNav.scss */
+.titleWrap .title h2 {
+  color: #fff;
+  background: url(../images/categoryarrowdown.png) no-repeat right center;
+}
+/* line 55, ../sass/_leftNav.scss */
+.titleWrap .title h2 span {
+  display: inline-block;
+  width: 20px;
+  height: 15px;
+  background: url(../images/homeindex.png) no-repeat -8px 0px;
+  vertical-align: middle;
+  transform: translateY(-1px);
+}
+
+/* 导航内容样式 */
+/* line 72, ../sass/_leftNav.scss */
+.navContent {
+  /* 每块导航的样式 */
+}
+/* line 74, ../sass/_leftNav.scss */
+.navContent .ItemWrap {
+  padding: 0px 12px;
+  position: relative;
+  /* 每块导航内容的样式 */
+}
+/* line 76, ../sass/_leftNav.scss */
+.navContent .ItemWrap .navItem {
+  padding: 8px 0;
+  border-bottom: 1px solid #ffd3d4;
+  position: relative;
+  z-index: 999;
+}
+/* line 83, ../sass/_leftNav.scss */
+.navContent .ItemWrap:hover {
+  border: 2px solid #e60000;
+  border-right: none;
+}
+/* line 86, ../sass/_leftNav.scss */
+.navContent .ItemWrap:hover .navItem {
+  background: #fff;
+  width: 186px;
+  border: none;
+  transform: translateX(2px);
+}
+/* line 92, ../sass/_leftNav.scss */
+.navContent .ItemWrap:hover .menu-item {
+  display: block;
+}
+/* line 96, ../sass/_leftNav.scss */
+.navContent .ItemWrap h4 {
+  background: url(../images/);
+  margin-bottom: 10px;
+}
+/* line 99, ../sass/_leftNav.scss */
+.navContent .ItemWrap h4 a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #333333;
+  font-size: 16px;
+  color: #e60000;
+}
+/* line 6, ../sass/mixins/_hover.scss */
+.navContent .ItemWrap h4 a:hover {
+  color: #e60000;
+  text-decoration: underline;
+}
+/* line 105, ../sass/_leftNav.scss */
+.navContent .ItemWrap h4 em {
+  float: right;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  color: #666666;
+}
+/* line 116, ../sass/_leftNav.scss */
+.navContent .ItemWrap .category-list a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #333333;
+  display: inline-block;
+  color: #666666;
+  margin-right: 12px;
+  line-height: 24px;
+}
+/* line 6, ../sass/mixins/_hover.scss */
+.navContent .ItemWrap .category-list a:hover {
+  color: #e60000;
+  text-decoration: underline;
+}
+/* line 127, ../sass/_leftNav.scss */
+.navContent .ItemWrap:last-child .navItem {
+  border-bottom: none;
+}
+/* line 132, ../sass/_leftNav.scss */
+.navContent .navBottom {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 26px;
+}
+/* line 137, ../sass/_leftNav.scss */
+.navContent .navBottom a {
+  font-size: 12px;
+  color: #666;
+  text-decoration: none;
+}
+/* line 141, ../sass/_leftNav.scss */
+.navContent .navBottom a:hover {
+  text-decoration: underline;
+}
+
+/* 隐藏导航块样式 */
+/* line 148, ../sass/_leftNav.scss */
+.menu-item {
+  position: absolute;
+  display: none;
+  left: 100%;
+  top: -2px;
+  width: 761px;
+  border-left: none;
+  background: #fff;
+  overflow: hidden;
+  z-index: 5;
+}
+/* line 158, ../sass/_leftNav.scss */
+.menu-item .subWrap {
+  border: 2px solid #e60000;
+  padding: 10px 0 10px 16px;
+  overflow: hidden;
+}
+/* line 162, ../sass/_leftNav.scss */
+.menu-item .subWrap .sub-list {
+  padding-right: 32px;
+}
+/* line 165, ../sass/_leftNav.scss */
+.menu-item .subWrap li {
+  padding: 9px 0;
+  border-bottom: 1px solid #999999;
+  overflow: hidden;
+}
+/* line 170, ../sass/_leftNav.scss */
+.menu-item .subWrap li:last-child {
+  border-bottom: none;
+}
+/* line 174, ../sass/_leftNav.scss */
+.menu-item .subWrap h4 {
+  float: left;
+  width: 85px;
+}
+/* line 177, ../sass/_leftNav.scss */
+.menu-item .subWrap h4 a {
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+/* line 182, ../sass/_leftNav.scss */
+.menu-item .subWrap h4 a:hover {
+  text-decoration: none;
+}
+/* line 187, ../sass/_leftNav.scss */
+.menu-item .subWrap p {
+  line-height: 24px;
+  color: #666;
+  float: left;
+  width: 600px;
+}
+/* line 192, ../sass/_leftNav.scss */
+.menu-item .subWrap p a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #333333;
+  color: inherit;
+  white-space: nowrap;
+  margin: 0 16px;
+  float: left;
+  line-height: inherit;
+}
+/* line 6, ../sass/mixins/_hover.scss */
+.menu-item .subWrap p a:hover {
+  color: #e60000;
+  text-decoration: underline;
+}
+/* line 200, ../sass/_leftNav.scss */
+.menu-item .subWrap p span {
+  font-size: 12px;
+  float: left;
+  line-height: inherit;
+}
+
 /* line 1, ../sass/_banner.scss */
 .bannerSwiper {
   height: 360px;
@@ -248,147 +888,332 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-top: 10px;
   height: 510px;
   overflow: hidden;
-  /* 右侧畅销榜样式 */
 }
-/* line 5, ../sass/_tabHot.scss */
+/* line 6, ../sass/_tabHot.scss */
 .tabHot .tabWrap {
   float: left;
   padding: 10px;
   background: #eff2fa;
 }
-/* line 9, ../sass/_tabHot.scss */
-.tabHot .tabWrap .tabSwitch {
+/* line 11, ../sass/_tabHot.scss */
+.tabHot .tabWrap #tabSwitch {
   width: 730px;
   height: 490px;
-  background: lightgreen;
+  background: transparent;
 }
-/* line 17, ../sass/_tabHot.scss */
-.tabHot .hotShipping {
+
+/* line 19, ../sass/_tabHot.scss */
+#tabSwitch {
+  /* 切换内容样式 */
+}
+/* line 20, ../sass/_tabHot.scss */
+#tabSwitch .nav {
+  height: 40px;
+  background: transparent;
+  border-bottom: none;
+}
+/* line 24, ../sass/_tabHot.scss */
+#tabSwitch .nav li {
+  border: none;
+  box-sizing: border-box;
+  height: 100%;
+  background: transparent;
+}
+/* line 31, ../sass/_tabHot.scss */
+#tabSwitch .nav a {
+  border-radius: 0;
+  border: none;
+  background: transparent;
+  margin-right: 0;
+  padding: 0 25px;
+  box-sizing: content-box;
+  border-top: 3px solid transparent;
+  font-size: 16px;
+  color: #111;
+  height: 37px;
+  line-height: 37px;
+  font-weight: 300;
+}
+/* line 49, ../sass/_tabHot.scss */
+#tabSwitch .nav .active a {
+  border-top: 3px solid #e60000;
+  background: #fff;
+  font-weight: bold;
+  color: #e60000;
+}
+/* line 59, ../sass/_tabHot.scss */
+#tabSwitch .tab-content {
+  background: #ffff;
+  height: 450px;
+  margin: 0;
+}
+
+/* 切换面板内容样式 */
+/* line 67, ../sass/_tabHot.scss */
+.tab-pane {
+  height: 100%;
+}
+/* line 70, ../sass/_tabHot.scss */
+.tab-pane .mainEditor {
+  height: 189px;
+  border-bottom: 1px solid #eef1f9;
+  padding: 15px 15px 0;
+}
+/* line 75, ../sass/_tabHot.scss */
+.tab-pane .mainEditor .mainCover {
+  float: left;
+  width: 189px;
+  height: 160px;
+  text-align: center;
+}
+/* line 81, ../sass/_tabHot.scss */
+.tab-pane .mainEditor .mainCover img {
+  max-width: 160px;
+  max-height: 160px;
+}
+/* line 88, ../sass/_tabHot.scss */
+.tab-pane .tabBook {
+  padding: 10px 0;
+}
+
+/* line 94, ../sass/_tabHot.scss */
+.mainText {
+  float: left;
+  width: 495px;
+  height: 100px;
+}
+/* line 99, ../sass/_tabHot.scss */
+.mainText h2 {
+  margin-top: 10px;
+  line-height: 30px;
+}
+/* line 103, ../sass/_tabHot.scss */
+.mainText h2 a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-family: "Microsoft YaHei";
+}
+/* line 109, ../sass/_tabHot.scss */
+.mainText h2 a:hover {
+  color: #e60000;
+}
+/* line 116, ../sass/_tabHot.scss */
+.mainText .mainFont p {
+  text-indent: 2em;
+}
+
+/* line 122, ../sass/_tabHot.scss */
+.priceWrap {
+  height: 30px;
+  line-height: 30px;
+}
+/* line 126, ../sass/_tabHot.scss */
+.priceWrap span {
+  font-size: 18px;
+  font-family: "Microsoft YaHei";
+  color: #999999;
+}
+/* line 132, ../sass/_tabHot.scss */
+.priceWrap .nowPrice {
+  color: #e60000;
+}
+/* line 136, ../sass/_tabHot.scss */
+.priceWrap .oldPrice {
+  text-decoration: line-through;
+}
+
+/* line 142, ../sass/_tabHot.scss */
+.mainFont p {
+  font-size: 12px;
+  color: #333;
+  line-height: 24px;
+  text-indent: 2em;
+}
+
+/* line 150, ../sass/_tabHot.scss */
+.bookItem {
+  width: 25%;
+  float: left;
+}
+/* line 154, ../sass/_tabHot.scss */
+.bookItem .bookWrap a {
+  text-decoration: none;
+}
+/* line 157, ../sass/_tabHot.scss */
+.bookItem .bookWrap .bookImg {
+  text-align: center;
+  position: relative;
+}
+/* line 160, ../sass/_tabHot.scss */
+.bookItem .bookWrap .bookImg img {
+  max-width: 158px;
+  max-height: 158px;
+}
+/* line 164, ../sass/_tabHot.scss */
+.bookItem .bookWrap .bookImg .discount {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* line 170, ../sass/_tabHot.scss */
+.bookItem .bookWrap .bookDisc {
+  margin: 10px 0;
+  padding: 0 15px;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 18px;
+  color: #333;
+}
+/* line 177, ../sass/_tabHot.scss */
+.bookItem .bookWrap .bookDisc:hover {
+  color: #e60000;
+}
+/* line 182, ../sass/_tabHot.scss */
+.bookItem .bookPrice {
+  padding: 0 15px;
+  line-height: 20px;
+}
+/* line 185, ../sass/_tabHot.scss */
+.bookItem .bookPrice .nowPrice {
+  color: #e60000;
+  font-size: 16px;
+  font-family: "Microsoft YaHei";
+}
+/* line 191, ../sass/_tabHot.scss */
+.bookItem .bookPrice .oldPrice {
+  color: #666666;
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+  text-decoration: line-through;
+}
+
+/* 右侧畅销榜样式 */
+/* line 2, ../sass/_hotShipping.scss */
+.hotShipping {
   width: 240px;
   height: 100%;
   float: right;
-  background: lightcoral;
+  background: #fff;
+  /* 更多畅销样式 */
+}
+/* line 8, ../sass/_hotShipping.scss */
+.hotShipping .hotTitle {
+  padding-left: 10px;
+  height: 32px;
+}
+/* line 12, ../sass/_hotShipping.scss */
+.hotShipping .hotTitle h3 {
+  line-height: 32px;
+  color: #e60000;
+}
+/* line 16, ../sass/_hotShipping.scss */
+.hotShipping .hotTitle h3 a {
+  float: right;
+  text-decoration: none;
+  font-size: 12px;
+  color: #333333;
+}
+/* line 6, ../sass/mixins/_hover.scss */
+.hotShipping .hotTitle h3 a:hover {
+  color: #e60000;
+  text-decoration: underline;
+}
+/* line 25, ../sass/_hotShipping.scss */
+.hotShipping .moreHotSale {
+  text-align: right;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #f0f0f0;
+  line-height: 20px;
+}
+/* line 32, ../sass/_hotShipping.scss */
+.hotShipping .moreHotSale a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #333333;
+}
+/* line 6, ../sass/mixins/_hover.scss */
+.hotShipping .moreHotSale a:hover {
+  color: #e60000;
+  text-decoration: underline;
+}
+
+/* 畅销榜导航 */
+/* line 39, ../sass/_hotShipping.scss */
+.hotNav {
+  overflow: hidden;
+  position: relative;
+}
+/* line 45, ../sass/_hotShipping.scss */
+.hotNav ul {
+  margin-left: 10px;
+  width: 270px;
+}
+/* line 49, ../sass/_hotShipping.scss */
+.hotNav ul li {
+  width: 54px;
+  height: 36px;
+  float: left;
+  border: 1px solid #e6e6e6;
+  border-right: none;
+}
+/* line 56, ../sass/_hotShipping.scss */
+.hotNav ul li a {
+  display: block;
+  height: 100%;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  color: #666;
+}
+/* line 65, ../sass/_hotShipping.scss */
+.hotNav ul li a:hover {
+  color: #e60000;
+}
+/* line 72, ../sass/_hotShipping.scss */
+.hotNav .arrow {
+  position: absolute;
+  height: 36px;
+  width: 10px;
+  cursor: pointer;
+}
+/* line 79, ../sass/_hotShipping.scss */
+.hotNav .leftArrow {
+  left: 0;
+  background: url(../Images/homeindex.png) no-repeat -10px -64px;
+}
+/* line 84, ../sass/_hotShipping.scss */
+.hotNav .rightArrow {
+  right: 0;
+  background: url(../Images/homeindex.png) no-repeat 0px -64px;
+}
+
+/* line 21, ../sass/index.scss */
+body {
+  /* font-size: 12px;
+  color: #666666; */
+  font-family: "宋体";
 }
 
 /* 顶部广告样式 */
-/* line 20, ../sass/index.scss */
+/* line 27, ../sass/index.scss */
 .topBanner {
   height: 100px;
   background-color: #8a1f25;
 }
-/* line 24, ../sass/index.scss */
+/* line 31, ../sass/index.scss */
 .topBanner .banner {
   text-align: center;
 }
-/* line 27, ../sass/index.scss */
+/* line 34, ../sass/index.scss */
 .topBanner .banner img {
   /* width: 100%; */
 }
 
-/* 网页头部样式 */
-/* line 34, ../sass/index.scss */
-header {
-  height: 175px;
-  min-width: 1200px;
-}
-/* line 38, ../sass/index.scss */
-header .search {
-  height: 144px;
-  background: #abc;
-}
-
-/* 头部链接结构 */
-/* line 45, ../sass/index.scss */
-#top {
-  height: 31px;
-  line-height: 31px;
-  background-color: #f2f2f2;
-  font-size: 12px;
-  /* 左侧欢迎结构 */
-  /* 右侧导航结构 */
-}
-/* line 51, ../sass/index.scss */
-#top .topWrapper {
-  width: 1200px;
-  margin: auto;
-  overflow: hidden;
-}
-/* line 57, ../sass/index.scss */
-#top .topLeft {
-  float: left;
-  font-weight: 400;
-  color: #666;
-}
-/* line 62, ../sass/index.scss */
-#top .topLeft h2 {
-  float: left;
-}
-/* line 66, ../sass/index.scss */
-#top .topLeft p {
-  float: left;
-  margin-left: 10px;
-}
-/* line 71, ../sass/index.scss */
-#top .topLeft span {
-  padding: 0 10px;
-  color: #d1d1d1;
-}
-/* line 76, ../sass/index.scss */
-#top .topLeft a {
-  text-decoration: none;
-  font-size: 12px;
-  color: #333333;
-  color: #e60000;
-}
-/* line 6, ../sass/mixins/_hover.scss */
-#top .topLeft a:hover {
-  color: #e60000;
-  text-decoration: underline;
-}
-/* line 83, ../sass/index.scss */
-#top .right_nav {
-  float: right;
-  height: 100%;
-}
-/* line 87, ../sass/index.scss */
-#top .right_nav li {
-  float: left;
-  height: 100%;
-  padding: 0 15px;
-  border: 1px solid #f2f2f2;
-  border-bottom: none;
-}
-/* line 96, ../sass/index.scss */
-#top .right_nav li:hover span {
-  background-position: 0 -4px;
-}
-/* line 100, ../sass/index.scss */
-#top .right_nav .backChange:hover {
-  background: #fff;
-  box-shadow: 1px 1px 2px #e6e6e6;
-}
-/* line 104, ../sass/index.scss */
-#top .right_nav a {
-  text-decoration: none;
-  font-size: 12px;
-  color: #333333;
-}
-/* line 6, ../sass/mixins/_hover.scss */
-#top .right_nav a:hover {
-  color: #e60000;
-  text-decoration: underline;
-}
-/* line 108, ../sass/index.scss */
-#top .right_nav span {
-  display: inline-block;
-  vertical-align: middle;
-  width: 8px;
-  height: 4px;
-  background: url(../images/homeindex.png) no-repeat 0 0;
-}
-
 /* 网页内容 */
-/* line 120, ../sass/index.scss */
+/* line 42, ../sass/index.scss */
 .content {
   width: 1200px;
   margin: auto;
@@ -396,34 +1221,26 @@ header .search {
   /* 淘书团热销样式 */
   /* 包邮区样式 */
 }
-/* line 123, ../sass/index.scss */
+/* line 45, ../sass/index.scss */
 .content .bannerWrap {
   height: 890px;
   background: #333;
-  overflow: hidden;
-  /* 左侧导航样式 */
+  /* overflow: hidden; */
   /* 右侧样式 */
 }
-/* line 129, ../sass/index.scss */
-.content .bannerWrap .leftNav {
-  width: 200px;
-  height: 100%;
-  background: lightblue;
-  float: left;
-}
-/* line 137, ../sass/index.scss */
+/* line 50, ../sass/index.scss */
 .content .bannerWrap .rightBanner {
   margin-left: 200px;
   padding: 10px 0 0 10px;
   height: 100%;
   background: #fff;
 }
-/* line 147, ../sass/index.scss */
+/* line 60, ../sass/index.scss */
 .content .dayUpdate {
   height: 160px;
   background: #fff;
 }
-/* line 151, ../sass/index.scss */
+/* line 64, ../sass/index.scss */
 .content .dayUpdate::before {
   content: "%20";
   display: block;
@@ -433,7 +1250,7 @@ header .search {
   height: 0;
   width: 0;
 }
-/* line 155, ../sass/index.scss */
+/* line 68, ../sass/index.scss */
 .content .dayUpdate .updateWrap {
   height: 100%;
   display: flex;
@@ -441,48 +1258,48 @@ header .search {
   justify-content: space-between;
   align-items: center;
 }
-/* line 162, ../sass/index.scss */
+/* line 75, ../sass/index.scss */
 .content .dayUpdate .updateWrap a {
   display: block;
   width: 393px;
 }
-/* line 166, ../sass/index.scss */
+/* line 79, ../sass/index.scss */
 .content .dayUpdate .updateWrap a img {
   display: block;
 }
-/* line 177, ../sass/index.scss */
+/* line 90, ../sass/index.scss */
 .content .groupHot {
   height: 395px;
   background: lightcoral;
 }
-/* line 183, ../sass/index.scss */
+/* line 96, ../sass/index.scss */
 .content .freeShipping {
   height: 320px;
   background: lightseagreen;
 }
-/* line 188, ../sass/index.scss */
+/* line 101, ../sass/index.scss */
 .content .literature, .content .social, .content .childBooks {
   height: 624px;
   background: lightpink;
 }
-/* line 193, ../sass/index.scss */
+/* line 106, ../sass/index.scss */
 .content .literature {
   background: lightsteelblue;
 }
-/* line 198, ../sass/index.scss */
+/* line 111, ../sass/index.scss */
 .content .social {
   background: lightsalmon;
 }
-/* line 203, ../sass/index.scss */
+/* line 116, ../sass/index.scss */
 .content .childBooks {
   background: lightgreen;
 }
-/* line 208, ../sass/index.scss */
+/* line 121, ../sass/index.scss */
 .content .others {
   height: 346px;
   background: lightgoldenrodyellow;
 }
-/* line 213, ../sass/index.scss */
+/* line 126, ../sass/index.scss */
 .content .publish {
   height: 516px;
   background: lightseagreen;

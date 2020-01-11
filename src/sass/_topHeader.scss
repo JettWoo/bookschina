@@ -1,0 +1,360 @@
+/* 网页头部样式 */
+header {
+    height: 173px;
+    min-width: $contentWidth;
+    border-bottom: 2px solid $themeColor;
+}
+
+/* 头部链接结构 */
+#top {
+    height: 31px;
+    line-height: 31px;
+    background-color: #f2f2f2;
+    font-size: 12px;
+
+    .topWrapper {
+        @include w1200;
+        /* overflow: hidden; */
+        height: 31px;
+    }
+
+    /* 左侧欢迎结构 */
+    .topLeft {
+        float: left;
+        font-weight: 400;
+        color: #666;
+
+        h2 {
+            float: left;
+        }
+
+        p {
+            float: left;
+            margin-left: 10px;
+        }
+
+        span {
+            padding: 0 10px;
+            color: #d1d1d1;
+        }
+
+        a {
+            @include hover_link;
+            color: #e60000;
+        }
+    }
+
+    /* 右侧导航结构 */
+    .right_nav {
+        float: right;
+        height: 100%;
+
+        li {
+            float: left;
+            height: 100%;
+            padding: 0 15px;
+            border: 1px solid #f2f2f2;
+            border-bottom: none;
+        }
+
+        .backChange {
+            position: relative;
+
+            span {
+                display: inline-block;
+                vertical-align: middle;
+                width: 8px;
+                height: 4px;
+                background: url(../images/homeindex.png) no-repeat 0 0;
+            }
+        }
+
+        .backChange:hover {
+            span {
+                background-position: 0 -4px;
+            }
+
+            background: #fff;
+            box-shadow: 1px 1px 2px #e6e6e6;
+
+            .hiddenLayer {
+                display: block;
+            }
+        }
+
+        .hiddenLayer {
+            display: none;
+            position: absolute;
+            left: 0;
+            overflow: hidden;
+            width: 156px;
+            background: #ffff;
+            border: 1px solid #dadada;
+            border-top: none;
+            z-index: 9;
+            box-shadow: 1px 2px 1px rgba(0, 0, 0, .1);
+            padding-left: 12px;
+
+            a {
+                width: 78px;
+                line-height: 24px;
+                margin-bottom: 6px;
+                float: left;
+                /* text-align: center; */
+            }
+        }
+
+        a {
+            @include hover_link;
+        }
+
+    }
+
+}
+
+/* 二维码样式 */
+.erweimaWrap {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 8px;
+
+    .erweima {
+        float: left;
+
+        img {
+            display: block;
+        }
+    }
+
+    .text {
+        float: left;
+        line-height: 18px;
+        margin-left: 10px;
+
+        b {
+            display: block;
+            color: #e60000;
+            margin: 8px 0;
+        }
+
+        i {
+            /* line-height: 14px; */
+        }
+
+    }
+}
+
+
+/* 头部搜索块 */
+.search {
+    height: 100px;
+    background: #ffff;
+
+    .searchWrap {
+        @include w1200;
+        height: 100%;
+    }
+
+    /* 左侧logo样式 */
+    .ztLogo {
+        float: left;
+        overflow: hidden;
+        height: 100%;
+
+        h1 {
+            text-indent: -9999px;
+
+            a {
+                display: block;
+            }
+
+            img {
+                display: block;
+            }
+        }
+
+    }
+
+
+}
+
+/* 中间搜索框样式 */
+.searchCenter {
+    padding-top: 20px;
+    margin-left: 35px;
+    float: left;
+    /* overflow: hidden; */
+    position: relative;
+
+    .inputWrap {
+        height: 40px;
+        width: 610px;
+        position: relative;
+    }
+
+    .inputInner {
+        border: 2px solid #e60000;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        input {
+            float: left;
+            margin: 8px 12px;
+            width: 350px;
+            border: none;
+            outline: none;
+            color: #6666;
+        }
+
+        .searchTabWrap {
+            float: right;
+            height: 100%;
+            padding: 0 12px;
+            font-size: 8px;
+            line-height: 34px;
+            box-sizing: border-box;
+            color: #999999;
+            border: 1px solid;
+            position: relative;
+
+            span {
+                position: relative;
+                padding-right: 12px;
+            }
+
+            i {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                right: 0;
+                width: 8px;
+                height: 4px;
+                background: url(../Images/homeindex.png) no-repeat 0 -14px;
+            }
+
+            &:hover {
+                i {
+                    background: url(../Images/homeindex.png) no-repeat 0 -10px;
+                }
+
+                ul {
+                    visibility: visible;
+                }
+            }
+
+            ul {
+                position: absolute;
+                z-index: 5;
+                left: -1px;
+                background: #fff;
+                border: 1px solid;
+                border-top: none;
+                visibility: hidden;
+                width: 100%;
+
+                li {
+                    height: 20px;
+                    text-align: center;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        .searchText {
+            float: right;
+            height: 100%;
+            background: #e60000;
+            color: #fff;
+            padding: 0px 35px;
+            line-height: 36px;
+        }
+    }
+
+    .inputBottom{
+        list-style-type: none;
+        margin-top: 5px;
+        li{
+            float: left;
+            margin-right: 15px;
+            a{
+                text-decoration: none;
+                color: $fontColor;
+                font-size: $fontSize;
+            }
+            a:hover{
+                color: $themeColor;
+            }
+        }
+    }
+
+    .highSearch{
+        position: absolute;
+        right: -80px;
+        line-height: 36px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        a{        
+            @include hover_link;
+            color: $themeColor;
+        }
+    }
+}
+
+/* 右侧滚动通知样式 */
+.scrollMessage{
+    margin-top: 20px;
+    float: right;
+    width: 160px;
+    height: 36px;
+    padding-left: 30px;
+    margin-right: 10px;
+    background: url(../images/homeindex.png) no-repeat 0 -20px;
+    overflow: hidden;
+    p{
+        height: 100%;
+        line-height: 36px;
+    }
+    .newUserR{
+        color: $themeColor;
+    }
+}
+
+
+.header_nav {
+    height: 44px;
+    min-width: $contentWidth;
+    .header_nav_wrap{
+        @include w1200;
+        height: 100%;
+        line-height: 40px;
+        ul{
+            padding-left: 200px;
+            list-style-type: none;
+            overflow: hidden;
+            /* background: lightpink; */
+            li{
+                float: left;
+            }
+            .active{
+                font-weight: 700;
+                color: $themeColor;
+            }
+            a{
+                font-size: 18px;
+                color: #333333;
+                text-decoration: none;
+                padding: 0 25px;
+            }
+            a:hover{
+                color: $themeColor;
+            }
+        }
+    }
+   
+}
+
