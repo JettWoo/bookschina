@@ -818,29 +818,30 @@ header {
   line-height: inherit;
 }
 
-/* line 1, ../sass/_banner.scss */
+/* 轮播图样式 */
+/* line 2, ../sass/_banner.scss */
 .bannerSwiper {
   height: 360px;
   position: relative;
 }
-/* line 5, ../sass/_banner.scss */
+/* line 6, ../sass/_banner.scss */
 .bannerSwiper ul li {
   position: absolute;
   left: 0;
   top: 0;
   display: none;
 }
-/* line 12, ../sass/_banner.scss */
+/* line 13, ../sass/_banner.scss */
 .bannerSwiper ul li:first-child {
   display: block;
 }
-/* line 16, ../sass/_banner.scss */
+/* line 17, ../sass/_banner.scss */
 .bannerSwiper .bannerDot {
   position: absolute;
   width: 100%;
   bottom: 0;
 }
-/* line 20, ../sass/_banner.scss */
+/* line 21, ../sass/_banner.scss */
 .bannerSwiper .bannerDot a {
   float: left;
   height: 34px;
@@ -853,17 +854,17 @@ header {
   color: #fff;
   padding: 3px 0px;
 }
-/* line 31, ../sass/_banner.scss */
+/* line 32, ../sass/_banner.scss */
 .bannerSwiper .bannerDot a span {
   vertical-align: middle;
   padding: 0 10px;
 }
-/* line 36, ../sass/_banner.scss */
+/* line 37, ../sass/_banner.scss */
 .bannerSwiper .bannerDot a.on {
   background: #e60000;
 }
-/* line 42, ../sass/_banner.scss */
-.bannerSwiper .arrowLeft, .bannerSwiper .arrowRight {
+/* line 43, ../sass/_banner.scss */
+.bannerSwiper .arrowLeft, .bannerSwiper .arrowRight, .bannerSwiper .groupHot .hotBookWrap .arrowLeft, .groupHot .hotBookWrap .bannerSwiper .arrowLeft, .bannerSwiper .groupHot .hotBookWrap .arrowRight, .groupHot .hotBookWrap .bannerSwiper .arrowRight {
   position: absolute;
   width: 27px;
   height: 38px;
@@ -872,15 +873,17 @@ header {
   cursor: pointer;
   display: none;
 }
-/* line 52, ../sass/_banner.scss */
+/* line 54, ../sass/_banner.scss */
 .bannerSwiper .arrowLeft {
   left: 0;
   background: url(../images/homeindex.png) no-repeat -73px -38px;
+  background-color: rgba(0, 0, 0, 0.35);
 }
-/* line 58, ../sass/_banner.scss */
+/* line 61, ../sass/_banner.scss */
 .bannerSwiper .arrowRight {
   right: 0;
   background: url(../images/homeindex.png) no-repeat -73px 0px;
+  background-color: rgba(0, 0, 0, 0.35);
 }
 
 /* line 1, ../sass/_tabHot.scss */
@@ -1092,22 +1095,22 @@ header {
 /* line 2, ../sass/_hotShipping.scss */
 .hotShipping {
   width: 240px;
+  padding-left: 10px;
   height: 100%;
   float: right;
   background: #fff;
   /* 更多畅销样式 */
 }
-/* line 8, ../sass/_hotShipping.scss */
+/* line 9, ../sass/_hotShipping.scss */
 .hotShipping .hotTitle {
-  padding-left: 10px;
   height: 32px;
 }
-/* line 12, ../sass/_hotShipping.scss */
+/* line 13, ../sass/_hotShipping.scss */
 .hotShipping .hotTitle h3 {
   line-height: 32px;
   color: #e60000;
 }
-/* line 16, ../sass/_hotShipping.scss */
+/* line 17, ../sass/_hotShipping.scss */
 .hotShipping .hotTitle h3 a {
   float: right;
   text-decoration: none;
@@ -1119,15 +1122,15 @@ header {
   color: #e60000;
   text-decoration: underline;
 }
-/* line 25, ../sass/_hotShipping.scss */
+/* line 26, ../sass/_hotShipping.scss */
 .hotShipping .moreHotSale {
   text-align: right;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   padding-right: 10px;
   background: #f0f0f0;
   line-height: 20px;
 }
-/* line 32, ../sass/_hotShipping.scss */
+/* line 33, ../sass/_hotShipping.scss */
 .hotShipping .moreHotSale a {
   text-decoration: none;
   font-size: 12px;
@@ -1140,25 +1143,26 @@ header {
 }
 
 /* 畅销榜导航 */
-/* line 39, ../sass/_hotShipping.scss */
+/* line 40, ../sass/_hotShipping.scss */
 .hotNav {
   overflow: hidden;
   position: relative;
 }
-/* line 45, ../sass/_hotShipping.scss */
+/* line 46, ../sass/_hotShipping.scss */
 .hotNav ul {
   margin-left: 10px;
-  width: 270px;
+  width: 275px;
+  overflow: hidden;
 }
-/* line 49, ../sass/_hotShipping.scss */
+/* line 51, ../sass/_hotShipping.scss */
 .hotNav ul li {
-  width: 54px;
+  width: 55px;
   height: 36px;
   float: left;
   border: 1px solid #e6e6e6;
   border-right: none;
 }
-/* line 56, ../sass/_hotShipping.scss */
+/* line 57, ../sass/_hotShipping.scss */
 .hotNav ul li a {
   display: block;
   height: 100%;
@@ -1172,25 +1176,646 @@ header {
 .hotNav ul li a:hover {
   color: #e60000;
 }
-/* line 72, ../sass/_hotShipping.scss */
+/* line 69, ../sass/_hotShipping.scss */
+.hotNav ul li:hover {
+  border-top: 2px solid #e60000;
+  border-bottom: none;
+}
+/* line 76, ../sass/_hotShipping.scss */
 .hotNav .arrow {
   position: absolute;
+  top: 0;
   height: 36px;
   width: 10px;
   cursor: pointer;
+  /*  display: none; */
 }
-/* line 79, ../sass/_hotShipping.scss */
+/* line 85, ../sass/_hotShipping.scss */
 .hotNav .leftArrow {
   left: 0;
   background: url(../Images/homeindex.png) no-repeat -10px -64px;
 }
-/* line 84, ../sass/_hotShipping.scss */
+/* line 90, ../sass/_hotShipping.scss */
 .hotNav .rightArrow {
   right: 0;
   background: url(../Images/homeindex.png) no-repeat 0px -64px;
 }
 
-/* line 21, ../sass/index.scss */
+/* 畅销榜内容样式 */
+/* line 97, ../sass/_hotShipping.scss */
+.hotCon {
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+}
+/* line 100, ../sass/_hotShipping.scss */
+.hotCon li {
+  border-bottom: 1px solid #eaeaea;
+  padding: 0 10px;
+  overflow: hidden;
+  line-height: 34px;
+  position: relative;
+}
+/* line 106, ../sass/_hotShipping.scss */
+.hotCon li .rank {
+  position: absolute;
+  font-size: 16px;
+  color: #e60000;
+}
+/* line 111, ../sass/_hotShipping.scss */
+.hotCon li .describe {
+  height: 34px;
+  font-size: 12px;
+  color: #333;
+  margin-left: 25px;
+}
+/* line 116, ../sass/_hotShipping.scss */
+.hotCon li .describe em {
+  float: right;
+}
+/* line 121, ../sass/_hotShipping.scss */
+.hotCon li .hotCur {
+  margin-left: 25px;
+  padding: 10px 0 11px;
+  background: #ffff;
+  overflow: hidden;
+}
+
+/* line 131, ../sass/_hotShipping.scss */
+.hotCur .leftImg {
+  height: 85px;
+  width: 85px;
+  float: left;
+}
+/* line 136, ../sass/_hotShipping.scss */
+.hotCur .leftImg a img {
+  max-width: 85px;
+  max-height: 85px;
+}
+/* line 143, ../sass/_hotShipping.scss */
+.hotCur .rightDesc {
+  margin-top: 8px;
+}
+/* line 145, ../sass/_hotShipping.scss */
+.hotCur .rightDesc .title {
+  height: 44px;
+  line-height: 22px;
+  overflow: hidden;
+  white-space: wrap;
+}
+/* line 150, ../sass/_hotShipping.scss */
+.hotCur .rightDesc .title a {
+  font-size: 12px;
+  color: #333;
+}
+/* line 154, ../sass/_hotShipping.scss */
+.hotCur .rightDesc .title a:hover {
+  color: #e60000;
+}
+/* line 159, ../sass/_hotShipping.scss */
+.hotCur .rightDesc .price {
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+}
+/* line 162, ../sass/_hotShipping.scss */
+.hotCur .rightDesc .price .nowPrice {
+  color: #e60000;
+}
+/* line 165, ../sass/_hotShipping.scss */
+.hotCur .rightDesc .price .oldPrice {
+  color: #999;
+  margin-left: 2px;
+}
+
+/* 每一块内容的头部样式 */
+/* line 3, ../sass/_titleItem.scss */
+.titleItem {
+  background: #fff;
+  overflow: hidden;
+  font-family: "Microsoft YaHei";
+}
+/* line 7, ../sass/_titleItem.scss */
+.titleItem h2 {
+  height: 58px;
+  line-height: 58px;
+  float: left;
+}
+/* line 12, ../sass/_titleItem.scss */
+.titleItem h2 a {
+  font-size: 22px;
+  color: #e60000;
+  text-decoration: none;
+}
+/* line 16, ../sass/_titleItem.scss */
+.titleItem h2 a span {
+  font-size: 18px;
+  font-style: oblique;
+  color: #333;
+}
+/* line 24, ../sass/_titleItem.scss */
+.titleItem .checkMore {
+  float: right;
+  height: 58px;
+  line-height: 58px;
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+}
+/* line 31, ../sass/_titleItem.scss */
+.titleItem .checkMore:hover {
+  text-decoration: underline;
+}
+
+/* line 2, ../sass/_groupHot.scss */
+.groupHot .titleItem {
+  border-bottom: 3px solid #e60000;
+}
+/* line 5, ../sass/_groupHot.scss */
+.groupHot .hotBookWrap {
+  margin-top: 14px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 9, ../sass/_groupHot.scss */
+.groupHot .hotBookWrap .arrowLeft, .groupHot .hotBookWrap .arrowRight {
+  position: absolute;
+  width: 27px;
+  height: 38px;
+  top: 35%;
+  margin-top: -19px;
+  cursor: pointer;
+  /* display: none; */
+}
+/* line 19, ../sass/_groupHot.scss */
+.groupHot .hotBookWrap .arrowLeft {
+  left: 0;
+  background: url(../images/homeindex.png) no-repeat -73px -38px;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+/* line 26, ../sass/_groupHot.scss */
+.groupHot .hotBookWrap .arrowRight {
+  right: 0;
+  background: url(../images/homeindex.png) no-repeat -73px 0px;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+/* line 33, ../sass/_groupHot.scss */
+.groupHot ul {
+  overflow: hidden;
+  width: 2000px;
+}
+/* line 37, ../sass/_groupHot.scss */
+.groupHot li {
+  box-sizing: content-box;
+  float: left;
+  width: 286px;
+  border: 1px solid #e6e6e6;
+  margin-right: 16px;
+  overflow: hidden;
+  background: #edf8ff;
+  height: 298px;
+}
+/* line 47, ../sass/_groupHot.scss */
+.groupHot li .bookCover img {
+  max-height: 190px;
+  max-width: 286px;
+  display: block;
+}
+/* line 53, ../sass/_groupHot.scss */
+.groupHot li .bookName {
+  margin-top: 7px;
+  padding: 0 14px;
+  line-height: 22px;
+  height: 66px;
+  overflow: hidden;
+}
+/* line 59, ../sass/_groupHot.scss */
+.groupHot li .bookName a {
+  font-size: 12px;
+  color: #333;
+}
+/* line 62, ../sass/_groupHot.scss */
+.groupHot li .bookName a:hover {
+  color: #e60000;
+}
+/* line 67, ../sass/_groupHot.scss */
+.groupHot li .priceWrap {
+  position: relative;
+  padding: 0 14px;
+}
+/* line 70, ../sass/_groupHot.scss */
+.groupHot li .priceWrap .salePrice {
+  font-size: 20px;
+  color: #e60000;
+  /* font-weight: 600; */
+}
+/* line 74, ../sass/_groupHot.scss */
+.groupHot li .priceWrap .salePrice b {
+  font-size: 14px;
+  color: #e60000;
+}
+/* line 78, ../sass/_groupHot.scss */
+.groupHot li .priceWrap .salePrice i {
+  font-size: 14px;
+  color: #e60000;
+  font-weight: 500;
+}
+/* line 86, ../sass/_groupHot.scss */
+.groupHot li .priceWrap .price {
+  font-size: 12px;
+  color: #666;
+  margin-left: 13px;
+}
+/* line 92, ../sass/_groupHot.scss */
+.groupHot li .priceWrap .discount {
+  background: #5bd7ff;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0 5px;
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* line 2, ../sass/_freeShipping.scss */
+.freeShipping .titleItem {
+  background: #f5f5f5;
+}
+/* line 6, ../sass/_freeShipping.scss */
+.freeShipping .freightWrap {
+  margin-top: 8px;
+  overflow: hidden;
+  border: 1px solid #e6e6e6;
+  border-top: none;
+}
+/* line 12, ../sass/_freeShipping.scss */
+.freeShipping .freightWrap .freightItem {
+  background: #fff;
+  float: left;
+  width: 20%;
+  height: 226px;
+  border-right: 1px solid #e6e6e6;
+  border-top: 3px solid #e6e6e6;
+}
+/* line 21, ../sass/_freeShipping.scss */
+.freeShipping .freightWrap .freightItem:last-child {
+  border-right: none;
+}
+/* line 25, ../sass/_freeShipping.scss */
+.freeShipping .freightWrap .freightItem:hover {
+  border-top-color: #e60000;
+}
+
+/* line 31, ../sass/_freeShipping.scss */
+.freightItem {
+  padding: 10px;
+  font-family: "Microsoft YaHei";
+  position: relative;
+}
+/* line 35, ../sass/_freeShipping.scss */
+.freightItem p {
+  line-height: 24px;
+}
+/* line 38, ../sass/_freeShipping.scss */
+.freightItem p a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+}
+/* line 43, ../sass/_freeShipping.scss */
+.freightItem p a:hover {
+  color: #e60000;
+}
+/* line 49, ../sass/_freeShipping.scss */
+.freightItem del {
+  font-size: 12px;
+  color: #666;
+}
+/* line 54, ../sass/_freeShipping.scss */
+.freightItem .price {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: url(../Images/homeindex.png) no-repeat -1px -318px;
+  top: 64px;
+  left: 14px;
+  z-index: 2;
+  text-align: center;
+  font-size: 22px;
+  line-height: 40px;
+  color: #fff;
+}
+/* line 66, ../sass/_freeShipping.scss */
+.freightItem .price i {
+  font-size: 14px;
+  font-weight: 400;
+}
+/* line 72, ../sass/_freeShipping.scss */
+.freightItem .book_cover {
+  height: 158px;
+  width: 158px;
+  margin-top: 6px;
+  margin-left: 70px;
+  text-align: center;
+}
+/* line 78, ../sass/_freeShipping.scss */
+.freightItem .book_cover img {
+  max-width: 158px;
+  max-height: 158px;
+  transition: all 0.5s;
+}
+/* line 84, ../sass/_freeShipping.scss */
+.freightItem .book_cover:hover img {
+  transform: translateX(-10px);
+}
+
+/* line 1, ../sass/_category.scss */
+.category {
+  /* 每块内容的头部样式 */
+  /* 每块内容样式 */
+  /* 此处采用圣杯布局 */
+}
+/* line 4, ../sass/_category.scss */
+.category .categoryTitle {
+  height: 55px;
+  line-height: 55px;
+  background: #f5f5f5;
+}
+/* line 9, ../sass/_category.scss */
+.category .categoryTitle h2 {
+  width: 210px;
+  height: 100%;
+  text-align: center;
+  background: #00b6f0;
+  float: left;
+}
+/* line 16, ../sass/_category.scss */
+.category .categoryTitle h2 a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
+  font-family: "黑体";
+}
+/* line 25, ../sass/_category.scss */
+.category .categoryTitle ul {
+  float: left;
+  height: 100%;
+}
+/* line 30, ../sass/_category.scss */
+.category .categoryTitle li {
+  float: left;
+  height: 100%;
+  padding: 0 19px;
+  background: url(../Images/kindline.jpg) no-repeat right;
+}
+/* line 36, ../sass/_category.scss */
+.category .categoryTitle li a {
+  display: block;
+  line-height: 52px;
+  border-top: 4px solid transparent;
+  color: #333;
+  text-decoration: none;
+}
+/* line 46, ../sass/_category.scss */
+.category .categoryTitle li:hover a {
+  border-top: 4px solid #00b6f0;
+  color: #03a7db;
+}
+/* line 58, ../sass/_category.scss */
+.category .categoryWrap {
+  margin-top: 10px;
+  padding-left: 210px;
+  padding-right: 230px;
+  overflow: hidden;
+  /* 左侧图片加导航样式 */
+  /* 居中内容样式 */
+  /* 右侧导航样式 */
+}
+/* line 65, ../sass/_category.scss */
+.category .categoryWrap .categoryLeft {
+  width: 210px;
+  float: left;
+  margin-left: -210px;
+}
+/* line 73, ../sass/_category.scss */
+.category .categoryWrap .categoryContent {
+  float: left;
+  width: 100%;
+}
+/* line 79, ../sass/_category.scss */
+.category .categoryWrap .categoryRight {
+  width: 230px;
+  float: left;
+  margin-right: -230px;
+}
+
+/* 左侧图片加导航样式 */
+/* line 88, ../sass/_category.scss */
+.categoryLeft {
+  /* 左侧banner广告样式 */
+}
+/* line 91, ../sass/_category.scss */
+.categoryLeft .leftBanner {
+  height: 334px;
+}
+/* line 95, ../sass/_category.scss */
+.categoryLeft .leftBanner a img {
+  display: block;
+  max-height: 334px;
+  max-width: 210px;
+}
+/* line 103, ../sass/_category.scss */
+.categoryLeft .leftText {
+  height: 195px;
+  margin-top: 1px;
+  background: #bdeefe;
+  overflow: hidden;
+}
+/* line 109, ../sass/_category.scss */
+.categoryLeft .leftText h3 {
+  padding-left: 10px;
+  margin-top: 14px;
+  line-height: 30px;
+}
+/* line 115, ../sass/_category.scss */
+.categoryLeft .leftText ul {
+  padding-left: 10px;
+  margin-top: 7px;
+}
+/* line 120, ../sass/_category.scss */
+.categoryLeft .leftText li {
+  font-size: 12px;
+  line-height: 26px;
+  overflow: hidden;
+}
+/* line 125, ../sass/_category.scss */
+.categoryLeft .leftText li span {
+  color: #666;
+}
+/* line 129, ../sass/_category.scss */
+.categoryLeft .leftText li a {
+  color: #666;
+  text-decoration: none;
+}
+/* line 134, ../sass/_category.scss */
+.categoryLeft .leftText li a:hover {
+  color: #07a1d2;
+}
+
+/* 居中内容样式 */
+/* line 143, ../sass/_category.scss */
+.categoryContent li {
+  float: left;
+  height: 100px;
+  background: #fff;
+  width: 185px;
+  height: 266px;
+}
+/* line 150, ../sass/_category.scss */
+.categoryContent li .book_hover {
+  height: 158px;
+  margin-top: 10px;
+  text-align: center;
+}
+/* line 155, ../sass/_category.scss */
+.categoryContent li .book_hover img {
+  max-height: 158px;
+}
+/* line 160, ../sass/_category.scss */
+.categoryContent li .bookName {
+  padding: 0 20px;
+  line-height: 18px;
+  height: 18px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+/* line 167, ../sass/_category.scss */
+.categoryContent li .bookName a {
+  color: #333;
+  font-size: 12px;
+  text-decoration: none;
+}
+/* line 173, ../sass/_category.scss */
+.categoryContent li .bookName a:hover {
+  color: #e60000;
+}
+/* line 178, ../sass/_category.scss */
+.categoryContent li .author {
+  margin-top: 4px;
+  color: #666;
+  padding: 0 20px;
+  line-height: 18px;
+  height: 18px;
+  font-size: 12px;
+}
+/* line 187, ../sass/_category.scss */
+.categoryContent li .priceWrap {
+  padding: 0 20px;
+  font-family: "Microsoft YaHei";
+}
+/* line 190, ../sass/_category.scss */
+.categoryContent li .priceWrap .nowPrice {
+  font-size: 15px;
+}
+/* line 194, ../sass/_category.scss */
+.categoryContent li .priceWrap .oldPrice {
+  font-size: 12px;
+  color: #666;
+}
+
+/* 右侧banner样式 */
+/* line 205, ../sass/_category.scss */
+.categoryRight {
+  /* 右侧banner样式 */
+}
+/* line 206, ../sass/_category.scss */
+.categoryRight .rightText {
+  border: 1px solid #e6e6e6;
+  border-bottom: none;
+  background: #fff;
+}
+/* line 211, ../sass/_category.scss */
+.categoryRight .rightText li {
+  border-bottom: 1px solid #e6e6e6;
+}
+/* line 216, ../sass/_category.scss */
+.categoryRight .rightText .img {
+  display: block;
+  width: 228px;
+  height: 90px;
+  overflow: hidden;
+}
+/* line 223, ../sass/_category.scss */
+.categoryRight .rightText p {
+  padding-left: 10px;
+  font-size: 12px;
+  height: 32px;
+  line-height: 32px;
+  overflow: hidden;
+  color: #333;
+}
+/* line 231, ../sass/_category.scss */
+.categoryRight .rightText p a {
+  text-decoration: none;
+  color: #333;
+}
+/* line 239, ../sass/_category.scss */
+.categoryRight .rightBanner {
+  height: 190px;
+  margin-top: 17px;
+}
+/* line 243, ../sass/_category.scss */
+.categoryRight .rightBanner img {
+  max-height: 190px;
+  max-width: 230px;
+  display: block;
+}
+
+/* line 2, ../sass/_publishModule.scss */
+.publish .leftWrap {
+  float: left;
+  width: 960px;
+  height: 100px;
+  background: yellowgreen;
+}
+/* line 9, ../sass/_publishModule.scss */
+.publish .rightWrap {
+  width: 230px;
+  float: right;
+}
+
+/* 右部样式 */
+/* line 17, ../sass/_publishModule.scss */
+.rightWrap h2 {
+  height: 55px;
+  background: #5eadb1;
+  line-height: 55px;
+  color: #fff;
+  padding-left: 20px;
+  font-size: 20;
+  font-weight: 400px;
+  font-family: "Microsoft YaHei";
+}
+/* line 28, ../sass/_publishModule.scss */
+.rightWrap .rightContent {
+  border: 1px solid #e6e6e6;
+  /* 作者介绍样式 */
+}
+/* line 32, ../sass/_publishModule.scss */
+.rightWrap .rightContent .contentWrap {
+  padding: 20px 26px 0 18px;
+}
+/* line 35, ../sass/_publishModule.scss */
+.rightWrap .rightContent .contentWrap a {
+  display: inline-block;
+  padding: 0 10px;
+  height: 25px;
+  line-height: 25px;
+  background: #5eadb1;
+  color: #fff;
+}
+
+/* line 27, ../sass/index.scss */
 body {
   /* font-size: 12px;
   color: #666666; */
@@ -1198,22 +1823,22 @@ body {
 }
 
 /* 顶部广告样式 */
-/* line 27, ../sass/index.scss */
+/* line 33, ../sass/index.scss */
 .topBanner {
   height: 100px;
   background-color: #8a1f25;
 }
-/* line 31, ../sass/index.scss */
+/* line 37, ../sass/index.scss */
 .topBanner .banner {
   text-align: center;
 }
-/* line 34, ../sass/index.scss */
+/* line 40, ../sass/index.scss */
 .topBanner .banner img {
   /* width: 100%; */
 }
 
 /* 网页内容 */
-/* line 42, ../sass/index.scss */
+/* line 48, ../sass/index.scss */
 .content {
   width: 1200px;
   margin: auto;
@@ -1221,26 +1846,26 @@ body {
   /* 淘书团热销样式 */
   /* 包邮区样式 */
 }
-/* line 45, ../sass/index.scss */
+/* line 51, ../sass/index.scss */
 .content .bannerWrap {
   height: 890px;
   background: #333;
   /* overflow: hidden; */
   /* 右侧样式 */
 }
-/* line 50, ../sass/index.scss */
+/* line 56, ../sass/index.scss */
 .content .bannerWrap .rightBanner {
   margin-left: 200px;
   padding: 10px 0 0 10px;
   height: 100%;
   background: #fff;
 }
-/* line 60, ../sass/index.scss */
+/* line 66, ../sass/index.scss */
 .content .dayUpdate {
   height: 160px;
   background: #fff;
 }
-/* line 64, ../sass/index.scss */
+/* line 69, ../sass/index.scss */
 .content .dayUpdate::before {
   content: "%20";
   display: block;
@@ -1250,7 +1875,7 @@ body {
   height: 0;
   width: 0;
 }
-/* line 68, ../sass/index.scss */
+/* line 72, ../sass/index.scss */
 .content .dayUpdate .updateWrap {
   height: 100%;
   display: flex;
@@ -1258,51 +1883,51 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-/* line 75, ../sass/index.scss */
+/* line 78, ../sass/index.scss */
 .content .dayUpdate .updateWrap a {
   display: block;
   width: 393px;
 }
-/* line 79, ../sass/index.scss */
+/* line 81, ../sass/index.scss */
 .content .dayUpdate .updateWrap a img {
   display: block;
 }
 /* line 90, ../sass/index.scss */
 .content .groupHot {
-  height: 395px;
-  background: lightcoral;
+  height: 375px;
+  margin-bottom: 25px;
+  background: #fff;
 }
-/* line 96, ../sass/index.scss */
+/* line 97, ../sass/index.scss */
 .content .freeShipping {
   height: 320px;
-  background: lightseagreen;
+  background: #fff;
 }
-/* line 101, ../sass/index.scss */
+/* line 102, ../sass/index.scss */
 .content .literature, .content .social, .content .childBooks {
-  height: 624px;
+  height: 595px;
+  margin-bottom: 28px;
   background: lightpink;
 }
-/* line 106, ../sass/index.scss */
+/* line 108, ../sass/index.scss */
 .content .literature {
-  background: lightsteelblue;
+  background: #fff;
 }
-/* line 111, ../sass/index.scss */
+/* line 113, ../sass/index.scss */
 .content .social {
-  background: lightsalmon;
+  background: #fff;
 }
-/* line 116, ../sass/index.scss */
+/* line 118, ../sass/index.scss */
 .content .childBooks {
-  background: lightgreen;
+  background: #fff;
 }
-/* line 121, ../sass/index.scss */
+/* line 123, ../sass/index.scss */
 .content .others {
   height: 346px;
-  background: lightgoldenrodyellow;
+  background: #fff;
 }
-/* line 126, ../sass/index.scss */
+/* line 128, ../sass/index.scss */
 .content .publish {
   height: 516px;
-  background: lightseagreen;
+  background: #fff;
 }
-
-/*  */

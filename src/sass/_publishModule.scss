@@ -1,0 +1,46 @@
+.publish {
+    .leftWrap {
+        float: left;
+        width: 960px;
+        height: 100px;
+        background: yellowgreen;
+    }
+
+    .rightWrap {
+        width: 230px;
+        float: right;
+    }
+}
+
+/* 右部样式 */
+.rightWrap {
+    h2 {
+        height: 55px;
+        background: #5eadb1;
+        line-height: 55px;
+        color: #fff;
+        padding-left: 20px;
+        font-size: 20;
+        font-weight: 400px;
+        font-family: "Microsoft YaHei";
+    }
+
+    .rightContent {
+        border: 1px solid #e6e6e6;
+
+        /* 作者介绍样式 */
+        .contentWrap {
+            padding: 20px 26px 0 18px;
+
+            a {
+                display: inline-block;
+                padding: 0 10px;
+                height: 25px;
+                line-height: 25px;
+                background: #5eadb1;
+                color: #fff;
+            }
+        }
+    }
+
+}

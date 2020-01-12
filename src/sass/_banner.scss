@@ -1,3 +1,4 @@
+/* 轮播图样式 */
 .bannerSwiper{
     height: 360px;
     position: relative;
@@ -47,17 +48,20 @@
         margin-top: -19px;
         cursor: pointer;
         display: none;
+        
     }
 
     .arrowLeft {
         @extend %arrow;
         left: 0;
         background: url(../images/homeindex.png) no-repeat -73px -38px;
+        background-color: rgba(0,0,0,0.35);
     }
     
     .arrowRight {
         @extend %arrow;
         right: 0;
         background: url(../images/homeindex.png) no-repeat -73px 0px;
+        background-color: rgba(0,0,0,0.35);
     }
 }

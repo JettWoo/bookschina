@@ -1,0 +1,35 @@
+/* 每一块内容的头部样式 */
+
+.titleItem{
+    background: #fff;
+    overflow: hidden;
+    font-family: "Microsoft YaHei";
+    h2{
+        height: 58px;
+        line-height: 58px;
+        float: left;
+        
+        a{
+            font-size: 22px;
+            color: $themeColor;
+            text-decoration: none;
+            span{
+                font-size: 18px;
+                font-style: oblique;
+                color: #333;
+            }
+        }
+    }
+
+    .checkMore{
+        float: right;
+        height: 58px;
+        line-height: 58px;
+        text-decoration: none;
+        color: #666;
+        font-size: 14px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}

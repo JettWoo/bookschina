@@ -1,0 +1,105 @@
+.groupHot {
+    .titleItem {
+        border-bottom: 3px solid $themeColor;
+    }
+    .hotBookWrap{
+        margin-top: 14px;
+        overflow: hidden;
+        position: relative;
+        %arrow {
+            position: absolute;
+            width: 27px;
+            height: 38px;
+            top: 35%;
+            margin-top: -19px;
+            cursor: pointer;
+            /* display: none; */
+        }
+    
+        .arrowLeft {
+            @extend %arrow;
+            left: 0;
+            background: url(../images/homeindex.png) no-repeat -73px -38px;
+            background-color: rgba(0,0,0,0.35);
+        }
+        
+        .arrowRight {
+            @extend %arrow;
+            right: 0;
+            background: url(../images/homeindex.png) no-repeat -73px 0px;
+            background-color: rgba(0,0,0,0.35);
+        }
+    }
+    ul{
+        overflow: hidden;
+        width: 2000px;
+    }
+    li {
+        box-sizing: content-box;
+        float: left;
+        width: 286px;
+        border: 1px solid #e6e6e6;
+        margin-right: 16px;
+        overflow: hidden;
+        background: #edf8ff;
+        height: 298px;
+        .bookCover{
+            img{
+                max-height: 190px;
+                max-width: 286px;
+                display: block;
+            }
+        }
+        .bookName{
+            margin-top: 7px;
+            padding: 0 14px;
+            line-height: 22px;
+            height: 66px;
+            overflow: hidden;
+            a{
+                font-size: 12px;
+                color: #333;
+                &:hover{
+                    color: $themeColor;
+                }
+            }
+        }
+        .priceWrap{
+            position: relative;
+            padding: 0 14px;
+            .salePrice{
+                font-size: 20px;
+                color: $themeColor;
+                /* font-weight: 600; */
+                b{
+                    font-size: 14px;
+                    color: $themeColor;
+                }
+                i{
+                    font-size: 14px;
+                    color: $themeColor;
+                    font-weight: 500;
+                }
+            }
+           
+
+            .price{
+                font-size: 12px;
+                color: #666;
+                margin-left: 13px;
+            }
+
+            .discount{
+                background: #5bd7ff;
+                font-size: 12px;
+                line-height: 16px;
+                padding: 0 5px;
+                position: absolute;
+                top: 8px;
+                right: 14px;
+                color: #fff;
+                border-radius: 2px;
+            }
+        }
+    }
+}

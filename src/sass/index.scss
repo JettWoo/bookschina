@@ -17,6 +17,12 @@
 @import 'tabHot';
 @import 'hotShipping';   // 引入畅销样式
 
+@import 'titleItem';     // 引入每个模块头部样式
+@import 'groupHot';      // 淘书团热销
+@import 'freeShipping';  // 引入包邮区样式  
+@import 'category';      // 引入每一种类图书的公共样式
+@import 'publishModule'; // 引入出版社图书模块样式
+
 
 body{
     /* font-size: 12px;
@@ -60,27 +66,21 @@ body{
     .dayUpdate {
         height: 160px;
         background: #fff;
-
         &::before {
             @include clearfix;
         }
-
         .updateWrap {
             height: 100%;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-
             a {
                 display: block;
                 width: 393px;
-
                 img {
                     display: block;
                 }
-
-                ;
             }
         }
 
@@ -88,45 +88,45 @@ body{
 
     /* 淘书团热销样式 */
     .groupHot {
-        height: 395px;
-        background: lightcoral;
+        height: 375px;
+        margin-bottom: 25px;
+        background: #fff;
     }
 
     /* 包邮区样式 */
     .freeShipping {
         height: 320px;
-        background: lightseagreen;
+        background: #fff;
     }
 
     %category {
-        height: 624px;
+        height: 595px;
+        margin-bottom: 28px;
         background: lightpink;
     }
 
     .literature {
         @extend %category;
-        background: lightsteelblue;
+        background: #fff;
     }
 
     .social {
         @extend %category;
-        background: lightsalmon;
+        background: #fff;
     }
 
     .childBooks {
         @extend %category;
-        background: lightgreen;
+        background: #fff;
     }
 
     .others {
         height: 346px;
-        background: lightgoldenrodyellow;
+        background: #fff;
     }
 
     .publish {
         height: 516px;
-        background: lightseagreen;
+        background: #fff;
     }
 }
-
-/*  */
