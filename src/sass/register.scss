@@ -129,10 +129,15 @@ body {
             }
 
         }
+        
+        .danger{
+            border-color: #e60000;
+        }
 
         .info {
             margin-left: 20px;
             height: 30px;
+            display: none;
         }
     }
 
@@ -144,6 +149,9 @@ body {
         p {
             display: none;
             margin-left: 180px;
+            color: #666;
+        }
+        .danger{
             color: #e60000;
         }
     }
