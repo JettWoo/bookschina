@@ -18,13 +18,13 @@
         <div class="w1000">
             <div class="registerForm">
                 <div class="registerTitle">
-                    <b>新用户注册</b>
-                    <span>
+                    <b>用户登录</b>
+                   <!--  <span>
                         新用户专享：19减5优惠券（全场通用，淘书团除外）
                     </span>
                     <div class="backLogin">
                         已有账号? <a href="">请登录</a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="registerInputWrap">
                     <div class="" style="position:absolute; right:0px; z-index: 998;">
@@ -40,7 +40,7 @@
                                 <span class="label">用户名:</span>
                                 <div class="inputWrap">
                                     <input type="text" name="phoneNum" placeholder="用户名/邮箱/已验证手机" 
-                                        autocomplete="off">
+                                        autocomplete="off" class="phoneNum">
                                 </div>
                                 <span class="info">
                                     <img src="../Images/sucessTip.png" alt="">
@@ -54,7 +54,7 @@
                             <div class="contentInput">
                                 <span class="label">密码:</span>
                                 <div class="inputWrap">
-                                    <input type="password" name="pwd" placeholder="密码">
+                                    <input type="password" name="pwd" placeholder="密码"  class="pwd">
                                 </div>
                                 <span class="info">
                                     <img src="../Images/sucessTip.png" alt="">
@@ -68,7 +68,7 @@
                             <div class="contentInput">
                                 <span class="label">验证码:</span>
                                 <div class="inputWrap">
-                                    <input type="password" name="pwdConfirm" placeholder="请输入右图验证码">
+                                    <input type="password"  class="confirmCode" name="confirmCode" placeholder="请输入右图验证码">
                                 </div>
                                 <div class="codeWrap">
                                     <div id="v_container" style="width: 200px;height: 42px;"></div>
@@ -123,6 +123,8 @@
     <script>
         var verifyCode = new GVerify("v_container");
     </script>
+
+<script src="../scripts/require.js" defer async='true' data-main="../scripts/main.js" id="currentPage"  target-page="../scripts/registry.js"></script>
 </body>
 
 </html>
