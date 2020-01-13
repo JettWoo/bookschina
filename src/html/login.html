@@ -1,109 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        body{
-            background: #333;
-        }
-        .registerForm{
-            width: 1000px;
-            box-sizing: border-box;
-            padding: 20px;
-            margin: auto;
-            background: #fff;
-
-        }
-
-        .contentInput{
-            overflow: hidden;
-            line-height: 42px;
-        }
-        .contentInput .label{
-            width: 150px;
-            text-align: right;
-            float: left;
-
-        }
-        .contentInput .inputWrap{
-            box-sizing: border-box;
-            width: 340px;
-            height: 42px;
-            border: 1px solid #333;
-            border-radius: 4px;
-            float: left;
-            margin-left: 30px;
-        }
-        .contentInput .inputWrap input{
-            border: none;
-            outline: none;
-            height: 100%;
-            width: 100%;
-            padding-left: 10px;
-            background: transparent;
-        }
-        input:-webkit-autofill {
-            -webkit-box-shadow: 0 0 0 1000px white inset;
-        }
-        .contentInput  .info{
-            margin-left: 20px;
-        }
-        .item .tip{
-            height: 30px;
-            line-height: 30px;
-        }
-        .item .tip p{
-            margin-left: 180px;
-        }
-
-        .registerForm input[type="button"]{
-            width: 380px;
-            height: 50px;
-            line-height: 50px;
-            text-align: center;
-            border: none;
-            background:#e60000;
-            color: #fff;
-            border-radius: 5px;
-            margin-left: 180px;
-        }
-    </style>
+    <title>登录</title>
+    <link rel="icon" href="../images/favicon.ico" sizes="32x32" />
+    <link rel="stylesheet" href="../stylesheets/register.css">
 </head>
-<body>
-    <div class="content">
-        <div class="registerForm">
-            <form method="POST">
-                <div class="item">
-                    <div class="contentInput">
-                        <span class="label">手机号码:</span>
-                        <div class="inputWrap">
-                            <input type="text" name="phoneNum" id="" placeholder="用户名/邮箱/已验证手机" autocomplete="off">
-                        </div>
-                        <span class="info"><img src="http://www.bookschina.com/Images/sucessTip.png" alt=""></span>
-                    </div>
-                    <div class="tip">
-                        <p>请输入用户名/邮箱/已验证手机</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="contentInput">
-                        <span class="label">密码:</span>
-                        <div class="inputWrap">
-                            <input type="password" name="pwd" id="" placeholder="密码">
-                        </div>
-                        <span class="info"><img src="http://www.bookschina.com/Images/sucessTip.png" alt=""></span>
-                    </div>
-                    <div class="tip">
-                        <p>请输入密码</p>
-                    </div>
-                </div>
 
-                <input type="button" value="登录" name="submit">
-            </form>
-        </div>
+<body>
+    <div class="head">
+
     </div>
+    <div class="content">
+        <div class="w1000">
+            <div class="registerForm">
+                <div class="registerTitle">
+                    <b>新用户注册</b>
+                    <span>
+                        新用户专享：19减5优惠券（全场通用，淘书团除外）
+                    </span>
+                    <div class="backLogin">
+                        已有账号? <a href="">请登录</a>
+                    </div>
+                </div>
+                <div class="registerInputWrap">
+                    <div class="" style="position:absolute; right:0px; z-index: 998;">
+                        <a href="http://www.bookschina.com/books/kind/specialbooks.aspx?cgid=254&amp;o=5-0"
+                            target="_blank" style="display:block; cursor:pointer; z-index: 999;" title="分享活动"><img
+                                src="http://image31.bookschina.com/pro-images/190821qc/300150.jpg" alt="分享活动"></a>
+                    </div>
+
+                    <!-- form表单 -->
+                    <form action="" method="POST">
+                        <div class="item">
+                            <div class="contentInput">
+                                <span class="label">用户名:</span>
+                                <div class="inputWrap">
+                                    <input type="text" name="phoneNum" placeholder="用户名/邮箱/已验证手机" 
+                                        autocomplete="off">
+                                </div>
+                                <span class="info">
+                                    <img src="../Images/sucessTip.png" alt="">
+                                </span>
+                            </div>
+                            <div class="tip">
+                                <p>请输入用户名/邮箱/已验证手机</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="contentInput">
+                                <span class="label">密码:</span>
+                                <div class="inputWrap">
+                                    <input type="password" name="pwd" placeholder="密码">
+                                </div>
+                                <span class="info">
+                                    <img src="../Images/sucessTip.png" alt="">
+                                </span>
+                            </div>
+                            <div class="tip">
+                                <p>请输入密码</p>
+                            </div>
+                        </div>
+                        <div class="item" id="confirmCode">
+                            <div class="contentInput">
+                                <span class="label">验证码:</span>
+                                <div class="inputWrap">
+                                    <input type="password" name="pwdConfirm" placeholder="请输入右图验证码">
+                                </div>
+                                <div class="codeWrap">
+                                    <div id="v_container" style="width: 200px;height: 42px;"></div>
+                                </div>
+                                <span class="info">
+                                    <img src="../Images/sucessTip.png" alt="">
+                                </span>
+                            </div>
+                            <div class="tip">
+                                <p>请输入图片验证码</p>
+                            </div>
+                        </div>
+
+
+                        <input value="登录" type="button" class="subButton">
+
+                    </form>
+
+                    <div class="otherLink">
+                        <a href="/RegUser/forgetpwd.aspx" target="_blank" class="fogotPas">忘记密码？</a>
+                        <a href="/RegUser/Register.aspx?u=%2f" target="_blank" class="newUserReg">新用户注册&gt;&gt;</a>
+                    </div>
+
+                  <!--   <div class="otherLoginWrap">
+                        <div class="therLoginTit">
+                            <span>使用以下账号登录</span>
+                        </div>
+                        <div class="otherLogin">
+                            <a href="http://qq.bookschina.com/weibo/weibologin.aspx?url=http://www.bookschina.com/RegUser/weibologin.aspx?u=" class="tsinalogin" id="tsinalogin"><span class="icon"></span>微博</a>
+                            <a href="http://qq.bookschina.com/qq/qqlogin.aspx?url=http://www.bookschina.com/RegUser/qqlogin.aspx?u=" class="qqlogin" id="qqlogin"><span class="icon"></span>QQ</a>
+                            <a href="/RegUser/WxLogin.aspx?u=" class="wxlogin" id="wxlogin"><span class="icon"></span>微信</a>
+                            <a href="/BaiDuLogin/BaiDuLogin.aspx?u=" class="baidulogin" id="baidulogin"><span class="icon"></span>百度</a>
+
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="foot">
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(".head").load("../static/header.html");
+        $(".foot").load("../static/footer.html");
+    </script>
+    <script src="../scripts/picCode.js"></script>
+    <script>
+        var verifyCode = new GVerify("v_container");
+    </script>
 </body>
+
 </html>

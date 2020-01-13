@@ -21,6 +21,7 @@ body {
     .registerTitle {
         height: 24px;
         line-height: 24px;
+        font-family: 'Microsoft YaHei';
 
         b {
             border-left: 3px solid #ff0000;
@@ -28,11 +29,16 @@ body {
             color: #333;
             font-weight: bold;
             padding-left: 13px;
+            line-height: 24px;
+            font-family: 'Microsoft YaHei';
+            display: inline-block;
         }
 
         span {
+            display: inline-block;
+            padding-top: 5px;
             font-size: 14px;
-            color: #ff0000;
+            color: #e60000;
             margin-left: 11px;
         }
 
@@ -44,14 +50,17 @@ body {
             a {
                 color: #999;
                 text-decoration: none;
+                display: inline-block;
+                margin-top: 5px;
             }
         }
     }
 
     .registerInputWrap {
         margin-top: 50px;
+        position: relative;
 
-        input[type='submit']{              
+        .subButton {
             width: 380px;
             height: 50px;
             line-height: 50px;
@@ -61,11 +70,29 @@ body {
             color: #fff;
             border-radius: 5px;
             margin-left: 180px;
+            margin-top: 23px;
+        }
+
+        .otherLink {
+            margin: 25px 0 0 180px;
+            width: 380px;
+            overflow: hidden;
+            line-height: 24px;
+            a{
+                float: left;
+                color: #666a6b;
+                font-size: 14px;
+                text-decoration: none;
+            }
+            .newUserReg {
+                float: right;
+            }
         }
     }
 }
 
 .item {
+
     .contentInput {
         overflow: hidden;
         line-height: 42px;
@@ -74,6 +101,8 @@ body {
             width: 150px;
             text-align: right;
             float: left;
+            font-size: 16px;
+            color: #333;
         }
 
 
@@ -81,11 +110,12 @@ body {
             box-sizing: border-box;
             width: 340px;
             height: 42px;
-            border: 1px solid #333;
+            border: 1px solid #dcdcdc;
             border-radius: 4px;
             float: left;
             margin-left: 30px;
-            input{
+
+            input {
                 border: none;
                 outline: none;
                 height: 100%;
@@ -93,23 +123,48 @@ body {
                 padding-left: 10px;
                 background: transparent;
             }
+
             input:-webkit-autofill {
                 -webkit-box-shadow: 0 0 0 1000px white inset;
             }
-            
+
         }
 
-        .info{
+        .info {
             margin-left: 20px;
+            height: 30px;
         }
     }
 
     .tip {
         height: 30px;
         line-height: 30px;
+        font-size: 12px;
 
         p {
+            display: none;
             margin-left: 180px;
+            color: #e60000;
         }
     }
+}
+
+
+#confirmCode {
+    .inputWrap {
+        width: 200px;
+    }
+
+    .codeWrap {
+        float: left;
+        margin-left: 30px;
+    }
+}
+
+.otherLoginWrap .therLoginTit {
+    background: url(../Images/logindot.jpg) repeat-x center;
+    margin-left: 180px;
+    text-align: center;
+    width: 380px;
+    margin-top: 46px;
 }

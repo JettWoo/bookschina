@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="icon" href="../images/favicon.ico" sizes="32x32" />
+    <link rel="stylesheet" href="../stylesheets/index.css" />
+    <link rel="stylesheet" href="../stylesheets/cartlist.css">
+</head>
+
+<body>
+    <!------------ 网页头部  ------------>
+    <header style="height: 125px; border: none;">
+        <!-- 头部链接结构 -->
+        <section id="top">
+            <!-- 居中包含块 -->
+            <div class="topWrapper">
+                <!-- 左侧欢迎结构 -->
+                <div class="topLeft">
+                    <h2>欢迎光临中国图书网&nbsp;&nbsp;请</h2>
+                    <p>
+                        <a href="">登录</a>
+                        <span>|</span>
+                        <a href="">注册</a>
+                    </p>
+                </div>
+                <!-- 右侧导航结构 -->
+                <div class="right_nav">
+                    <ul>
+                        <li>
+                            <a href="">购物车</a>
+                        </li>
+                        <li>
+                            <a href="">我的订单</a>
+                        </li>
+                        <li class="backChange">
+                            <a href="">我的账户</a>
+                            <span></span>
+                            <div class="hiddenLayer">
+                                <a href="">我的收藏夹</a>
+                                <a href="">账户余额</a>
+                                <a href="">我的优惠券</a>
+                                <a href="">我的书币</a>
+                                <a href="">收货地址</a>
+                                <a href="">我的书评</a>
+                                <a href="">我的消息</a>
+                                <a href="">书币换券</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">帮助中心</a>
+                        </li>
+                        <li class="backChange">
+                            <a href="">手机中图</a>
+                            <span></span>
+
+                            <div class="hiddenLayer" style="left: initial; right: -1px;">
+                                <!-- 二维码结构 -->
+                                <div class="erweimaWrap">
+                                    <div class="erweima">
+                                        <img src="../images/weiboerweima.jpg" alt="" />
+                                    </div>
+                                    <div class="text">
+                                        <b>扫一扫</b>
+                                        <i>
+                                            关注中国网<br />
+                                            官方微博
+                                        </i>
+                                    </div>
+                                </div>
+                                <!-- 二维码结构 -->
+                                <div class="erweimaWrap">
+                                    <div class="erweima">
+                                        <img src="../images/weixinerweima.jpg" alt="" />
+                                    </div>
+                                    <div class="text">
+                                        <b>扫一扫</b>
+                                        <i>
+                                            关注中国网<br />
+                                            微信公众号
+                                        </i>
+                                    </div>
+                                </div>
+                                <!-- 二维码结构 -->
+                                <div class="erweimaWrap">
+                                    <div class="erweima">
+                                        <img src="../images/phoneerweima.jpg" alt="" />
+                                    </div>
+                                    <div class="text">
+                                        <b>手机中图</b>
+                                        <i>
+                                            进入中图<br />
+                                            手机触屏版
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <div class="head">
+
+        </div>
+    </header>
+
+    <div class="content" id="car">
+        <div class="contentInner empty_cart">
+
+            <div class="tabShoppCar clearfix">
+                <div class="carTab">
+                    <ul>
+                        <li class="cur"><a href="javsscript:void(0)">购物车(<span>5</span>)</a></li>
+                        <li><a href="http://tuan.bookschina.com/Cart">淘书团购物车(0) </a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cartEmpty clearfix">
+                <div class="emptyIcon">
+                </div>
+                <div class="emptyText">
+                    <span>购物车空空的哦~，去看看心仪的商品吧~</span>
+                    <a href="/">去购物</a>
+                </div>
+            </div>
+        </div>
+        <div class="contentInner full_car show">
+            <div class="shoppingProcedure">
+                <span class="current">我的购物车 </span>
+                <span>填写核对订单信息</span>
+                <span>成功提交订单</span>
+            </div>
+
+            <div class="tabShoppCar clearfix">
+                <div class="carTab">
+                    <ul>
+                        <li class="cur"><a href="javsscript:void(0)" class="">购物车(<span>5</span>)</a></li>
+                        <li><a href="http://tuan.bookschina.com/Cart">淘书团购物车(0) </a></li>
+                    </ul>
+                </div>
+                <div class="shoppingTip">
+                    <strong>重要提示</strong><strong>|</strong>
+
+                    <span>登录后可保存您购物车中的商品，并可看到您的星级会员价</span>
+
+                </div>
+            </div>
+
+            <div class="shoppingCar">
+                <!--购物车头部-->
+                <div class="shoppingTitle">
+                    <ul>
+                        <li class="f1"><span class="J_selectALL selectAll"></span>全选</li>
+                        <li class="f2">图书名称</li>
+                        <li class="f3">定价（元）</li>
+                        <li class="f4">一星会员（元）</li>
+                        <li class="f5">数量操作</li>
+                        <li class="f6">小计（元）</li>
+                        <li class="f7">操作</li>
+                    </ul>
+                </div>
+                <!--购物车内容-->
+                <div class="shoppingListWrap shoppingListContent">
+                    <div class="shoppingItem NoActivity">
+                        <div class="shoppingList clearfix select" style="z-index: 1;">
+                            <div class="cartCheckbox fl"><span sid="91680620" class="J_check selected">选中</span></div>
+                            <div class="goodImg fl"><a href="/8041724.htm" target="_blank"><img alt=""
+                                        src="http://image31.bookschina.com/pro-images/tj.png" class="iconTe"><img
+                                        src="http://image31.bookschina.com/2019/zuo/7/z8041724.jpg" title="月亮与六便士"></a>
+                            </div>
+                            <div class="goodName fl"><a href="/8041724.htm" target="_blank">月亮与六便士<br></a></div>
+                            <div class="goodPrice fl"><strong>￥42</strong></div>
+                            <div class="goodSellPrice fl"><strong>￥20.6</strong></div>
+                            <div class="goodQuantity fl">
+                                <div class="quantityForm"><a href="javascript:void(0);" class="decrement" sid="91680620"
+                                        bid="8041724">-</a><input autocomplete="off" type="text" sid="91680620"
+                                        class="num J_input" id="input91680620" bid="8041724" max="7" shopcount="5"
+                                        value="5"><a href="javascript:void(0);" class="increment" sid="91680620"
+                                        bid="8041724">+</a></div>
+                                <div class="limitText" id="limitText91680620"></div>
+                            </div>
+                            <div class="goodSum fl"><strong class="subtotal">￥103.0</strong></div>
+                            <div class="goodOperation fl"><a class="goodRemove J_delate" href="javascript:void(0);"
+                                    sid="91680620">删除</a><a href="javascript:void(0);" class="goodCollection J_collect"
+                                    sid="91680620" bid="8041724">移入收藏</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--购物车脚部-->
+        <div class="myf clearfix" style=""><em>运费</em>
+            <p>已免运费</p>
+        </div>
+        <div class="shoppingfootWrap full_car show" id="shoppingfootWrap">
+            <div class="shoppingfootinner">
+                <div class="shoppingFoot clearfix">
+                    <div class="shoppingFootLeft fl clearfix">
+                        <div class="Checkbox fl">
+                            <span class="J_selectALL selectAll">选中</span>全选
+                        </div>
+                        <div class="removeGood fl"><a href="javascript:void(0)" class="J_deleteALL">删除选中的商品</a></div>
+                        <div class="removeGood fl"><a href="javascript:void(0)" class="J_deleteStock">清除下架或缺货商品</a>
+                        </div>
+                    </div>
+                    <div class="shoppingFootRight fr">
+                        <div class="fl shoppingResult">
+                            <div class="result">
+                                已选择<span id="J_SumCount">5</span>件商品，商品总金额<span class="money">￥</span><b
+                                    id="J_SumZongJia">103</b>
+                            </div>
+                            <div class="discoutResult">
+                                已优惠：￥<b id="J_SumYouhui">0</b>
+                            </div>
+                        </div>
+                        <div class="submitBtn fl cur" id="J_submitBtn">
+                            <a href="javascript:void(0);">立即结算</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--购物车脚部结束-->
+    </div>
+
+
+    <div class="foot" style="background: #f5f5f5;overflow: hidden;">
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(".head").load("../static/header.html");
+        $(".foot").load("../static/footer.html");
+    </script>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 5, D:/Program Files/Ruby26/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, E:/Program Files (x86)/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, D:/Program Files/Ruby26/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, E:/Program Files (x86)/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, D:/Program Files/Ruby26/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, E:/Program Files (x86)/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, D:/Program Files/Ruby26/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, E:/Program Files (x86)/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, D:/Program Files/Ruby26/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, E:/Program Files (x86)/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, D:/Program Files/Ruby26/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, E:/Program Files (x86)/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, D:/Program Files/Ruby26/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, E:/Program Files (x86)/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, D:/Program Files/Ruby26/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, E:/Program Files (x86)/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, D:/Program Files/Ruby26/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, E:/Program Files (x86)/Ruby26-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -120,6 +120,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 45, ../sass/_header.scss */
 .loginHead .logoInner .ad .yizhe {
   background-position: -289px;
+  margin-right: 0;
 }
 
 /* line 6, ../sass/_footer.scss */
@@ -1819,13 +1820,12 @@ header {
   background: #f5f5f5;
 }
 /* line 48, ../sass/_publishModule.scss */
-.publishContent .contentWrap {
+.publishContent .contentRightWrap {
   width: 740px;
   float: right;
-  height: 100px;
-  background: red;
 }
 
+/* 左侧导航样式 */
 /* line 57, ../sass/_publishModule.scss */
 .navWrap .topWrap {
   height: 420px;
@@ -1881,8 +1881,103 @@ header {
   background-position: -21px -401px;
 }
 
+/* 左侧内容样式 */
+/* line 115, ../sass/_publishModule.scss */
+.pubItem .pubText {
+  padding-right: 8px;
+  border-bottom: 1px solid #ededed;
+  height: 180px;
+}
+/* line 119, ../sass/_publishModule.scss */
+.pubItem .pubText h3 {
+  padding: 0 35px;
+  line-height: 20px;
+  margin-top: 11px;
+}
+/* line 124, ../sass/_publishModule.scss */
+.pubItem .pubText h3 a {
+  color: #000;
+  background: inherit;
+  text-decoration: none;
+  font-family: 'Microsoft YaHei';
+  font-weight: bold;
+}
+/* line 132, ../sass/_publishModule.scss */
+.pubItem .pubText h3 a:hover {
+  color: #e60000;
+}
+/* line 139, ../sass/_publishModule.scss */
+.pubItem .publishInfo p {
+  padding: 0 35px;
+  text-indent: 2em;
+  line-height: 26px;
+  color: #666;
+  margin-top: 10px;
+  font-family: "宋体";
+  font-size: 12px;
+}
+/* line 150, ../sass/_publishModule.scss */
+.pubItem li {
+  float: left;
+  height: 100px;
+  background: #fff;
+  width: 185px;
+  height: 266px;
+}
+/* line 157, ../sass/_publishModule.scss */
+.pubItem li .book_hover {
+  height: 158px;
+  margin-top: 10px;
+  text-align: center;
+}
+/* line 162, ../sass/_publishModule.scss */
+.pubItem li .book_hover img {
+  max-height: 158px;
+}
+/* line 167, ../sass/_publishModule.scss */
+.pubItem li .bookName {
+  padding: 0 20px;
+  line-height: 18px;
+  height: 18px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+/* line 174, ../sass/_publishModule.scss */
+.pubItem li .bookName a {
+  color: #333;
+  font-size: 12px;
+  text-decoration: none;
+}
+/* line 180, ../sass/_publishModule.scss */
+.pubItem li .bookName a:hover {
+  color: #e60000;
+}
+/* line 185, ../sass/_publishModule.scss */
+.pubItem li .author {
+  margin-top: 4px;
+  color: #666;
+  padding: 0 20px;
+  line-height: 18px;
+  height: 18px;
+  font-size: 12px;
+}
+/* line 194, ../sass/_publishModule.scss */
+.pubItem li .priceWrap {
+  padding: 0 20px;
+  font-family: "Microsoft YaHei";
+}
+/* line 198, ../sass/_publishModule.scss */
+.pubItem li .priceWrap .nowPrice {
+  font-size: 15px;
+}
+/* line 202, ../sass/_publishModule.scss */
+.pubItem li .priceWrap .oldPrice {
+  font-size: 12px;
+  color: #666;
+}
+
 /* 右部样式 */
-/* line 117, ../sass/_publishModule.scss */
+/* line 215, ../sass/_publishModule.scss */
 .rightWrap h2 {
   height: 55px;
   background: #5eadb1;
@@ -1893,17 +1988,17 @@ header {
   font-weight: 400px;
   font-family: "Microsoft YaHei";
 }
-/* line 128, ../sass/_publishModule.scss */
+/* line 226, ../sass/_publishModule.scss */
 .rightWrap .rightContent {
   border: 1px solid #e6e6e6;
 }
 
 /* 作者介绍样式 */
-/* line 135, ../sass/_publishModule.scss */
+/* line 233, ../sass/_publishModule.scss */
 .contentWrap {
   padding: 20px 26px 0 18px;
 }
-/* line 139, ../sass/_publishModule.scss */
+/* line 237, ../sass/_publishModule.scss */
 .contentWrap h3 a {
   display: inline-block;
   padding: 0 10px;
@@ -1912,50 +2007,50 @@ header {
   background: #5eadb1;
   color: #fff;
 }
-/* line 150, ../sass/_publishModule.scss */
+/* line 248, ../sass/_publishModule.scss */
 .contentWrap .descri {
   margin-top: 10px;
   line-height: 18px;
 }
-/* line 154, ../sass/_publishModule.scss */
+/* line 252, ../sass/_publishModule.scss */
 .contentWrap .descri a {
   color: #333333;
   font-size: 12px;
   text-decoration: none;
 }
-/* line 161, ../sass/_publishModule.scss */
+/* line 259, ../sass/_publishModule.scss */
 .contentWrap .book {
   text-align: center;
   margin-top: 8px;
 }
-/* line 165, ../sass/_publishModule.scss */
+/* line 263, ../sass/_publishModule.scss */
 .contentWrap .book img {
   max-height: 160px;
 }
-/* line 170, ../sass/_publishModule.scss */
+/* line 268, ../sass/_publishModule.scss */
 .contentWrap .bookName {
   margin-top: 14px;
   height: 18px;
   line-height: 18px;
 }
-/* line 175, ../sass/_publishModule.scss */
+/* line 273, ../sass/_publishModule.scss */
 .contentWrap .bookName a {
   color: #333;
   font-size: 14px;
   font-family: "Microsoft YaHei";
   text-decoration: none;
 }
-/* line 181, ../sass/_publishModule.scss */
+/* line 279, ../sass/_publishModule.scss */
 .contentWrap .bookName a:hover {
   color: #e60000;
 }
-/* line 188, ../sass/_publishModule.scss */
+/* line 286, ../sass/_publishModule.scss */
 .contentWrap .priceWrap span {
   font-size: 16px;
   color: #5eadb1;
   font-family: "Microsoft YaHei";
 }
-/* line 194, ../sass/_publishModule.scss */
+/* line 292, ../sass/_publishModule.scss */
 .contentWrap .priceWrap .Price {
   margin-left: 8px;
   text-decoration-line: line-through;
@@ -1964,7 +2059,7 @@ header {
 }
 
 /* 其他作者样式 */
-/* line 204, ../sass/_publishModule.scss */
+/* line 302, ../sass/_publishModule.scss */
 .otherAuthor {
   overflow: hidden;
   padding: 12px;
@@ -1973,7 +2068,7 @@ header {
   font-size: 12px;
   border-top: 1px solid #e6e6e6;
 }
-/* line 212, ../sass/_publishModule.scss */
+/* line 310, ../sass/_publishModule.scss */
 .otherAuthor a {
   float: left;
   padding: 0 13px;
@@ -1982,11 +2077,11 @@ header {
   text-align: center;
   color: #333;
 }
-/* line 220, ../sass/_publishModule.scss */
+/* line 318, ../sass/_publishModule.scss */
 .otherAuthor a:hover {
   color: #3da9ae;
 }
-/* line 225, ../sass/_publishModule.scss */
+/* line 323, ../sass/_publishModule.scss */
 .otherAuthor span {
   float: left;
   color: #c6c6c6;

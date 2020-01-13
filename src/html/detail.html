@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情</title>
+    <link rel="icon" href="../images/favicon.ico" sizes="32x32" />
+    <link rel="stylesheet" href="../stylesheets/index.css">
+    <link rel="stylesheet" href="../stylesheets/detail.css">
+</head>
+
+<body>
+    <!------------ 网页头部  ------------>
+    <header>
+        <!-- 头部链接结构 -->
+        <section id="top">
+            <!-- 居中包含块 -->
+            <div class="topWrapper">
+                <!-- 左侧欢迎结构 -->
+                <div class="topLeft">
+                    <h2>欢迎光临中国图书网&nbsp;&nbsp;请</h2>
+                    <p>
+                        <a href="">登录</a>
+                        <span>|</span>
+                        <a href="">注册</a>
+                    </p>
+                </div>
+                <!-- 右侧导航结构 -->
+                <div class="right_nav">
+                    <ul>
+                        <li>
+                            <a href="">购物车</a>
+                        </li>
+                        <li>
+                            <a href="">我的订单</a>
+                        </li>
+                        <li class="backChange">
+                            <a href="">我的账户</a>
+                            <span></span>
+                            <div class="hiddenLayer">
+                                <a href="">我的收藏夹</a>
+                                <a href="">账户余额</a>
+                                <a href="">我的优惠券</a>
+                                <a href="">我的书币</a>
+                                <a href="">收货地址</a>
+                                <a href="">我的书评</a>
+                                <a href="">我的消息</a>
+                                <a href="">书币换券</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">帮助中心</a>
+                        </li>
+                        <li class="backChange">
+                            <a href="">手机中图</a>
+                            <span></span>
+
+                            <div class="hiddenLayer" style="left: initial; right: -1px;">
+                                <!-- 二维码结构 -->
+                                <div class="erweimaWrap">
+                                    <div class="erweima">
+                                        <img src="../images/weiboerweima.jpg" alt="" />
+                                    </div>
+                                    <div class="text">
+                                        <b>扫一扫</b>
+                                        <i>
+                                            关注中国网<br />
+                                            官方微博
+                                        </i>
+                                    </div>
+                                </div>
+                                <!-- 二维码结构 -->
+                                <div class="erweimaWrap">
+                                    <div class="erweima">
+                                        <img src="../images/weixinerweima.jpg" alt="" />
+                                    </div>
+                                    <div class="text">
+                                        <b>扫一扫</b>
+                                        <i>
+                                            关注中国网<br />
+                                            微信公众号
+                                        </i>
+                                    </div>
+                                </div>
+                                <!-- 二维码结构 -->
+                                <div class="erweimaWrap">
+                                    <div class="erweima">
+                                        <img src="../images/phoneerweima.jpg" alt="" />
+                                    </div>
+                                    <div class="text">
+                                        <b>手机中图</b>
+                                        <i>
+                                            进入中图<br />
+                                            手机触屏版
+                                        </i>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- 头部搜索块结构 -->
+        <div class="search">
+            <!-- 居中包裹块 -->
+            <div class="searchWrap">
+                <!-- 左侧网站logo -->
+                <div class="ztLogo">
+                    <h1>
+                        中国图书网
+                        <a href="" title="中国图书网">
+                            <img src="../images/logo0508.png" alt="" />
+                        </a>
+                    </h1>
+                </div>
+                <!-- 中间搜索框结构 -->
+                <div class="searchCenter">
+                    <div class="inputWrap">
+                        <div class="inputInner">
+                            <input type="text" placeholder="碎语文学-莫言文集" />
+
+                            <div class="searchText">
+                                <span>
+                                    搜索
+                                </span>
+                            </div>
+
+                            <div class="searchTabWrap">
+                                <span>搜索全部 <i class="icon"></i></span>
+                                <ul class="searchOptions">
+                                    <li>
+                                        <span>搜索全部</span>
+                                    </li>
+                                    <li><span>书名</span></li>
+                                    <li><span>作者</span></li>
+                                    <li><span>出版社</span></li>
+                                    <li><span>ISBN</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <span class="highSearch"><a href="">高级搜索</a></span>
+                    </div>
+                    <!-- 搜索栏底部导航结构 -->
+                    <nav class="inputBottom">
+                        <li><a href="">宇宙超度指南</a></li>
+                        <li><a href="">潜能者们</a></li>
+                        <li><a href="">18岁给我一个姑娘</a></li>
+                        <li><a href="">民国好时光</a></li>
+                        <li><a href="">春琴抄</a></li>
+                    </nav>
+                </div>
+                <!-- 右侧滚动通知样式 -->
+                <div class="scrollMessage">
+                    <p class="newUserR">
+                        新用户注册即送5元!
+                    </p>
+                    <p>
+                        每日签到抽红包
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- 头部导航栏结构 -->
+        <nav class="header_nav">
+            <div class="header_nav_wrap">
+                <ul>
+                    <li><a href="" class="active">首页</a></li>
+                    <li><a href="">淘书团</a></li>
+                    <li>
+                        <a href=""
+                            style="background: url(../images/naozhong_icon.png) no-repeat; background-position: 8px 5px;">今日值得买</a>
+                    </li>
+                    <li>
+                        <a href=""
+                            style="background: url(../images/newfivestar.png) no-repeat; background-position: 8px 5px;">五星书</a>
+                    </li>
+                    <li><a href="">畅销榜</a></li>
+                    <li><a href="">9.9包邮</a></li>
+                    <li><a href="">出版社浏览</a></li>
+                    <li><a href="">闲情雅趣</a></li>
+                    <li><a href="">批发</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content">
+        <!--Banner广告-->
+
+        <!--面包屑-->
+        <div class="w1200 clearfix">
+            <div class="crumbsBar">
+                <div class="crumbsNav clearfix">
+                    <div class="crumsItem">
+                        <a href="/">中国图书网</a>
+                    </div>
+                    <i class="">&gt;</i>
+                    <div class="crumsItem"><a href="/kinder/14000000/">传记</a></div><i class="">&gt;</i>
+                    <div class="crumsItem"><a href="/kinder/14310000/">女性人物</a></div><i class=""></i>
+                    <div class="crumsItem">
+                        <span>张爱玲-她从海上来-第二版</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--图书详情-->
+        <div class="w1200">
+            <!--缺货提示-->
+
+        </div>
+        <div class="w1200">
+            <div class="bookInfoWrap clearfix">
+                <div class="bookDetaiWrap">
+
+                    <div class="bookCover">
+
+                        <div class="box">
+                            <div class="coverImg" id="popbigpic">
+                                <a href="javascript:void(0)" class="img">
+                                    <img src="http://image12.bookschina.com/2015/20150726/B7078536.jpg" class="jqzoom"
+                                        alt="张爱玲-她从海上来-第二版"
+                                        rel="http://image12.bookschina.com/2015/20150726/7078536.jpg">
+                                </a>
+
+                                <input type="hidden" value="http://image12.bookschina.com/2015/20150726/7078536.jpg"
+                                    id="bigImgSrc">
+
+                                <div class="activeIcon">
+                                    <img src="/Images/bookdetailactiveicon.png">
+                                </div>
+
+                                <span class="bigIconTip"></span>
+
+                            </div>
+                        </div>
+
+                        <div class="bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1578901460713"><a href="#"
+                                class="bds_more" data-cmd="more"
+                                style="background: url(/Images/childredSprit.png?id=180530) no-repeat -438px -205px; font-size: 14px; padding-left: 17px; color: #e60000;">分享</a>
+                        </div>
+                        <script>
+                            var textString = $(".activeItemWrap").text();
+                            window._bd_share_config = {
+                                "common": {
+                                    "bdSnsKey": {},
+                                    "bdText": "《张爱玲-她从海上来-第二版》 张爱玲的一生可以用大起大落、大悲大喜来形容。痛定思痛的爱情经历，五光十色的成名经历，流光溢彩的香港传奇，十里洋场的上海故事，以及寂寞萧瑟的淡然结局。 作者：艾嘉 著，石油工业出版社出版，售价10.4（3.0折）正在参与促销：今日主打折上7折",
+                                    "bdPopupOffsetLeft": -92,
+                                    "bdMini": "2",
+                                    "bdMiniList": ["weixin", "tsina", "douban", "sqq", "qzone", "evernotecn"],
+                                    "bdPic": "http://image12.bookschina.com/2015/20150726/B7078536.jpg",
+                                    "bdStyle": "0",
+                                    "bdSize": "16"
+                                },
+                                "share": {
+                                    "bdSize": 16
+                                }
+                            };
+                            with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement(
+                                    'script')).src =
+                                'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(
+                                    -new Date() / 36e5)];
+                        </script>
+                    </div>
+                    <div class="bookInfo">
+                        <div class="padLeft10">
+                            <h1>张爱玲-她从海上来-第二版</h1>
+
+                            <p class="recomand">
+                                张爱玲的一生可以用大起大落、大悲大喜来形容。痛定思痛的爱情经历，五光十色的成名经历，流光溢彩的香港传奇，十里洋场的上海故事，以及寂寞萧瑟的淡然结局。</p>
+
+                            <div class="author"><span>作者：</span><a
+                                    href="/book_find2/?stp=%u827e%u5609%u8457&amp;sCate=3" target="_blank">艾嘉 著</a>
+                            </div>
+
+                            <div class="publisher"><span>出版社：</span><a href="/publish/5021/"
+                                    target="_blank">石油工业出版社</a><span>出版时间：</span><i>2016-01-01</i></div>
+
+
+                            <div class="otherInfor">
+
+                                <span>开本：</span>
+                                <em>16开</em>
+
+                                <span>页数：</span>
+                                <i>259页</i>
+
+                            </div>
+
+                            <div class="sort"><span>排名：</span><a href="/24hour/14000000/" target="_blank">传记销量榜</a>
+                                <b>第<i>1</i>位</b></div>
+                        </div>
+                        <div class="priceWrap">
+                            <span class="sellPriceTit">中 图 价:</span><span class="sellPrice"><i>¥</i>10.4</span><span
+                                class="discount">(3.0折)</span>
+                            <span class="priceTit">定价:</span><del class="price">¥34.8 </del>
+
+                            <a href="/RegUser/login.aspx?url=/7078536.htm" target="_blank">登录后可看到会员价</a>
+
+                        </div>
+                        <div class="activeIcon"><span class="activeTit" target="_blank">促销活动:</span>
+                            <div class="activeItemWrap"><a target="_blank" href="/tejia/NewTeHui.aspx"
+                                    style="background:#935ec5">今日主打折上7折</a></div>
+                        </div>
+
+
+
+                        <div class="oparateButton clearfix">
+
+                            <a href="javascript:void(0);"
+                                onclick="window.open('/shopcar/shoppingcart_add.aspx?book_id=7078536','_self');"
+                                class="buyButton">加入购物车</a>
+
+                            <a href="javascript:frAdd('7078536');" class="collectBtn">收藏</a>
+
+
+                            <div class="freightPolicyWrap" style="cursor: auto;">
+                                <div style="color:#666666">运费6元，满69元免运费</div>
+                                <span class="freightTit"
+                                    style="width:auto;padding-left:18px; padding-right:0px; line-height: 36px; color:#024f7d; cursor:pointer;position: relative; top: -4px;"><a
+                                        target="_blank" href="/question/default3.asp" style="color:#024f7d;"><i
+                                            class="icon"
+                                            style="left:0px; background:url(http://image31.bookschina.com/pro-images/child2.png?id=5511) no-repeat; height: 14px; width: 14px;"></i>快递不能达地区使用邮政小包，运费14元起</a></span>
+                                <div class="freightCon" style="width: 370px; top:40px; left:0px;">
+                                    <div class="reightPolicy" style="color:#666; border-color:#999">
+                                        云南、广西、海南、新疆、青海、西藏六省，部分地区快递不可达</div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="buyTip">
+                            <span>温馨提示：</span>5折以下图书主要为出版社尾货，大部分为全新，个别图书品相8-9成新、切口
+                            <br>
+                            有划线标记、光盘等附件不全
+                        </div>
+
+                    </div>
+                </div>
+                <!--本类五星书-->
+                <div class="fiveStartWrap">
+                    <div class="fiveStart">
+                        <div class="fiveStartTit">
+                            <span>本类五星书</span><a href="/fivestar/Default.aspx?flh=14" target="_blank">更多&gt;</a>
+                        </div>
+                        <div class="fiveStartCon">
+                            <ul>
+                                <li class="cur">
+                                    <em>&gt;</em>
+                                    <p>立人三部曲:盗火与革命+安生与立命+世道与人心(全三册)</p>
+                                    <div class="bookCur">
+                                        <div class="bpic">
+                                            <a href="/8071947.htm" target="_blank" title="立人三部曲:盗火与革命+安生与立命+世道与人心(全三册)">
+                                                <img data-original="http://image31.bookschina.com/2019/fm/05/s8071947.jpg"
+                                                    src="http://image31.bookschina.com/2019/fm/05/s8071947.jpg"
+                                                    alt="立人三部曲:盗火与革命+安生与立命+世道与人心(全三册)" class="lazyImg">
+                                            </a>
+                                        </div>
+                                        <div class="bDetai">
+                                            <div class="bName"><a href="/8071947.htm" target="_blank"
+                                                    title="立人三部曲:盗火与革命+安生与立命+世道与人心(全三册)">立人三部曲:盗火与革命+安生与立命+世道与人心(全三册)</a>
+                                            </div>
+                                            <div class="startWrap">
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                            </div>
+                                            <div class="bPrice"><span class="sellPrice">¥75.6</span><span
+                                                    class="price">¥126</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="">
+                                    <em>&gt;</em>
+                                    <p>枭雄录:古代世界十四位枭雄的成败启示录</p>
+                                    <div class="bookCur">
+                                        <div class="bpic">
+                                            <a href="/8022002.htm" target="_blank" title="枭雄录:古代世界十四位枭雄的成败启示录">
+                                                <img data-original="http://image31.bookschina.com/2019/fm/05/s8022002.jpg"
+                                                    src="http://image31.bookschina.com/2019/fm/05/s8022002.jpg"
+                                                    alt="枭雄录:古代世界十四位枭雄的成败启示录" class="lazyImg">
+                                            </a>
+                                        </div>
+                                        <div class="bDetai">
+                                            <div class="bName"><a href="/8022002.htm" target="_blank"
+                                                    title="枭雄录:古代世界十四位枭雄的成败启示录">枭雄录:古代世界十四位枭雄的成败启示录</a></div>
+                                            <div class="startWrap">
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                            </div>
+                                            <div class="bPrice"><span class="sellPrice">¥35.7</span><span
+                                                    class="price">¥169.8</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em>&gt;</em>
+                                    <p>法国文人相轻史</p>
+                                    <div class="bookCur">
+                                        <div class="bpic">
+                                            <a href="/7922477.htm" target="_blank" title="法国文人相轻史">
+                                                <img data-original="http://image12.bookschina.com/2018/20181018/1/s7922477.jpg"
+                                                    src="http://image31.bookschina.com/images/feng85.jpg" alt="法国文人相轻史"
+                                                    class="lazyImg">
+                                            </a>
+                                        </div>
+                                        <div class="bDetai">
+                                            <div class="bName"><a href="/7922477.htm" target="_blank"
+                                                    title="法国文人相轻史">法国文人相轻史</a></div>
+                                            <div class="startWrap">
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                            </div>
+                                            <div class="bPrice"><span class="sellPrice">¥31.2</span><span
+                                                    class="price">¥48</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em>&gt;</em>
+                                    <p>岭南文化知识书系:中国电影先驱蔡楚生</p>
+                                    <div class="bookCur">
+                                        <div class="bpic">
+                                            <a href="/7916945.htm" target="_blank" title="岭南文化知识书系:中国电影先驱蔡楚生">
+                                                <img data-original="http://image31.bookschina.com/2018/zuo/10/s7916945.jpg"
+                                                    src="http://image31.bookschina.com/images/feng85.jpg"
+                                                    alt="岭南文化知识书系:中国电影先驱蔡楚生" class="lazyImg">
+                                            </a>
+                                        </div>
+                                        <div class="bDetai">
+                                            <div class="bName"><a href="/7916945.htm" target="_blank"
+                                                    title="岭南文化知识书系:中国电影先驱蔡楚生">岭南文化知识书系:中国电影先驱蔡楚生</a></div>
+                                            <div class="startWrap">
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                            </div>
+                                            <div class="bPrice"><span class="sellPrice">¥3</span><span
+                                                    class="price">¥10</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em>&gt;</em>
+                                    <p>广东农家书屋系列:民主革命的先行者-孙中山</p>
+                                    <div class="bookCur">
+                                        <div class="bpic">
+                                            <a href="/7916927.htm" target="_blank" title="广东农家书屋系列:民主革命的先行者-孙中山">
+                                                <img data-original="http://image31.bookschina.com/2018/zuo/10/s7916927.jpg"
+                                                    src="http://image31.bookschina.com/images/feng85.jpg"
+                                                    alt="广东农家书屋系列:民主革命的先行者-孙中山" class="lazyImg">
+                                            </a>
+                                        </div>
+                                        <div class="bDetai">
+                                            <div class="bName"><a href="/7916927.htm" target="_blank"
+                                                    title="广东农家书屋系列:民主革命的先行者-孙中山">广东农家书屋系列:民主革命的先行者-孙中山</a></div>
+                                            <div class="startWrap">
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                            </div>
+                                            <div class="bPrice"><span class="sellPrice">¥3</span><span
+                                                    class="price">¥10</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em>&gt;</em>
+                                    <p>(精)卡帕自传:颤抖的镜头(鎏金口)</p>
+                                    <div class="bookCur">
+                                        <div class="bpic">
+                                            <a href="/7893060.htm" target="_blank" title="(精)卡帕自传:颤抖的镜头(鎏金口)">
+                                                <img data-original="http://image31.bookschina.com/2018/zuo/9/s7893060.jpg"
+                                                    src="http://image31.bookschina.com/images/feng85.jpg"
+                                                    alt="(精)卡帕自传:颤抖的镜头(鎏金口)" class="lazyImg">
+                                            </a>
+                                        </div>
+                                        <div class="bDetai">
+                                            <div class="bName"><a href="/7893060.htm" target="_blank"
+                                                    title="(精)卡帕自传:颤抖的镜头(鎏金口)">(精)卡帕自传:颤抖的镜头(鎏金口)</a></div>
+                                            <div class="startWrap">
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                            </div>
+                                            <div class="bPrice"><span class="sellPrice">¥117</span><span
+                                                    class="price">¥78</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <em>&gt;</em>
+                                    <p>(平)中国文库第二辑·艺术类:齐白石的一生</p>
+                                    <div class="bookCur">
+                                        <div class="bpic">
+                                            <a href="/7880197.htm" target="_blank" title="(平)中国文库第二辑·艺术类:齐白石的一生">
+                                                <img data-original="http://image31.bookschina.com/2019/zuo/1/s7880197.jpg"
+                                                    src="http://image31.bookschina.com/images/feng85.jpg"
+                                                    alt="(平)中国文库第二辑·艺术类:齐白石的一生" class="lazyImg">
+                                            </a>
+                                        </div>
+                                        <div class="bDetai">
+                                            <div class="bName"><a href="/7880197.htm" target="_blank"
+                                                    title="(平)中国文库第二辑·艺术类:齐白石的一生">(平)中国文库第二辑·艺术类:齐白石的一生</a></div>
+                                            <div class="startWrap">
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                                <i class="one"></i>
+                                            </div>
+                                            <div class="bPrice"><span class="sellPrice">¥11.9</span><span
+                                                    class="price">¥15</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="foot">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            $(".foot").load("../static/footer.html");
+        </script>
+    </div>
+</body>
+
+</html>

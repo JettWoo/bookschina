@@ -119,6 +119,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 45, ../sass/_header.scss */
 .loginHead .logoInner .ad .yizhe {
   background-position: -289px;
+  margin-right: 0;
 }
 
 /* line 6, ../sass/_footer.scss */
@@ -202,38 +203,47 @@ body {
 .registerForm .registerTitle {
   height: 24px;
   line-height: 24px;
+  font-family: 'Microsoft YaHei';
 }
-/* line 25, ../sass/register.scss */
+/* line 26, ../sass/register.scss */
 .registerForm .registerTitle b {
   border-left: 3px solid #ff0000;
   font-size: 22px;
   color: #333;
   font-weight: bold;
   padding-left: 13px;
+  line-height: 24px;
+  font-family: 'Microsoft YaHei';
+  display: inline-block;
 }
-/* line 33, ../sass/register.scss */
+/* line 37, ../sass/register.scss */
 .registerForm .registerTitle span {
+  display: inline-block;
+  padding-top: 5px;
   font-size: 14px;
-  color: #ff0000;
+  color: #e60000;
   margin-left: 11px;
 }
-/* line 39, ../sass/register.scss */
+/* line 45, ../sass/register.scss */
 .registerForm .registerTitle .backLogin {
   float: right;
   font-size: 14px;
   color: #c1c1c1;
 }
-/* line 44, ../sass/register.scss */
+/* line 50, ../sass/register.scss */
 .registerForm .registerTitle .backLogin a {
   color: #999;
   text-decoration: none;
+  display: inline-block;
+  margin-top: 5px;
 }
-/* line 51, ../sass/register.scss */
+/* line 59, ../sass/register.scss */
 .registerForm .registerInputWrap {
   margin-top: 50px;
+  position: relative;
 }
-/* line 54, ../sass/register.scss */
-.registerForm .registerInputWrap input[type='submit'] {
+/* line 63, ../sass/register.scss */
+.registerForm .registerInputWrap .subButton {
   width: 380px;
   height: 50px;
   line-height: 50px;
@@ -243,30 +253,51 @@ body {
   color: #fff;
   border-radius: 5px;
   margin-left: 180px;
+  margin-top: 23px;
+}
+/* line 76, ../sass/register.scss */
+.registerForm .registerInputWrap .otherLink {
+  margin: 25px 0 0 180px;
+  width: 380px;
+  overflow: hidden;
+  line-height: 24px;
+}
+/* line 81, ../sass/register.scss */
+.registerForm .registerInputWrap .otherLink a {
+  float: left;
+  color: #666a6b;
+  font-size: 14px;
+  text-decoration: none;
+}
+/* line 87, ../sass/register.scss */
+.registerForm .registerInputWrap .otherLink .newUserReg {
+  float: right;
 }
 
-/* line 69, ../sass/register.scss */
+/* line 96, ../sass/register.scss */
 .item .contentInput {
   overflow: hidden;
   line-height: 42px;
 }
-/* line 73, ../sass/register.scss */
+/* line 100, ../sass/register.scss */
 .item .contentInput .label {
   width: 150px;
   text-align: right;
   float: left;
+  font-size: 16px;
+  color: #333;
 }
-/* line 80, ../sass/register.scss */
+/* line 109, ../sass/register.scss */
 .item .contentInput .inputWrap {
   box-sizing: border-box;
   width: 340px;
   height: 42px;
-  border: 1px solid #333;
+  border: 1px solid #dcdcdc;
   border-radius: 4px;
   float: left;
   margin-left: 30px;
 }
-/* line 88, ../sass/register.scss */
+/* line 118, ../sass/register.scss */
 .item .contentInput .inputWrap input {
   border: none;
   outline: none;
@@ -275,20 +306,43 @@ body {
   padding-left: 10px;
   background: transparent;
 }
-/* line 96, ../sass/register.scss */
+/* line 127, ../sass/register.scss */
 .item .contentInput .inputWrap input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px white inset;
 }
-/* line 102, ../sass/register.scss */
+/* line 133, ../sass/register.scss */
 .item .contentInput .info {
   margin-left: 20px;
+  height: 30px;
 }
-/* line 107, ../sass/register.scss */
+/* line 139, ../sass/register.scss */
 .item .tip {
   height: 30px;
   line-height: 30px;
+  font-size: 12px;
 }
-/* line 111, ../sass/register.scss */
+/* line 144, ../sass/register.scss */
 .item .tip p {
+  display: none;
   margin-left: 180px;
+  color: #e60000;
+}
+
+/* line 154, ../sass/register.scss */
+#confirmCode .inputWrap {
+  width: 200px;
+}
+/* line 158, ../sass/register.scss */
+#confirmCode .codeWrap {
+  float: left;
+  margin-left: 30px;
+}
+
+/* line 164, ../sass/register.scss */
+.otherLoginWrap .therLoginTit {
+  background: url(../Images/logindot.jpg) repeat-x center;
+  margin-left: 180px;
+  text-align: center;
+  width: 380px;
+  margin-top: 46px;
 }
