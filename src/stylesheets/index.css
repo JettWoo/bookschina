@@ -681,7 +681,7 @@ header {
 }
 /* line 96, ../sass/_leftNav.scss */
 .navContent .ItemWrap h4 {
-  background: url(../images/);
+  /* background: url(../images/); */
   margin-bottom: 10px;
 }
 /* line 99, ../sass/_leftNav.scss */

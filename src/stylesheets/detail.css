@@ -10,7 +10,7 @@ button{border:0}
 dd,dl,dt,li,ol,ul{list-style:none}
 b,em,i,strong{font-style:normal;font-weight:400}
 body{font-size:12px;background:#fff;font-family:Arial,Verdana,"宋体"}
-a{text-decoration:none;color:#333;outline:none blr:expression(this.onFocus=this.blur())}
+a{text-decoration:none;color:#333;outline:none;}
 a:hover{text-decoration:underline;color:#e70b1c}
 .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 .clearfix{zoom:1;display:block}
@@ -464,7 +464,7 @@ a:hover{text-decoration:underline;color:#e70b1c}
 .popbig { border: none; border-radius: 0px; }
 .popbig .popBigWrap { padding: 60px; position: relative; }
 .popbig .popBigWrap .popBigInner { text-align: center; }
-.popbig .popBigWrap .popBigInner img { cursor: url(../Images/fangda.png),pointer; }
+.popbig .popBigWrap .popBigInner img { cursor: /* url(../Images/fangda.png), */pointer; }
 .popbig .popBigWrap.nobigImg .popBigInner img { cursor:default;  }
 
 

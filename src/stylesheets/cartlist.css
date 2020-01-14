@@ -490,10 +490,10 @@ body {font-family: "Microsoft YaHei",tahoma,arial,"Hiragino Sans GB","\5b8b\4f53
 .empty_cart.show { display:block; }
 .full_car { display:none;}
 .full_car.show { display:block; }
-#loadImg { height:300px; background:url(../images/loding.gif) no-repeat center;}
+#loadImg { height:300px; background:/* url(../images/loding.gif) */ no-repeat center;}
 /*内容部分*/
 .content{background: none; min-height: 180px;}
-.content.loading {background: url(../images/loding_01.gif) no-repeat center;}
+.content.loading {background: /* url(../images/loding_01.gif) */ no-repeat center;}
 .content .cartEmpty { padding: 80px 0px 120px;}
 .content .cartEmpty .emptyIcon {background:url(../images/carSprites.png) no-repeat left -222px;  float: left; width: 89px; height: 70px; margin-left: 252px;}
 .content .cartEmpty  .emptyText { padding-left: 30px; float: left; width: 629px; font-size: 14px;}
@@ -524,7 +524,7 @@ body {font-family: "Microsoft YaHei",tahoma,arial,"Hiragino Sans GB","\5b8b\4f53
 
 /*购物车标题*/
 .shoppingCar{background: none;}
-.shoppingCar.loading {background: url(../images/loding_01.gif) no-repeat center;}
+.shoppingCar.loading {background: /* url(../images/loding_01.gif) */ no-repeat center;}
 .shoppingCar .shoppingTitle { border:1px solid #e4e4e4; height:38px;}
  .shoppingCar .shoppingTitle ul { overflow:hidden; line-height:38px;}
 .shoppingCar .shoppingTitle ul li { overflow:hidden; float:left; color:#666;}
@@ -618,8 +618,8 @@ body {font-family: "Microsoft YaHei",tahoma,arial,"Hiragino Sans GB","\5b8b\4f53
 
 .giftWrap .adgift_tit { line-height:40px;  overflow:hidden; height:40px;}
 .giftWrap .adgift_tit span { float:left;margin-left:50px; margin-right:10px; color:#2054a8;}
-.giftWrap .adgift_tit a { float:left; color:#fff; height:22px; line-height:22px; padding:0 17px 0 6px; margin:9px 0 0; background:#2a66c8 url(../images/arrow_dwon.png) no-repeat 58px;}
-.giftWrap.tog .adgift_tit a { background:#2054a8 url(../images/arrow_up.png) no-repeat 58px;}
+.giftWrap .adgift_tit a { float:left; color:#fff; height:22px; line-height:22px; padding:0 17px 0 6px; margin:9px 0 0; background:#2a66c8 /* url(../images/arrow_dwon.png) */ no-repeat 58px;}
+.giftWrap.tog .adgift_tit a { background:#2054a8 /* url(../images/arrow_up.png) */ no-repeat 58px;}
 .adgift_list { background-color: #e8f1ff;border-bottom:1px solid #e7e7e7;}
 .adgift_list.hide {display:none;}
 .adgift_list.show {display:block!important;}
@@ -722,7 +722,7 @@ body {font-family: "Microsoft YaHei",tahoma,arial,"Hiragino Sans GB","\5b8b\4f53
 .collectDialog {  position:absolute; left:50%; top:50%; border: 4px solid rgba(0,0,0,.1); background:#fff; border-radius:5px; width:400px; margin-left:-200px; height:160px; margin-top:-80px; z-index:999999;}
 .collectDialog .dialogTittle { height:30px; line-height:30px; background:#f3f3f3; padding:0px 10px;}
 .collectDialog .dialogTittle span { float:left; color:#666; font-size:14px;}
-.collectDialog .dialogTittle a { float:right; height:13px; width:13px; background:url(.Sprite./images/cars.png) no-repeat left -146px; margin-top:8px; text-indent:-9999px; overflow:hidden;}
+.collectDialog .dialogTittle a { float:right; height:13px; width:13px; background:/* url(.Sprite./images/cars.png) */ no-repeat left -146px; margin-top:8px; text-indent:-9999px; overflow:hidden;}
 .dialogContent { position:relative; padding:10px 40px 40px;}
 .warnIcon { position:absolute; width:48px; height:42px;  background:url(../images/carSprites.png) no-repeat -1px -92px; }
 .dialogContent .text { padding-left:58px;}
@@ -777,7 +777,7 @@ body {font-family: "Microsoft YaHei",tahoma,arial,"Hiragino Sans GB","\5b8b\4f53
 /*弹框css*/
 .pop_div { position: absolute;   z-index: 9999;   padding-bottom:9px; }
 .pop_div .inner { border: 1px solid #c9c9c9;width: 123px; background:#fff; padding:0px 15px; height: 74px; position:relative;}
-.pop_div .inner b.arrow { position:absolute; bottom:-9px; left:38px; width:13px; height:9px;background:url(../images/icon_sprite.png) no-repeat -17px -35px;}
+.pop_div .inner b.arrow { position:absolute; bottom:-9px; left:38px; width:13px; height:9px;background:/* url(../images/icon_sprite.png) */ no-repeat -17px -35px;}
 .pop_div p { font-size: 12px; color: #666;  text-align: left; padding:10px 0px; }
 .pop_div .pop_opr { text-align: center; margin-top:5px; }
 .pop_div .pop_opr a { margin:0px 5px;}
@@ -785,7 +785,7 @@ body {font-family: "Microsoft YaHei",tahoma,arial,"Hiragino Sans GB","\5b8b\4f53
 
 .popWrap { border:none; border-radius:0px; }
 .popWrap .popTitle .close{ display:none;}
-.popWrap .popContent {background:url(../images/loding.gif) no-repeat center; background-size:30px 12px;}
+.popWrap .popContent {background:/* url(../images/loding.gif) */ no-repeat center; background-size:30px 12px;}
 
 
 /* 公告 确认公告  */
