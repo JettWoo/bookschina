@@ -1,9 +1,9 @@
 require.config({
-    baseUrl: 'https://cdnjs.cloudflare.com/ajax/libs/', //设置模块的公共路径
+   // baseUrl: 'https://cdnjs.cloudflare.com/ajax/libs/', //设置模块的公共路径
     paths: {
-        'jquery': 'jquery/1.12.4/jquery.min',
-        'jquerycookie': 'jquery-cookie/1.4.1/jquery.cookie.min',
-        'jquerylazyload': 'jquery.lazyload/1.9.1/jquery.lazyload.min'
+        'jquery': 'https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min',
+        'jquerycookie': 'https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min',
+        'jquerylazyload': 'https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min'
     }
 });
 

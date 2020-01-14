@@ -1,0 +1,36 @@
+{
+  "name": "bookschina",
+  "version": "1.0.0",
+  "description": "自实现中国图书网",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JettWoo/bookschina.git"
+  },
+  "keywords": [
+    "图书"
+  ],
+  "author": "Jett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JettWoo/bookschina/issues"
+  },
+  "homepage": "https://github.com/JettWoo/bookschina#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-load-plugins": "^2.0.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1"
+  }
+}

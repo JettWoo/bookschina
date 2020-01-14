@@ -60,6 +60,15 @@ body {
         margin-top: 50px;
         position: relative;
 
+        .hoverImg{
+            position: absolute;
+            left: 30%;
+            top: -150px;
+            width: 150px;
+            img{
+                max-width:150px;
+            }
+        }
         .subButton {
             width: 380px;
             height: 50px;

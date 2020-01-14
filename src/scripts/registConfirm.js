@@ -1,4 +1,4 @@
-class RegConf{
+/* class RegConf{
     constructor(){
         this.phoneNumInput = $(".phoneNum");
         this.pwd = $(".pwd");
@@ -12,11 +12,11 @@ class RegConf{
     init(){
         console.log("aaaa");
     }
-}
+} */
 
 
 define([], function(){
     return{
-        RegConf
+        //RegConf
     }
 });

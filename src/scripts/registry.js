@@ -1,6 +1,5 @@
 class RegConf {
     constructor() {
-
         this.phoneNumInput = $(".phoneNum");
         this.pwd = $(".pwd");
         this.pwdConfirm = $(".pwdConfirm");
@@ -145,13 +144,14 @@ class RegConf {
         let _this = this;
 
         this.pwdConfirm.focus(() => {
-            this.pwd.attr("placeholder", "");
+            this.pwdConfirm.attr("placeholder", "");
             tip.show();
             info.hide();
             _this.confirms.checkPwdConf = false;
         });
+        this.pwdConfirm.blur(() => {
+            _this.pwdConfirm.attr("placeholder", tipText.placeholder);
 
-        this.pwdConfirm.blur(()=> {
             let firstValue = this.pwd.val();
             let value = this.pwdConfirm.val();
 
@@ -186,7 +186,7 @@ class RegConf {
                     }
                 }
             }
-        })
+        }); 
     }
 
     checkConfirmCode(){
@@ -211,6 +211,7 @@ class RegConf {
         });
 
         this.confirmCode.blur(function(){
+            $(this).attr("placeholder", tipText.placeholder)
             if(!$(this).val()){
                 wrap.addClass("danger");
                 tip.addClass("danger");
@@ -235,8 +236,6 @@ class RegConf {
             }
         })
     }
-
-
     checkSubmit(){
         this.submit.click(()=>{
             if(this.confirms.checkPhone && this.confirms.checkPwd && this.confirms.checkPwdConf && this.confirms.checkConf){
@@ -258,10 +257,18 @@ class LoginConf{
         this.pwd = $(".pwd");
         this.confirmCode = $(".confirmCode");
         this.submit = $(".subButton");
+        this.hoverImg = $(".hoverImg img");
+
         this.confirms = {
             checkPhone: false,
             checkPwd: false,
             checkConf: false
+        }
+
+        this.hoverImgs = {
+            normal: '../images/normal.0447fe9.png',
+            phoneFocus: "../images/greeting.1415c1c.png",
+            pwdFocus: '../images/blindfold.58ce423.png'
         }
     }
 
@@ -287,10 +294,12 @@ class LoginConf{
             this.phoneNumInput.attr("placeholder", "");
             tip.show();
             info.hide();
+            this.hoverImg.attr("src", this.hoverImgs.phoneFocus);
         });
         let _this =this;
         this.phoneNumInput.blur(function () {
             $(this).attr("placeholder", tipText.placeholder);
+            _this.hoverImg.attr("src", _this.hoverImgs.normal);
             let value = $(this).val();
             if (!phoneReg.test(value)) {
                 wrap.addClass("danger");
@@ -327,12 +336,13 @@ class LoginConf{
             this.pwd.attr("placeholder", "");
             tip.show();
             info.hide();
+            this.hoverImg.attr("src", this.hoverImgs.pwdFocus);
         });
 
         this.pwd.blur(function () {
             $(this).attr("placeholder", tipText.placeholder);
+            _this.hoverImg.attr("src", _this.hoverImgs.normal);
             let value = $(this).val();
-            //console.log("val:", value)
             if (!value) {
                 wrap.addClass("danger");
                 tip.addClass("danger");
@@ -399,9 +409,12 @@ class LoginConf{
             tip.show();
             info.hide();
             _this.confirms.checkConf = false;
+            this.hoverImg.attr("src", this.hoverImgs.phoneFocus);
         });
 
         this.confirmCode.blur(function(){
+            $(this).attr("placeholder", tipText.placeholder);
+            _this.hoverImg.attr("src", _this.hoverImgs.normal);
             if(!$(this).val()){
                 wrap.addClass("danger");
                 tip.addClass("danger");
@@ -443,7 +456,7 @@ class LoginConf{
 }
 
 
-define([], function (reg) {
+define(["registConfirm"], function (reg) {
     return {
         RegConf: new RegConf().init(),
         LoginConf: new LoginConf().init()
