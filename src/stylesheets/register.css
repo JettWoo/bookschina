@@ -104,13 +104,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding: 27px 0;
 }
 /* line 34, ../sass/_header.scss */
-.loginHead .logoInner .ad span {
+.loginHead .logoInner .fr span {
   float: left;
   line-height: 36px;
   padding-left: 49px;
   margin-right: 33px;
   font-size: 12px;
-  background: url(../images/promiseAd.png) no-repeat left;
+  background:url(../images/promiseAd.png) no-repeat left;
 }
 /* line 42, ../sass/_header.scss */
 .loginHead .logoInner .ad .baoyou {
@@ -137,7 +137,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: left;
   width: 120px;
   text-align: center;
-  background: url(../images/loginRegistfootline.jpg) no-repeat right center;
+  background:  url(../images/loginRegistfootline.jpg) no-repeat right center;
 }
 /* line 22, ../sass/_footer.scss */
 .loginRegistryFoot .footNav li:last-child {
@@ -360,7 +360,7 @@ body {
 
 /* line 181, ../sass/register.scss */
 .otherLoginWrap .therLoginTit {
-  background: url(../Images/logindot.jpg) repeat-x center;
+  background: url(../images/logindot.jpg) repeat-x center;
   margin-left: 180px;
   text-align: center;
   width: 380px;

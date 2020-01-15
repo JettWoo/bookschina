@@ -12,11 +12,9 @@
   <meta name="description"
     content="中国图书网（中图网）：网上书店，创办于1998年，通过好书推荐、畅销书、淘书团、特色专题等栏目及各种促销活动，致力于为读者提供价廉物美的正版优质书籍，是爱书人的淘书圣地" />
   <link rel="icon" href="../images/favicon.ico" sizes="32x32" />
-  <!-- <link rel="stylesheet" href="../stylesheets/bootstrap.min.css" />
-  <link rel="stylesheet" href="../stylesheets/index.css" /> -->
 </head>
 
-<body>
+<body id="pageMark" targetPage = "index">
   <!-------------- 顶部广告 ----------->
   <div class="topBanner">
     <section class="banner">
@@ -900,7 +898,7 @@
               <!-- Tab panes -->
               <div class="tab-content">
                 <!-- 切换面板内容结构 -->
-                <div role="tabpanel" class="tab-pane active" id="news">
+                <!-- <div role="tabpanel" class="tab-pane active" id="news">
                   <div class="mainEditor">
                     <div class="mainCover">
                       <a href="">
@@ -1001,7 +999,7 @@
                 </div>
                 <div role="tabpanel" class="tab-pane" id="hotCritical">
                   .123123.
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -1169,7 +1167,13 @@
       <div class="hotBookWrap">
         <!-- 轮播图图片结构 -->
         <ul>
-          <li>
+          <div style="position: absolute;top: 0;left: 0; height: 600px; width: 1524px;" >
+
+          </div>
+          <div style="position: absolute;top: 0;left: 0; height: 600px;  width: 1524px;" class="hideHot">
+
+          </div>
+          <!-- <li>
             <div class="bookCover">
               <a href="">
                 <img src="http://imgt.bookschina.com/2020/tuangou/12694_20200107091324.jpg" alt="" />
@@ -1254,11 +1258,11 @@
               <del class="price">¥98.0</del>
               <span class="discount">4.6折</span>
             </div>
-          </li>
+          </li> -->
         </ul>
         <!-- 轮播左右箭头结构 -->
-        <span class="arrowLeft"> </span>
-        <span class="arrowRight"> </span>
+        <span class="arrowLeft" style="display: none;"> </span>
+        <span class="arrowRight" style="display: none;"> </span>
       </div>
     </section>
 
@@ -2666,15 +2670,6 @@
     <!------- 底部证书结构 -------->
     <div class="certifica"></div>
   </div>
-
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
- <!--  <script src="../scripts/banner.js"></script>
-  <script src="../scripts/bootstrap.min.js"></script> -->
-  <!-- <script>
-    $(".certifica").load("../static/footer.html");
-  </script> -->
-
-  <!-- tab切换 -->
 
 </body>
 

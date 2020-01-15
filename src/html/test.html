@@ -9,7 +9,7 @@
         <input type="text" id="code_input" value="" placeholder="请输入验证码"/><button id="my_button">验证</button>
         <input type="button" class="button" value="换一换">
     </body>
-    <script src="../js/picCode.js">
+    <!-- <script src="../js/picCode.js">
     </script>
     <script>
         var verifyCode = new GVerify("v_container");
@@ -24,5 +24,86 @@
                 alert("验证码错误");
             }
         }
+    </script> -->
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+
+    <script>
+        
+    let data = [
+        {
+            title: '江西地方贸易与税收（1850-1920）',
+            narrative: '区域研究专著2部：《江西地方贸易与税收（1850-1920）》由英国人斯坦利·福勒莱特撰笔，不仅考察了江西贸易变迁与税收状况，而且记载了大量珍贵资料，具有极高的史料价值；《赣文化通志》大16开精装，总达910页，从地理、考古、哲学、军事、经贸、科技、文学、建筑等各方面，详述赣地文化发展历程，是一部时间跨度较大、涵盖内容较广的文化史志。定价136元，现团购价59元包邮！',
+            imgUrl: 'http://imgt.bookschina.com/2020/tuangou/12678_20200104053538.jpg',
+            imgUrls: 'http://imgt.bookschina.com/2020/tuangou/12678_20200104053538.jpg',
+            price: 136.0,
+            isGroupHot: true
+        },
+        {
+            title: '汤素兰暖房子童话·美绘注音版',
+            narrative: '《汤素兰暖房子童话·美绘注音版》全8册，精选著名儿童文学作家汤素兰的短篇佳作，包括斩获陈伯吹儿童文学奖《住在摩天大楼顶层的马》、张天翼童话寓言奖银奖《女孩和栀子花》、海峡两岸童话征文佳作奖《狩猎奇遇》等150余篇，其中多篇作品入选小学语文教材、幼儿师范学校语文教材。汤素兰的作品构思精巧，语言优美，能从平凡的一花一草、一事一物中提炼出人生哲理，让小读者身临其境般感受美好、认知世界，同时传递着爱、亲情、快乐、善良、感恩等一切美好的情感。定价212元，现团购价75元包邮！',
+            imgUrl: 'http://imgt.bookschina.com/2020/tuangou/12676_20200104053757.jpg',
+            imgUrls: 'http://imgt.bookschina.com/2020/tuangou/12676_20200104053757.jpg',
+            price: 212.0,
+            isGroupHot: true
+        },
+        {
+            title: '古书人物辞典',
+            narrative: '稀见老书！古书辞典精装2部：《古书人物辞典》旨在全面系统地介绍我国古代文学作品中的人物形象，上迄先秦，下至近代，以古代诗辞文赋、小说戏曲等文学作品中的人物形象为对象，共设词目4541条；《古书情节辞典》从古代神话、寓言、小说、笔记、弹词、鼓词、戏曲、诗词、散文、史籍中，选取其含有故事情节的内容，经过提炼和浓缩，分编为2500余个条目。两部辞典各具特色，又互为映照，涉及数千种古籍，包括不少一般读者罕见的资料，从不同的侧面为读者呈现了我国灿烂的古代文化。定价146元，现团购价88元包邮！',
+            imgUrl: 'http://imgt.bookschina.com/2020/tuangou/12676_20200104053757.jpg',
+            imgUrls: 'http://imgt.bookschina.com/2020/tuangou/12676_20200104053757.jpg',
+            price: 146.0,
+            isGroupHot: true
+        },
+        {
+            title: '黄河文化史',
+            narrative: '李学勤、徐吉军主编《黄河文化史》精装全三册，总计170余万字，达2179页。其工程浩大，由36位作者联合著成，包括了考古学、文化学、历史学界的老一辈和中青年学者。全书上起远古、下迄近代，对黄河流域这一大区域文化进行了详细论述，涵盖政治、经济、军事、艺术、哲学、科技、文学、史学、宗教、道德规范、社会生活习俗等方面，更配有多幅插图，全方位、多层次探索了黄河文化的孕育、发生、发展、繁荣及转移的历史过程。定价138元，现团购价55元包邮！',
+            imgUrl: 'http://imgt.bookschina.com/2020/tuangou/12664_20200102094100.jpg',
+            imgUrls: 'http://imgt.bookschina.com/2020/tuangou/12664_20200102094100.jpg',
+            price: 138.0,
+            isGroupHot: true
+        },
+        {
+            title: '中国古典文学辞典',
+            narrative: ' 稀见老书！“中国古典文学研究专著”精装2部：《中国古典文学辞典》，收录词目近三千条，较为系统地介绍了从上古至近代主要作家和作品，以及有关文体、作法、流派、词牌、曲牌和各类文学作品中习见的人物形象等内容，书后还介绍了有关古典文学的一些常用的工具书，是一部检索方便的古典文学案头备查读本；《中国伪书大观》，从伪书的来历谈起，总结伪书的种类，归纳辨伪意义及方法，回顾历代辨伪学的发展情况，阐述伪书的价值，继而对近200部伪书进行论述，条理清晰、论证平实，对古书辨伪具有很大的指导价值。定价82元，现团购价39.9元包邮！',
+            imgUrl: 'http://imgt.bookschina.com/2019/tuangou/12641_20191231091332.jpg',
+            imgUrls: 'http://imgt.bookschina.com/2019/tuangou/12641_20191231091332.jpg',
+            price: 82.0,
+            isGroupHot: true
+        },
+        {
+            title: '大师与玛格丽特',
+            narrative: '“世界文学名著典藏·全译本”精装4种：收入“魔幻现实主义”的鼻祖米·布尔加科夫《大师与玛格丽特》，斯蒂芬·茨威格刻画女人暗恋心理的名作《一个陌生女人的来信》，经典希腊神话读本——古斯塔夫·施瓦布《希腊神话故事》，全世界吸血鬼小说的蓝本——布莱姆·斯托克《德拉库拉》。专业学者导读，采用经典欧式设计风格，配以黑白手绘插图，熠熠雍容的外观，质感温馨的纸张，典雅大气的装帧，引领我们穿梭时光，触碰历经时间磨砺、在文字中永生的经典名著。定价104元，现团购价29.9元包邮！',
+            imgUrl: 'http://imgt.bookschina.com/2019/tuangou/12636_20191229115653.jpg',
+            imgUrls: 'http://imgt.bookschina.com/2019/tuangou/12636_20191229115653.jpg',
+            price: 104.0,
+            isGroupHot: true
+        },
+        {
+            title: '《周礼》《孟子》《荀子》《战国策》《山海经》',
+            narrative: ' 稀见老书！“元典文化丛书”精装5册，本丛书自1995年出版以来备受好评，曾荣获第十届中国图书奖等多项大奖。由著名神话学者高有鹏等撰写，通俗流畅的文字结合生动有趣的历史故事，深入浅出地诠释《周礼》《孟子》《荀子》《战国策》《山海经》，并阐述其对中国法律、宗教、经济、文学等诸多文化领域的重要影响，使读者一册在手，既可以了解一本元典著作的原始面貌、基本内容，又可以全方位的了解其历史价值，立论严谨、材料详实充足、准确可靠，具有较高的学术性与可读性。定价121元，现团购价45元包邮！',
+            imgUrl: 'http://imgt.bookschina.com/2019/tuangou/12590_20191224091631.jpg',
+            imgUrls: 'http://imgt.bookschina.com/2019/tuangou/12590_20191224091631.jpg',
+            price: 121.0,
+            isGroupHot: true
+        },
+        {
+            title: '前汉演义',
+            narrative: '“一代史家，千秋神笔。”民国著名历史小说家蔡东藩代表作“中国历代通俗演义”全20册，精装彩插本，重达17公斤。以正史为经，逸闻为纬，演绎自秦代到民国时期两千多年的历史兴衰进程。本套书的亮点在于每一册均配以数幅优美插图，有历代名家经典书画，有各色珍贵文物，也有相关人物资料照片，为我们重现壮阔的时代场景。文雅与通俗兼而有之，说史而又富含哲思，千古兴衰与朝代更迭，尽收眼底。定价1481元，现团购价269元包邮！',
+            imgUrl: 'http://imgt.bookschina.com/2019/tuangou/12581_20191221031052.jpg',
+            imgUrls: 'http://imgt.bookschina.com/2019/tuangou/12581_20191221031052.jpg',
+            price: 1481.0,
+            isGroupHot: true
+        }
+    ]
+    let query = ""
+    for(let i = 0; i < 8; i++){
+        query += `INSERT INTO bookinfo VALUE(null, '${data[i].imgUrl}', '${data[i].title}', '${data[i].narrative}', "阿加莎·克里斯丁", ${data[i].price}, '${data[i].imgUrls}' , ${data[i].isGroupHot});`;
+       /*  $.ajax({
+            url: 'http://10.31.152.26:8080/bookschina/php/insertData.php',
+            data: query
+        }) */
+    }
+    console.log(query);
     </script>
 </html>

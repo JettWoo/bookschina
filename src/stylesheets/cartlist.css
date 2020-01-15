@@ -115,7 +115,7 @@ a {
 
     .head .ta_sub .top_menu a {
         padding: 0 7px;
-        background: url(/Images/Head/border.jpg) no-repeat right center;
+        background: /* url(/Images/Head/border.jpg) */ no-repeat right center;
     }
 
     .head .ta_sub .search_bar {
@@ -139,12 +139,12 @@ a {
                 font-size: 14px;
                 margin: 0 0 0 5px;
                 color: #666;
-                background: url(/Images/Head/headitem_up.jpg) no-repeat;
+                background: /* url(/Images/Head/headitem_up.jpg) */ no-repeat;
                 display: inline;
             }
 
                 .head .ta_sub .search_bar .search_tab a.now {
-                    background: url(/Images/Head/headitem.jpg) no-repeat;
+                    background: /* url(/Images/Head/headitem.jpg) */ no-repeat;
                     color: #fff;
                 }
 
@@ -161,7 +161,7 @@ a {
             }
 
 .nav {
-    background: url(/Images/Head/head_bg.jpg) repeat-x;
+    background: /* url(/Images/Head/head_bg.jpg) */ repeat-x;
     height: 30px;
 }
 
@@ -176,7 +176,7 @@ a {
             padding: 0 10px;
             display: inline;
             position: relative;
-            background: url(/Images/Head/Separated.jpg) no-repeat right;
+            background: /* url(/Images/Head/Separated.jpg) */ no-repeat right;
         }
 
             .nav ul li a {
@@ -225,7 +225,7 @@ a {
             font-weight: bold;
             color: #944a03;
             border: 0;
-            background: url(/Images/Head/ssbg.jpg) repeat-x;
+            background: /* url(/Images/Head/ssbg.jpg) */ repeat-x;
             height: 25px;
             line-height: 23px;
             width: 80px;
@@ -247,7 +247,7 @@ a {
         font-size: 14px;
         line-height: 25px;
         font-weight: bold;
-        background: url(/Images/Head/service.png) no-repeat left;
+        background:/*  url(/Images/Head/service.png) */ no-repeat left;
     }
 
 .footerWrap {
@@ -365,7 +365,7 @@ a {
             width: 40px;
             border-bottom: 1px solid #cecece;
             text-align: center;
-            background: #aaa url(/Images/sidetoolicon.jpg) no-repeat;
+            background: #aaa /* url(../Images/sidetoolicon.jpg) */ no-repeat;
             position: relative;
         }
 
@@ -417,7 +417,7 @@ a {
     top: -60px;
     left: -120px;
     border: 1px solid #CCC;
-    background: #fff url(/Images/weixin.jpg) no-repeat;
+    background: #fff /* url(../Images/weixin.jpg) */ no-repeat;
 }
 
 .side_tool .inner .share .shareWrap {

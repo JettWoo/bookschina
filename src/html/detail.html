@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>商品详情</title>
     <link rel="icon" href="../images/favicon.ico" sizes="32x32" />
-    <link rel="stylesheet" href="../stylesheets/index.css">
-    <link rel="stylesheet" href="../stylesheets/detail.css">
+    <!-- <link rel="stylesheet" href="../stylesheets/index.css">
+    <link rel="stylesheet" href="../stylesheets/detail.css"> -->
 </head>
 
-<body>
+<body id="pageMark" targetPage = "detail">
     <!------------ 网页头部  ------------>
     <header>
         <!-- 头部链接结构 -->
@@ -229,7 +229,7 @@
                                     id="bigImgSrc">
 
                                 <div class="activeIcon">
-                                    <img src="/Images/bookdetailactiveicon.png">
+                                    <!-- <img src="../images/bookdetailactiveicon.png"> -->
                                 </div>
 
                                 <span class="bigIconTip"></span>
@@ -239,9 +239,9 @@
 
                         <div class="bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1578901460713"><a href="#"
                                 class="bds_more" data-cmd="more"
-                                style="background: url(/Images/childredSprit.png?id=180530) no-repeat -438px -205px; font-size: 14px; padding-left: 17px; color: #e60000;">分享</a>
+                                style="background: url(../images/childredSprit.png) no-repeat -438px -205px; font-size: 14px; padding-left: 17px; color: #e60000;">分享</a>
                         </div>
-                        <script>
+                        <!-- <script>
                             var textString = $(".activeItemWrap").text();
                             window._bd_share_config = {
                                 "common": {
@@ -262,7 +262,7 @@
                                     'script')).src =
                                 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(
                                     -new Date() / 36e5)];
-                        </script>
+                        </script> -->
                     </div>
                     <div class="bookInfo">
                         <div class="padLeft10">
@@ -542,12 +542,18 @@
 
     </div>
 
-    <div class="foot">
+
+
+    
+    <div class="foot" style="background: #f5f5f5;overflow: hidden;">
+
+    </div>
+    <!-- <div class="foot">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script>
             $(".foot").load("../static/footer.html");
         </script>
-    </div>
+    </div> -->
 </body>
 
 </html>

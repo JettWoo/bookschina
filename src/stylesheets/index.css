@@ -431,11 +431,11 @@ header {
   right: 0;
   width: 8px;
   height: 4px;
-  background: url(../Images/homeindex.png) no-repeat 0 -14px;
+  background: url(../images/homeindex.png) no-repeat 0 -14px;
 }
 /* line 240, ../sass/_topHeader.scss */
 .searchCenter .inputInner .searchTabWrap:hover i {
-  background: url(../Images/homeindex.png) no-repeat 0 -10px;
+  background: url(../images/homeindex.png) no-repeat 0 -10px;
 }
 /* line 244, ../sass/_topHeader.scss */
 .searchCenter .inputInner .searchTabWrap:hover ul {
@@ -1068,6 +1068,8 @@ header {
   font-size: 12px;
   line-height: 18px;
   color: #333;
+  height: 36px;
+  overflow: hidden;
 }
 /* line 177, ../sass/_tabHot.scss */
 .bookItem .bookWrap .bookDisc:hover {
@@ -1194,12 +1196,12 @@ header {
 /* line 85, ../sass/_hotShipping.scss */
 .hotNav .leftArrow {
   left: 0;
-  background: url(../Images/homeindex.png) no-repeat -10px -64px;
+  background: url(../images/homeindex.png) no-repeat -10px -64px;
 }
 /* line 90, ../sass/_hotShipping.scss */
 .hotNav .rightArrow {
   right: 0;
-  background: url(../Images/homeindex.png) no-repeat 0px -64px;
+  background: url(../images/homeindex.png) no-repeat 0px -64px;
 }
 
 /* 畅销榜内容样式 */
@@ -1341,7 +1343,7 @@ header {
   position: absolute;
   width: 27px;
   height: 38px;
-  top: 35%;
+  top: 120px;
   margin-top: -19px;
   cursor: pointer;
   /* display: none; */
@@ -1361,7 +1363,15 @@ header {
 /* line 33, ../sass/_groupHot.scss */
 .groupHot ul {
   overflow: hidden;
-  width: 2000px;
+  width: 2304px;
+  height: 600px;
+  position: relative;
+}
+
+.hotBookWrap ul .hideHot{
+  position: absolute;top: 0;left: 0;
+  display: none;
+  height: 600px;  width: 1524px;
 }
 /* line 37, ../sass/_groupHot.scss */
 .groupHot li {
@@ -1497,7 +1507,7 @@ header {
   position: absolute;
   width: 60px;
   height: 60px;
-  background: url(../Images/homeindex.png) no-repeat -1px -318px;
+  background: url(../images/homeindex.png) no-repeat -1px -318px;
   top: 64px;
   left: 14px;
   z-index: 2;
@@ -1567,7 +1577,7 @@ header {
   float: left;
   height: 100%;
   padding: 0 19px;
-  background: url(../Images/kindline.jpg) no-repeat right;
+  background: url(../images/kindline.jpg) no-repeat right;
 }
 /* line 36, ../sass/_category.scss */
 .category .categoryTitle li a {
@@ -1870,7 +1880,7 @@ header {
   height: 20px;
   width: 20px;
   cursor: pointer;
-  background: #fff url(../Images/homeindex.png) no-repeat;
+  background: #fff url(../images/homeindex.png) no-repeat;
 }
 /* line 102, ../sass/_publishModule.scss */
 .navWrap .butWrap .downArrow {

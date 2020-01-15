@@ -9,12 +9,16 @@ module.exports = {
     entry: {
        /*  app: './src/index.js',
         print: './src/print.js', */
-        app: './src/scripts/main.js',
+        main: './src/scripts/main.js',
+        /* login: "./src/scripts/login.js",
+        register: './src/scripts/registry.js',
+        detail: './src/scripts/detail.js',
+        cartList: './src/scripts/cartList.js' */
     },
-    devtool: 'inline-source-map',
+    /* devtool: 'inline-source-map', */
     output: {
         /* filename: 'bundle.js', */
-        filename: '[name].bundle.js',
+        filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
     devServer:{
@@ -25,44 +29,36 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'Output Management',
             template: './src/html/index1.html',
-            filename: 'index.html',
+            filename: './html/index.html',
             minify:{
                     removeComments: true,//删除注释
                     collapseWhitespace:true//删除空格
-                // 
-            }
+            },
+            chunks: ['main']
         }),
-       
         new HtmlWebpackPlugin({
-            filename: 'header.html',
+            filename: './html/header.html',
             template: './src/static/header.html',
-            //thunks: ['common', 'list']
         }), 
         new HtmlWebpackPlugin({
-            filename: 'footer.html',
+            filename: './html/footer.html',
             template: './src/static/footer.html',
-            //thunks: ['common', 'list']
         }),
         new HtmlWebpackPlugin({
-            filename: 'detail.html',
+            filename: './html/detail.html',
             template: './src/html/detail.html',
-            //thunks: ['common', 'list']
         }),
-
         new HtmlWebpackPlugin({
-          filename: 'cartlist.html',
+          filename: './html/cartlist.html',
           template: './src/html/cartlist.html',
-           //thunks: ['common', 'detail']
         }),
         new HtmlWebpackPlugin({
-            filename: 'login.html',
+            filename: './html/login.html',
             template: './src/html/login.html',
-            //thunks: ['common', 'list']
         }), 
         new HtmlWebpackPlugin({
-          filename: 'registry.html',
+          filename: './html/registry.html',
           template: './src/html/registry.html',
-          //thunks: ['common', 'detail']
         }),
 
 
@@ -89,13 +85,21 @@ module.exports = {
                 test: /\.(png|jpg|gif)$/,
                 use: [
                     {
-                        loader: 'url-loader?url=false&name=images/[hash:8].[name].[ext]',
+                        loader: 'url-loader',
                         options: {
-                            limit: 8192
+                            limit: 8192,
+                            name: '../images/[name].[ext]'
                         }
                     }
                 ]
             },
+            /* { //配置图片文件的包
+                test: /\.(png|jpg|gif|svg|ico)$/,
+                loader: 'file-loader',
+                options: {
+                    name: 'images/[name].[ext]'
+                }
+            }, */
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
                 use: [
@@ -115,7 +119,7 @@ module.exports = {
                     }
                 ]
             },
-            {
+           /*  {
                 test: /\.js$/,
                 exclude: /(node_modules|bower_components)/,
                 use: {
@@ -124,7 +128,7 @@ module.exports = {
                         presets: ['env']
                         }
                 }
-            }
+            } */
         ]
     }
 }

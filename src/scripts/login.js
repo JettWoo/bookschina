@@ -1,36 +1,37 @@
-/* import 'jquery';
-import "babel-polyfill"; 
-import '../stylesheets/register.css'; */
 
 
 import {
     GVerify
-}from "./picCode.js";
+} from "./picCode.js";
 
-class RegConf {
-    constructor() {
+class LoginConf{
+    constructor(){
         this.phoneNumInput = $(".phoneNum");
         this.pwd = $(".pwd");
-        this.pwdConfirm = $(".pwdConfirm");
         this.confirmCode = $(".confirmCode");
-        this.submit = $("input[type='submit']");
+        this.submit = $(".subButton");
+        this.hoverImg = $(".hoverImg img");
+
         this.confirms = {
             checkPhone: false,
             checkPwd: false,
-            checkPwdConf: false,
             checkConf: false
         }
 
+        this.hoverImgs = {
+            normal: '../images/normal.0447fe9.png',
+            phoneFocus: "../images/greeting.1415c1c.png",
+            pwdFocus: '../images/blindfold.58ce423.png'
+        }
     }
 
-    init() {
+    init(){
         this.checkPhoneNum();
         this.checkPwd();
-        this.confirmPwd();
         this.checkConfirmCode();
         this.checkSubmit();
-
     }
+
     checkPhoneNum() {
         let phoneReg = /^1[3578]\d{9}$/;
         let tipText = {
@@ -46,10 +47,12 @@ class RegConf {
             this.phoneNumInput.attr("placeholder", "");
             tip.show();
             info.hide();
+            this.hoverImg.attr("src", this.hoverImgs.phoneFocus);
         });
         let _this =this;
         this.phoneNumInput.blur(function () {
             $(this).attr("placeholder", tipText.placeholder);
+            _this.hoverImg.attr("src", _this.hoverImgs.normal);
             let value = $(this).val();
             if (!phoneReg.test(value)) {
                 wrap.addClass("danger");
@@ -86,12 +89,13 @@ class RegConf {
             this.pwd.attr("placeholder", "");
             tip.show();
             info.hide();
+            this.hoverImg.attr("src", this.hoverImgs.pwdFocus);
         });
 
         this.pwd.blur(function () {
             $(this).attr("placeholder", tipText.placeholder);
+            _this.hoverImg.attr("src", _this.hoverImgs.normal);
             let value = $(this).val();
-            //console.log("val:", value)
             if (!value) {
                 wrap.addClass("danger");
                 tip.addClass("danger");
@@ -138,68 +142,11 @@ class RegConf {
         })
     }
 
-    confirmPwd() {
-        let pwdReg = /\w{6,16}/;
-        let tipText = {
-            normal: '请再次输入密码',
-            danger: "密码不能为空",
-            error: "长度只能在6-16位",
-            warn: '两次密码输入不一致，请重新输入',
-            placeholder: "请再次输入密码"
-        }
-        let wrap = this.pwdConfirm.parents(".inputWrap");
-        let info = this.pwdConfirm.parents(".item").find(".info");
-        let tip = this.pwdConfirm.parents(".item").find(".tip p");
-        let _this = this;
-
-        this.pwdConfirm.focus(() => {
-            this.pwdConfirm.attr("placeholder", "");
-            tip.show();
-            info.hide();
-            _this.confirms.checkPwdConf = false;
-        });
-        this.pwdConfirm.blur(() => {
-            _this.pwdConfirm.attr("placeholder", tipText.placeholder);
-
-            let firstValue = this.pwd.val();
-            let value = this.pwdConfirm.val();
-
-            if (!value) {
-                wrap.addClass("danger");
-                tip.addClass("danger");
-                tip.html(tipText.danger);
-                info.hide();
-                _this.confirms.checkPwdConf = false;
-            } else {
-                if (!pwdReg.test(value)) {
-                    wrap.addClass("danger");
-                    tip.addClass("danger");
-                    tip.html(tipText.error);
-                    info.hide();
-                    _this.confirms.checkPwdConf = false;
-                } else {
-                    //console.log("val:", value, "first:", firstValue)
-                    if (value !== firstValue) {
-                        wrap.addClass("danger");
-                        tip.addClass("danger");
-                        tip.html(tipText.warn);
-                        info.hide();
-                        _this.confirms.checkPwdConf = false;
-                    } else {
-                        wrap.removeClass("danger")
-                        tip.removeClass("danger");
-                        tip.html(tipText.normal);
-                        tip.hide();
-                        info.show();
-                        _this.confirms.checkPwdConf = true;
-                    }
-                }
-            }
-        }); 
-    }
 
     checkConfirmCode(){
-        var verifyCode = new GVerify("v_container");
+        //console.log("------", GVerify)
+        let verifyCode = new GVerify("v_container");
+
         let tipText = {
             normal: '请输入图片验证码',
             danger: "验证码不能为空",
@@ -216,10 +163,12 @@ class RegConf {
             tip.show();
             info.hide();
             _this.confirms.checkConf = false;
+            this.hoverImg.attr("src", this.hoverImgs.phoneFocus);
         });
 
         this.confirmCode.blur(function(){
-            $(this).attr("placeholder", tipText.placeholder)
+            $(this).attr("placeholder", tipText.placeholder);
+            _this.hoverImg.attr("src", _this.hoverImgs.normal);
             if(!$(this).val()){
                 wrap.addClass("danger");
                 tip.addClass("danger");
@@ -244,9 +193,11 @@ class RegConf {
             }
         })
     }
+
+
     checkSubmit(){
         this.submit.click(()=>{
-            if(this.confirms.checkPhone && this.confirms.checkPwd && this.confirms.checkPwdConf && this.confirms.checkConf){
+            if(this.confirms.checkPhone && this.confirms.checkPwd && this.confirms.checkConf){
                 console.log("可以提交");
                 return false;
             }else{
@@ -257,18 +208,6 @@ class RegConf {
         
     }
 }
-
-
-/* if ($(".head")) {
-    $(".head").load("./header.html");
-};
-if ($(".foot")) {
-    $(".foot").load("./footer.html");
-};
-new RegConf().init(); */
-
-
-export {
-    RegConf
+export{
+    LoginConf
 }
-

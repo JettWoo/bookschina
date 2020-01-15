@@ -73,7 +73,36 @@ class Swiper {
     }
 }
 
+class Effect{
+    constructor(){
+
+    }
+    init(){
+        this.hotSwiper();
+    }
+
+    hotSwiper(){
+        let $hotWrap = $(".hotBookWrap");
+        let $arrowLeft = $(".hotBookWrap .arrowLeft");
+        let $arrowRight = $(".hotBookWrap .arrowRight");
+        let $div = $(".hotBookWrap ul div");
+        $hotWrap.hover(function(){
+            $arrowLeft.show();
+            $arrowRight.show();
+        }, function(){
+            $arrowLeft.hide();
+            $arrowRight.hide();
+        });
+        $arrowLeft.on("click", function(){
+            $div.toggleClass("hideHot");
+        });
+        $arrowRight.on("click", function(){
+            $div.toggleClass("hideHot");
+        })
+    }
+}
 /* new Swiper().init(); */
 export {
-    Swiper
+    Swiper,
+    Effect
 }
