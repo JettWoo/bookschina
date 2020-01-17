@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../stylesheets/detail.css"> -->
 </head>
 
-<body id="pageMark" targetPage = "detail">
+<body id="pageMark" targetPage="detail" style="background: #fff;">
     <!------------ 网页头部  ------------>
     <header>
         <!-- 头部链接结构 -->
@@ -207,11 +207,7 @@
             </div>
         </div>
         <!--图书详情-->
-        <div class="w1200">
-            <!--缺货提示-->
-
-        </div>
-        <div class="w1200">
+        <div class="w1200" >
             <div class="bookInfoWrap clearfix">
                 <div class="bookDetaiWrap">
 
@@ -221,8 +217,11 @@
                             <div class="coverImg" id="popbigpic">
                                 <a href="javascript:void(0)" class="img">
                                     <img src="http://image12.bookschina.com/2015/20150726/B7078536.jpg" class="jqzoom"
-                                        alt="张爱玲-她从海上来-第二版"
-                                        rel="http://image12.bookschina.com/2015/20150726/7078536.jpg">
+                                        alt="">
+
+                                        <div class="zoomMask" style="left: 0px; top: 0px; visibility: hidden;">
+
+                                        </div>
                                 </a>
 
                                 <input type="hidden" value="http://image12.bookschina.com/2015/20150726/7078536.jpg"
@@ -233,7 +232,12 @@
                                 </div>
 
                                 <span class="bigIconTip"></span>
+                                <div class="zoomDiv" style="display: block;visibility: hidden;" style="background: red;">
+                                    <img id="detailPic" src="" style="position: absolute;width: 800px; height: 800px;">
+                                </div>
+                               <!--  <div class="zoomMask" style="left: 87.4px; top: 36.4px;">
 
+                                </div> -->
                             </div>
                         </div>
 
@@ -241,88 +245,75 @@
                                 class="bds_more" data-cmd="more"
                                 style="background: url(../images/childredSprit.png) no-repeat -438px -205px; font-size: 14px; padding-left: 17px; color: #e60000;">分享</a>
                         </div>
-                        <!-- <script>
-                            var textString = $(".activeItemWrap").text();
-                            window._bd_share_config = {
-                                "common": {
-                                    "bdSnsKey": {},
-                                    "bdText": "《张爱玲-她从海上来-第二版》 张爱玲的一生可以用大起大落、大悲大喜来形容。痛定思痛的爱情经历，五光十色的成名经历，流光溢彩的香港传奇，十里洋场的上海故事，以及寂寞萧瑟的淡然结局。 作者：艾嘉 著，石油工业出版社出版，售价10.4（3.0折）正在参与促销：今日主打折上7折",
-                                    "bdPopupOffsetLeft": -92,
-                                    "bdMini": "2",
-                                    "bdMiniList": ["weixin", "tsina", "douban", "sqq", "qzone", "evernotecn"],
-                                    "bdPic": "http://image12.bookschina.com/2015/20150726/B7078536.jpg",
-                                    "bdStyle": "0",
-                                    "bdSize": "16"
-                                },
-                                "share": {
-                                    "bdSize": 16
-                                }
-                            };
-                            with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement(
-                                    'script')).src =
-                                'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(
-                                    -new Date() / 36e5)];
-                        </script> -->
                     </div>
                     <div class="bookInfo">
                         <div class="padLeft10">
                             <h1>张爱玲-她从海上来-第二版</h1>
 
                             <p class="recomand">
-                                张爱玲的一生可以用大起大落、大悲大喜来形容。痛定思痛的爱情经历，五光十色的成名经历，流光溢彩的香港传奇，十里洋场的上海故事，以及寂寞萧瑟的淡然结局。</p>
+                                张爱玲的一生可以用大起大落、大悲大喜来形容。痛定思痛的爱情经历，五光十色的成名经历，流光溢彩的香港传奇，十里洋场的上海故事，以及寂寞萧瑟的淡然结局。
+                            </p>
 
-                            <div class="author"><span>作者：</span><a
-                                    href="/book_find2/?stp=%u827e%u5609%u8457&amp;sCate=3" target="_blank">艾嘉 著</a>
+                            <div class="author"><span>作者：</span>
+                                <a href="" target="_blank">艾嘉 著
+                                </a>
                             </div>
 
-                            <div class="publisher"><span>出版社：</span><a href="/publish/5021/"
-                                    target="_blank">石油工业出版社</a><span>出版时间：</span><i>2016-01-01</i></div>
+                            <div class="publisher">
+                                <span>出版社：</span>
+                                <a href="" target="_blank">石油工业出版社</a>
+                                <span>出版时间：</span><i>2016-01-01</i>
+                            </div>
 
 
                             <div class="otherInfor">
-
                                 <span>开本：</span>
                                 <em>16开</em>
-
                                 <span>页数：</span>
                                 <i>259页</i>
-
                             </div>
 
-                            <div class="sort"><span>排名：</span><a href="/24hour/14000000/" target="_blank">传记销量榜</a>
-                                <b>第<i>1</i>位</b></div>
+                            <div class="sort">
+                                <span>排名：</span>
+                                <a href="">传记销量榜</a>
+                                <b>第<i>1</i>位</b>
+                            </div>
                         </div>
                         <div class="priceWrap">
-                            <span class="sellPriceTit">中 图 价:</span><span class="sellPrice"><i>¥</i>10.4</span><span
-                                class="discount">(3.0折)</span>
-                            <span class="priceTit">定价:</span><del class="price">¥34.8 </del>
+                            <span class="sellPriceTit">中 图 价:</span>
+                            <span class="sellPrice"><i>¥</i>10.4</span>
+                            <span class="discount">(3.0折)</span>
+                            <span class="priceTit">定价:</span>
+                            <del class="price">¥34.8 </del>
 
-                            <a href="/RegUser/login.aspx?url=/7078536.htm" target="_blank">登录后可看到会员价</a>
+                            <a href="" target="_blank">登录后可看到会员价</a>
 
                         </div>
-                        <div class="activeIcon"><span class="activeTit" target="_blank">促销活动:</span>
-                            <div class="activeItemWrap"><a target="_blank" href="/tejia/NewTeHui.aspx"
-                                    style="background:#935ec5">今日主打折上7折</a></div>
+                        <div class="activeIcon">
+                            <span class="activeTit" target="_blank">促销活动:</span>
+                            <div class="activeItemWrap">
+                                <a target="_blank" href="" style="background:#935ec5">
+                                    今日主打折上7折
+                                </a>
+                            </div>
                         </div>
 
 
 
                         <div class="oparateButton clearfix">
 
-                            <a href="javascript:void(0);"
-                                onclick="window.open('/shopcar/shoppingcart_add.aspx?book_id=7078536','_self');"
-                                class="buyButton">加入购物车</a>
-
-                            <a href="javascript:frAdd('7078536');" class="collectBtn">收藏</a>
-
-
+                            <a href="javascript:void(0);" class="buyButton">加入购物车</a>
+                            <a href="javascript:void(0);" class="collectBtn">收藏</a>
                             <div class="freightPolicyWrap" style="cursor: auto;">
                                 <div style="color:#666666">运费6元，满69元免运费</div>
                                 <span class="freightTit"
-                                    style="width:auto;padding-left:18px; padding-right:0px; line-height: 36px; color:#024f7d; cursor:pointer;position: relative; top: -4px;"><a
-                                        target="_blank" href="/question/default3.asp" style="color:#024f7d;"><i
-                                            class="icon"
-                                            style="left:0px; background:url(http://image31.bookschina.com/pro-images/child2.png?id=5511) no-repeat; height: 14px; width: 14px;"></i>快递不能达地区使用邮政小包，运费14元起</a></span>
+                                    style="width:auto;padding-left:18px; padding-right:0px; line-height: 36px; color:#024f7d; cursor:pointer;position: relative; top: -4px;">
+                                    <a target="_blank" href="" style="color:#024f7d;">
+                                        <i class="icon"
+                                            style="left:0px; background:url(http://image31.bookschina.com/pro-images/child2.png?id=5511) no-repeat; height: 14px; width: 14px;">
+                                        </i>快递不能达地区使用邮政小包，运费14元起
+                                    </a>
+                                </span>
                                 <div class="freightCon" style="width: 370px; top:40px; left:0px;">
                                     <div class="reightPolicy" style="color:#666; border-color:#999">
                                         云南、广西、海南、新疆、青海、西藏六省，部分地区快递不可达</div>
@@ -332,14 +323,15 @@
 
 
                         </div>
-
-                        <div class="buyTip">
+                      <!--   <div class="buyTip">
                             <span>温馨提示：</span>5折以下图书主要为出版社尾货，大部分为全新，个别图书品相8-9成新、切口
                             <br>
                             有划线标记、光盘等附件不全
-                        </div>
+                        </div> -->
 
                     </div>
+
+
                 </div>
                 <!--本类五星书-->
                 <div class="fiveStartWrap">
@@ -544,7 +536,7 @@
 
 
 
-    
+
     <div class="foot" style="background: #f5f5f5;overflow: hidden;">
 
     </div>

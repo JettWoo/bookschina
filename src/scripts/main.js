@@ -26,6 +26,16 @@ import {
     Render
 } from "./render.js";
 
+// 导入详情类
+import {
+    Detail
+} from './detail.js';
+
+// 导入购物车类
+import {
+    CartList
+}from "./cartList.js";
+
 let page = $("body").attr("targetPage");
 
 
@@ -68,10 +78,12 @@ case 'registry': {
 break;
 case 'detail': {
     renderHeadAndFooter();
+    new Detail().init();
 };
 break;
 case 'cartlist': {
     renderHeadAndFooter();
+    new CartList().init();
 };
 break;
 }

@@ -17,7 +17,7 @@ class Render{
             url: "http://10.31.152.26:8080/bookschina/php/sendData.php",
             dataType: 'json'
         }).done(function(data){
-            //console.log(data);
+            //console.log("mmm" + data + "nnn");
             let htmlStr = "";
             for(let i = 0; i < ids.length; i++){
                 let active = "";
@@ -27,13 +27,13 @@ class Render{
                 <div role="tabpanel" class="tab-pane ${active}" id="${ids[i]}">
                 <div class="mainEditor">
                   <div class="mainCover">
-                    <a href="">
+                    <a href="detail.html?${ data[i * 4].id}">
                       <img src="${data[i*4].imgUrl}" alt="" />
                     </a>
                   </div>
                   <div class="mainText">
                     <h2>
-                      <a href="" title="${data[i*4].title}">${data[i*4].title}</a>
+                      <a href="detail.html?${ data[i * 4].id}" title="${data[i*4].title}">${data[i*4].title}</a>
                     </h2>
                     <div class="priceWrap">
                       <span class="nowPrice">￥${data[i*4].price}</span>
@@ -51,7 +51,7 @@ class Render{
                     htmlStr += `
                     <div class="bookItem">
                     <div class="bookWrap">
-                      <a href="">
+                      <a href="detail.html?${ data[i * 4 + j].id} ">
                         <div class="bookImg">
                           <img src="${data[i*4 + j].imgUrl}" alt="" />
                           <img src="../images/tubiao48.png" alt="" class="discount" />
@@ -91,12 +91,12 @@ class Render{
                     htmlStr += `
                     <li>
                     <div class="bookCover">
-                      <a href="">
+                      <a href="detail.html?${ data[ j * 4 + i].id}">
                         <img src="${data[j * 4 + i].imgUrl}" alt="" />
                       </a>
                     </div>
                     <p class="bookName">
-                      <a href="">
+                      <a href="detail.html?${ data[ j * 4 + i].id}">
                         ${data[j * 4 + i].narrative}
                       </a>
                     </p>
@@ -119,6 +119,7 @@ class Render{
            
         })
     }
+
 
     init(){
         this.renderNew();

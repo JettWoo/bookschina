@@ -1,3 +1,24 @@
+/* #pageMark{
+    background: #fff;
+} */
+#popbigpic a{
+    display: block;
+    height: 348px;
+    width: 348px;
+}
+#popbigpic a .jqzoom{
+    display: inline-block;
+    height: 100%;
+    max-height: 348px;
+    max-width:100%;
+    /* max-width: 300px; */
+}
+.bookInfo .recomand{
+    max-height: 72px;
+    overflow: hidden;
+}
+
+
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0}
 td,th{word-break:break-all;word-wrap:break-word}
 input{outline:0;border:none;background-color:#fff}
@@ -49,11 +70,12 @@ a:hover{text-decoration:underline;color:#e70b1c}
 .bookInfoWrap .bookDetaiWrap .bookCover { display: inline; float: left; margin-right: 20px; padding-bottom: 16px; width: 350px; }
 
 .box{  position:relative;    }
-.coverImg{ cursor:pointer;  border:1px solid #dbdbdb;position:relative;z-index:1; padding:24px;height:300px;width:300px; text-align:center; }
+.coverImg{ cursor:pointer;  
+    border:1px solid #dbdbdb;position:relative;z-index:1; /* padding:24px; */height:348px;width:348px; text-align:center; }
 .coverImg .img img  { max-height:300px; }
 .zoomDiv{z-index:999;position:absolute;top:0px;left:350px;width:400px;height:400px;background:#ffffff;border:1px solid #dbdbdb;display:none;text-align:center;overflow:hidden;  }
 .zoomDiv img { position:absolute; left:0; right:0; }
-.zoomMask{position:absolute;background:url("http://www.bookschina.com../images/zoom_pup.png?id=1");cursor:move;z-index:1; width:200px; height:200px; }
+.zoomMask{position:absolute;background:url("../images/zoom_pup.png");cursor:move;z-index:1; width:200px; height:200px; }
 
 
 

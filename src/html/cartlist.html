@@ -7,11 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>购物车</title>
     <link rel="icon" href="../images/favicon.ico" sizes="32x32" />
-   <!--  <link rel="stylesheet" href="../stylesheets/index.css" />
-    <link rel="stylesheet" href="../stylesheets/cartlist.css"> -->
 </head>
 
-<body id="pageMark" targetPage = "cartlist">
+<body id="pageMark" targetPage="cartlist" style="background: #fff;">
     <!------------ 网页头部  ------------>
     <header style="height: 125px; border: none;">
         <!-- 头部链接结构 -->
@@ -115,7 +113,7 @@
                 <div class="carTab">
                     <ul>
                         <li class="cur"><a href="javsscript:void(0)">购物车(<span>5</span>)</a></li>
-                        <li><a href="http://tuan.bookschina.com/Cart">淘书团购物车(0) </a></li>
+                        <!-- <li><a href="http://tuan.bookschina.com/Cart">淘书团购物车(0) </a></li> -->
                     </ul>
                 </div>
             </div>
@@ -129,6 +127,8 @@
                 </div>
             </div>
         </div>
+
+
         <div class="contentInner full_car show">
             <div class="shoppingProcedure">
                 <span class="current">我的购物车 </span>
@@ -140,7 +140,7 @@
                 <div class="carTab">
                     <ul>
                         <li class="cur"><a href="javsscript:void(0)" class="">购物车(<span>5</span>)</a></li>
-                        <li><a href="http://tuan.bookschina.com/Cart">淘书团购物车(0) </a></li>
+                        <!-- <li><a href="http://tuan.bookschina.com/Cart">淘书团购物车(0) </a></li> -->
                     </ul>
                 </div>
                 <div class="shoppingTip">
@@ -167,28 +167,53 @@
                 <!--购物车内容-->
                 <div class="shoppingListWrap shoppingListContent">
                     <div class="shoppingItem NoActivity">
+
                         <div class="shoppingList clearfix select" style="z-index: 1;">
-                            <div class="cartCheckbox fl"><span sid="91680620" class="J_check selected">选中</span></div>
-                            <div class="goodImg fl"><a href="/8041724.htm" target="_blank"><img alt=""
-                                        src="http://image31.bookschina.com/pro-images/tj.png" class="iconTe"><img
-                                        src="http://image31.bookschina.com/2019/zuo/7/z8041724.jpg" title="月亮与六便士"></a>
+                            <div class="cartCheckbox fl">
+                                <span sid="91680620" class="J_check selected">选中</span>
                             </div>
-                            <div class="goodName fl"><a href="/8041724.htm" target="_blank">月亮与六便士<br></a></div>
-                            <div class="goodPrice fl"><strong>￥42</strong></div>
-                            <div class="goodSellPrice fl"><strong>￥20.6</strong></div>
+                            <div class="goodImg fl">
+                                <a href="" target="_blank">
+                                    <img alt="" src="" class="iconTe">
+                                    <img src="" title="月亮与六便士">
+                                </a>
+                            </div>
+                            <div class="goodName fl">
+                                <a href="" target="_blank">月亮与六便士<br></a>
+                            </div>
+                            <div class="goodPrice fl">
+                                <strong>￥42</strong>
+                            </div>
+                            <div class="goodSellPrice fl">
+                                <strong>￥20.6</strong>
+                            </div>
                             <div class="goodQuantity fl">
-                                <div class="quantityForm"><a href="javascript:void(0);" class="decrement" sid="91680620"
-                                        bid="8041724">-</a><input autocomplete="off" type="text" sid="91680620"
-                                        class="num J_input" id="input91680620" bid="8041724" max="7" shopcount="5"
-                                        value="5"><a href="javascript:void(0);" class="increment" sid="91680620"
-                                        bid="8041724">+</a></div>
+                                <div class="quantityForm">
+                                    <a href="javascript:void(0);" class="decrement" sid="91680620" bid="8041724">
+                                        -
+                                    </a>
+                                    <input autocomplete="off" type="text" sid="91680620" class="num J_input"
+                                        id="input91680620" bid="8041724" max="7" shopcount="5" value="5">
+                                    <a href="javascript:void(0);" class="increment" sid="91680620" bid="8041724">
+                                        +
+                                    </a>
+                                </div>
                                 <div class="limitText" id="limitText91680620"></div>
                             </div>
-                            <div class="goodSum fl"><strong class="subtotal">￥103.0</strong></div>
-                            <div class="goodOperation fl"><a class="goodRemove J_delate" href="javascript:void(0);"
-                                    sid="91680620">删除</a><a href="javascript:void(0);" class="goodCollection J_collect"
-                                    sid="91680620" bid="8041724">移入收藏</a></div>
+                            <div class="goodSum fl">
+                                <strong class="subtotal">￥103.0</strong>
+                            </div>
+                            <div class="goodOperation fl">
+                                <a class="goodRemove J_delate" href="javascript:void(0);" sid="91680620">
+                                    删除
+                                </a>
+                                <a href="javascript:void(0);" class="goodCollection J_collect" sid="91680620"
+                                    bid="8041724">
+                                    移入收藏
+                                </a>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -205,8 +230,8 @@
                             <span class="J_selectALL selectAll">选中</span>全选
                         </div>
                         <div class="removeGood fl"><a href="javascript:void(0)" class="J_deleteALL">删除选中的商品</a></div>
-                        <div class="removeGood fl"><a href="javascript:void(0)" class="J_deleteStock">清除下架或缺货商品</a>
-                        </div>
+                       <!--  <div class="removeGood fl"><a href="javascript:void(0)" class="J_deleteStock">清除下架或缺货商品</a>
+                        </div> -->
                     </div>
                     <div class="shoppingFootRight fr">
                         <div class="fl shoppingResult">

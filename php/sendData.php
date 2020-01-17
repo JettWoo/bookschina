@@ -12,6 +12,9 @@ $sql = "SELECT * FROM bookinfo WHERE isGroupHot = 0";
 $result = $conn->query($sql);
 
 //var_dump($result);
+/* echo("aaaaa");
+echo false;
+echo("zzzz"); */
 
 $data = array();
 
