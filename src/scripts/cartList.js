@@ -22,14 +22,18 @@ class CartList {
         if (cartData) {
             let ids = Object.keys(cartData);
             console.log("ids:", ids);
+            let obj = {};
+            for(let i = 0; i < ids.length; i++){
+                obj[i] = ids[i];
+            }
+            console.log(JSON.stringify(obj))
             //console.log("ids:", JSON.stringify(ids));
             
             $.ajax({
                 url: 'http://10.31.152.26:8080/bookschina/php/sendCartData.php',
                 type: 'POST',
                 data: {
-                    
-                    selects: JSON.stringify(ids)
+                    selects: JSON.stringify(obj)
                     //selects: JSON.stringify(cartData)
                 }
             })

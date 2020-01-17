@@ -6,25 +6,22 @@
 
     $conn = getConn();
     $conn->query("SET NAMES UTF8");
+    $sql = "SELECT * FROM bookinfo WHERE id = ";
+    /* $result = $conn->query("$sql");
+    $data = array();
 
+    for($i=0;$i<$result->num_rows;$i++){
+        $data[$i] = $result->fetch_assoc();
+    } */
+    //echo json_encode($data);
     if(isset($_POST["selects"])){
-        //json_decode
-        //echo($_POST['selects']);
-        
         $data = $_POST['selects'];
-        echo($data);
-        $data = '{"1": 1, "2":2}';
-        echo($data);
-        //echo($data);
-        //$array = array();
         $array = json_decode($data);
-        var_dump($array);
-        /* $json = '{"Peter":65,"Harry":80,"John":78,"Clark":90}';
-        var_dump(json_decode($json)); */
-        /* for($i =0; $i<$array->num_rows; $i++){
-            echo($array[$i])
-        } */
-        //var_dump($_POST['selects']);
+        for($i=0; $i<$array->num_rows - 1; $i++){
+            $sql.$array[i].'|| id=';
+        }
+        $sql.$array[$array->num_rows];
+        echo($sql);
     }else{
         echo "aaaa";
     }
