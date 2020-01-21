@@ -20,10 +20,12 @@
     // 注册
     if(isset($_POST['submit'])){
         $phoneNum = $_POST['phoneNum'];
-        $pwd = sha1($_POST['pwd']);
+        //$pwd = sha1($_POST['pwd']);
+        $pwd = $_POST['pwd'];
         //echo $phoneNum.$pwd;
-        $conn->query("INSERT INTO user_info VALUES (null, '$phoneNum', null,  '$pwd')");
-        header("location:http://10.31.152.26:8080/bookStore/src/html/login.html");
+        $result = $conn->query("INSERT INTO user_info VALUES (null, '$phoneNum', null,  '$pwd')");
+        
+        header("location:http://172.20.10.5/bookschina/dist/html/login.html");
         //echo "注册成功";
     }
 ?>

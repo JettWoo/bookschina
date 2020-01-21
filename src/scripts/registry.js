@@ -58,12 +58,12 @@ class RegConf {
                 info.hide();
                 _this.confirms.checkPhone = false;
             } else {
+                // 此处应该判断该手机号是否被注册
                 wrap.removeClass("danger")
                 tip.removeClass("danger");
                 tip.html(tipText.normal);
                 tip.hide();
                 info.show();
-
                 _this.confirms.checkPhone = true;
             }
         })
@@ -248,7 +248,7 @@ class RegConf {
         this.submit.click(()=>{
             if(this.confirms.checkPhone && this.confirms.checkPwd && this.confirms.checkPwdConf && this.confirms.checkConf){
                 console.log("可以提交");
-                return false;
+                return true;
             }else{
                 console.log("无法提交");
                 return false;

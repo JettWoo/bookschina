@@ -198,10 +198,27 @@ class LoginConf{
     checkSubmit(){
         this.submit.click(()=>{
             if(this.confirms.checkPhone && this.confirms.checkPwd && this.confirms.checkConf){
-                console.log("可以提交");
-                return false;
+                //console.log("可以提交");
+                //return false;
+                $.ajax({
+                   url: 'http://172.20.10.5/bookschina/php/login.php',
+                   type: 'POST',
+                   //dataType: 'json',
+                   data: {
+                       phoneNum: this.phoneNumInput.val(),
+                       pwd: this.pwd.val()
+                   }
+                }).done((data)=>{
+                    if(!data){
+                        //
+                        //console.log("登录成功")
+                        alert("账号与密码不匹配请重新输入");
+                    }else{
+                        location.href = "http://172.20.10.5/bookschina/dist/html/index.html";
+                    }
+                });
             }else{
-                console.log("无法提交");
+                //console.log("无法提交");
                 return false;
             }
         })

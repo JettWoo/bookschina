@@ -14,7 +14,8 @@ class Render{
     renderNew(){
         let ids = ['news', 'week', 'speed', 'hotCritical']
         $.ajax({
-            url: "http://10.31.152.26:8080/bookschina/php/sendData.php",
+            //url: "http://10.31.152.26:8080/bookschina/php/sendData.php",
+            url: "http://172.20.10.5/bookschina/php/sendData.php",
             dataType: 'json'
         }).done(function(data){
             //console.log("mmm" + data + "nnn");
@@ -81,7 +82,8 @@ class Render{
 
     renderHot(){
         $.ajax({
-            url: "http://10.31.152.26:8080/bookschina/php/sendHotData.php",
+            //url: "http://10.31.152.26:8080/bookschina/php/sendHotData.php",
+            url: "http://172.20.10.5/bookschina/php/sendHotData.php",
             dataType: 'json'
         }).done(function(data){
             let $div = $(".hotBookWrap ul div");

@@ -16,7 +16,9 @@ class Detail {
 
         this.$bookInfoWrap = $(".w1200 .bookInfoWrap");
 
-        this.baseUrl = 'http://10.31.152.26:8080/bookschina/php/';
+        //this.baseUrl = 'http://10.31.152.26:8080/bookschina/php/';
+        this.baseUrl = 'http://172.20.10.5/bookschina/php/';
+        
     }
     init() {
         this.detailRender();
@@ -104,7 +106,6 @@ class Detail {
         }
         // 鼠标移入显示隐藏元素
         this.small.addEventListener("mouseenter", (e) => {
-            console.log("ooooo");
             this.larger.style.visibility = "visible";
             this.large.style.visibility = "visible";
 
@@ -154,7 +155,6 @@ class Detail {
         let $buy = $(".oparateButton .buyButton");
 
         $buy.on('click', ()=>{
-            console.log("aaaaa")
             let cartData = JSON.parse(localStorage.getItem("cartData"));
             if(!cartData){
                 cartData = {};
@@ -170,7 +170,6 @@ class Detail {
                 cartData[sid].productNum = 1;
                 cartData[sid].choose = true;
             }
-
             localStorage.setItem("cartData", JSON.stringify(cartData));
         })
     }
